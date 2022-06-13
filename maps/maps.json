@@ -1,0 +1,14 @@
+﻿[
+  {
+    "name": "holodrum",
+    "location_size": 32,
+    "location_border_thickness": 4,
+    "img": "images/map_holodrum_labeled_scaled.png"
+  },
+  {
+    "name": "subrosia",
+    "location_size": 32,
+    "location_border_thickness": 4,
+    "img": "images/map_subrosia_base_scaled.png"
+  }
+]

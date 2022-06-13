@@ -1,0 +1,1702 @@
+﻿[
+	{
+		"name": "Holodrum",
+		"chest_unopened_img": "images/chest.png",
+		"chest_opened_img": "images/chestopen.png",
+		"color": "#00ff08",
+		"children": [
+			{
+				"name": "Western Coast",
+				"children": [
+					{
+						"name": "Explorer's Crypt",
+						"access_rules": [
+							"$d7_shuffle",
+							"[$d7_shuffle], $d7_shuffle_hard",
+						],
+						"sections": [
+						  {
+							"name": "Chest in \nbombable wall",
+							"access_rules": [
+								// Can get every single chest in D7
+								"$d7clear",
+								
+								"bombs"
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Wizzrobe\nchest",
+							"access_rules": [
+								// Can get every single chest in D7
+								"$d7clear",
+								
+								"$kill_normal"
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Chest before \nfirst poe",
+							"access_rules": [
+								// Can get every single chest in D7
+								"$d7clear",
+								
+								//"d7sk:5",
+								//"d7sk:1, [d7sk:5]",
+								
+								// Accessing poe 1 is 1 key but the chest is behind 5 to avoid a key being there
+								// Therefore, show as accessible with only 1 key
+								"d7sk:1, $kill_normal",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Zol trampoline\ndrop",
+							"access_rules": [
+								// Can get every single chest in D7
+								"$d7clear",
+								
+								"d7sk:1, bracelet, [$shoot_seeds], [emberseeds], $kill_poe, $max_jump:1",
+								"d7sk:1, bracelet, $shoot_seeds, mysteryseeds, $kill_poe, $max_jump:1, [emberseeds]",
+								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:1, [$shoot_seeds], [emberseeds]",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Armos puzzle\ndrop",
+							"access_rules": [
+								// Can get every single chest in D7
+								"$d7clear",
+								
+								"d7sk:1, bracelet, $shoot_seeds, emberseeds, $kill_poe, $max_jump:2",
+								"d7sk:1, bracelet, $shoot_seeds, emberseeds, $kill_poe, magnet",
+								"d7sk:1, bracelet, $shoot_seeds, mysteryseeds, $kill_poe, $max_jump:2, [emberseeds]",
+								"d7sk:1, bracelet, $shoot_seeds, mysteryseeds, $kill_poe, magnet, [emberseeds]",
+								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:2, [$shoot_seeds], [emberseeds]",
+								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], magnet, [$shoot_seeds], [emberseeds]",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Magnet ball\nchest",
+							"access_rules": [
+								// Can get every single chest in D7
+								"$d7clear",
+								
+								"d7sk:1, bracelet, $shoot_seeds, emberseeds, $kill_poe, $max_jump:2, $kill_magunesu, magnet",
+								"d7sk:1, bracelet, $shoot_seeds, mysteryseeds, $kill_poe, $max_jump:2, $kill_magunesu, magnet, [emberseeds]",
+								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:2, $kill_magunesu, magnet, [$shoot_seeds], [emberseeds]",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Chest up trampoline \nbefore second poe",
+							"access_rules": [
+								// Can get every single chest in D7
+								"$d7clear",
+								
+								"d7sk:2, bracelet, $shoot_seeds, emberseeds, $kill_poe, $max_jump:1",
+								"d7sk:1, [d7sk:2], bracelet, $shoot_seeds, emberseeds, $kill_poe, $max_jump:1",
+								"d7sk:2, bracelet, $shoot_seeds, mysteryseeds, $kill_poe, $max_jump:1, [emberseeds]",
+								"d7sk:1, [d7sk:2], bracelet, $shoot_seeds, mysteryseeds, $kill_poe, $max_jump:1, [emberseeds]",
+								"d7sk:2, bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:1, [$shoot_seeds], [emberseeds]",
+								"d7sk:1, [d7sk:2], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:1, [$shoot_seeds], [emberseeds]",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Spike island \nchest",
+							"access_rules": [
+								// Can get every single chest in D7
+								"$d7clear",
+								
+								"d7sk:3, bracelet, [$shoot_seeds], emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, $max_jump:3",
+								"d7sk:2, [d7sk:3], bracelet, [$shoot_seeds], emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, $max_jump:3",
+								"d7sk:3, bracelet, [$shoot_seeds], emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, $kill_darknut_across, $max_jump:1",
+								"d7sk:2, [d7sk:3], bracelet, [$shoot_seeds], emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, $kill_darknut_across, $max_jump:1",
+								"d7sk:3, bracelet, [$shoot_seeds], emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, magnet, $max_jump:1",
+								"d7sk:2, [d7sk:3], bracelet, [$shoot_seeds], emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, magnet, $max_jump:1",
+								
+								"d7sk:3, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
+								"d7sk:2, [d7sk:3], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
+								"d7sk:3, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $kill_darknut_across, $max_jump:1",
+								"d7sk:2, [d7sk:3], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $kill_darknut_across, $max_jump:1",
+								"d7sk:3, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $kill_stalfos_pit, magnet",
+								"d7sk:2, [d7sk:3], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $kill_stalfos_pit, magnet",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Chest in \nstair maze",
+							"access_rules": [
+								// Can get every single chest in D7
+								"$d7clear",
+								
+								"d7sk:4, bracelet, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, $max_jump:3",
+								"d7sk:4, bracelet, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, [$max_jump:3], $max_jump:2, bombs",
+								"d7sk:3, [d7sk:4], bracelet, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, $max_jump:3",
+								"d7sk:3, [d7sk:4], bracelet, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, [$max_jump:3], $max_jump:2, bombs",
+								
+								"d7sk:4, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
+								"d7sk:4, bracelet, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs",
+								"d7sk:3, [d7sk:4], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
+								"d7sk:3, [d7sk:4], bracelet, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Magnet spinner\ndrop",
+							"access_rules": [
+								// Can get every single chest in D7
+								"$d7clear",
+								
+								"d7sk:4, bracelet, $shoot_seeds, emberseeds, $kill_poe, flippers, $max_jump:3, magnet",
+								"d7sk:4, bracelet, $shoot_seeds, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs, magnet",
+								"d7sk:3, [d7sk:4], bracelet, $shoot_seeds, emberseeds, $kill_poe, flippers, $max_jump:3, magnet",
+								"d7sk:3, [d7sk:4], bracelet, $shoot_seeds, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs, magnet",
+								"d7sk:4, bracelet, $shoot_seeds, emberseeds, $kill_poe, flippers, $max_jump:4, [magnet]",
+								"d7sk:3, [d7sk:4], bracelet, $shoot_seeds, emberseeds, $kill_poe, flippers, $max_jump:4, [magnet]",
+								
+								"d7sk:4, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3, magnet",
+								"d7sk:4, bracelet, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs, magnet",
+								"d7sk:3, [d7sk:4], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3, magnet",
+								"d7sk:3, [d7sk:4], bracelet, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs, magnet",
+								"d7sk:4, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:4, [magnet]",
+								"d7sk:3, [d7sk:4], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:4, [magnet]",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Far east \nstalfos chest",
+							"access_rules": [
+								// Can get every single chest in D7
+								"$d7clear",
+								
+								"d7sk:5, bracelet, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, $max_jump:3",
+								"d7sk:5, bracelet, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, [$max_jump:3], $max_jump:2, bombs",
+								"d7sk:4, [d7sk:5], bracelet, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, $max_jump:3",
+								"d7sk:4, [d7sk:5], bracelet, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, [$max_jump:3], $max_jump:2, bombs",
+								
+								"d7sk:5, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:4, [satchel], [pegasusseeds]",
+								"d7sk:4, [d7sk:5], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:4, [satchel], [pegasusseeds]",
+							],
+							"item_count": 1
+						  },
+						  
+						  {
+							"name": "Gleeok \nreward",
+							"access_rules": [
+								// Can get every single chest in D7
+								"$d7clear",
+								
+								"d7bk, d7sk:4, bracelet, $kill_gleeok, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, $max_jump:3",
+								"d7bk, d7sk:4, bracelet, $kill_gleeok, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, [$max_jump:3], $max_jump:2, bombs",
+								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, $max_jump:3",
+								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, [$max_jump:3], $max_jump:2, bombs",
+								
+								"d7bk, d7sk:4, bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
+								"d7bk, d7sk:4, bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs",
+								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
+								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Seeds \nof Life",
+							"access_rules": [
+								// Can get every single chest in D7
+								"$d7clear",
+								
+								"d7bk, d7sk:4, bracelet, $kill_gleeok, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, $max_jump:3",
+								"d7bk, d7sk:4, bracelet, $kill_gleeok, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, [$max_jump:3], $max_jump:2, bombs",
+								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, $max_jump:3",
+								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, [$max_jump:3], $max_jump:2, bombs",
+								
+								"d7bk, d7sk:4, bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
+								"d7bk, d7sk:4, bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs",
+								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
+								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs",
+							],
+							"hosted_item": "d7",
+							"item_count": 0
+						  },
+						  {
+							"name": "D7 small\nkeys",
+							"hosted_item": "d7sk",
+							"item_count": 0
+						  },
+						  {
+							"name": "D7 boss \nkey",
+							"hosted_item": "d7bk",
+							"item_count": 0
+						  },
+						],
+						"map_locations": [
+						  {
+							"map": "holodrum",
+							"x": 25,
+							"y": 578
+						  }
+						]
+					},
+					{
+						"name": "Get ember seeds in \nD7's Poe rooms",
+						"access_rules": [
+								"$d7_shuffle",
+								"[$d7_shuffle], $d7_shuffle_hard",
+							],
+						"sections": [
+						  {
+							"name": "Respawnable bushes",
+							"access_rules": [
+								"[emberseeds], $destroy_bush_respawn",
+							],
+							"hosted_item": "emberseeds",
+							"item_count": 0
+						  },
+						],
+						"map_locations": [
+						  {
+							"map": "holodrum",
+							"x": 40,
+							"y": 563
+						  }
+						]
+					},
+				]
+			},	
+			{
+				"name": "North Horon",
+				"children": [
+					{
+						"name": "Gnarled Root Dungeon",
+						"access_rules": [
+							"$d1_shuffle",
+							"[$d1_shuffle], $d1_shuffle_hard",
+						],
+						"sections": [	
+							{
+								"name": "Stalfos \ndrop",
+								"access_rules": [
+										// Can get every single chest in D1
+										"$d1clear",
+										
+										"$kill_stalfos",
+										"bracelet",
+										"$kill_stalfos_hard, [$kill_stalfos]",
+										"$kill_stalfos_hard, [bracelet]",
+									],
+								"item_count": 1
+							},
+							{
+								"name": "Stalfos \nchest",
+								"access_rules": [
+										// Can get every single chest in D1
+										"$d1clear",
+								
+										"d1sk:1, $kill_stalfos",
+										"d1sk:1, bracelet",
+										"d1sk:1, $kill_stalfos_hard, [$kill_stalfos]",
+										"d1sk:1, $kill_stalfos_hard, [bracelet]",
+		
+									],
+								"item_count": 1
+							},
+							{
+								"name": "Chest past \ntorch door",
+								"access_rules": [
+										// Can get every single chest in D1
+										"$d1clear",
+										
+										"d1sk:1, $kill_stalfos, $use_seeds, emberseeds",
+										"d1sk:1, bracelet, $use_seeds, emberseeds",
+										"d1sk:1, $kill_stalfos_hard, [$kill_stalfos], $use_seeds, emberseeds",
+										"d1sk:1, $kill_stalfos_hard, [bracelet], $use_seeds, emberseeds",
+										
+										"d1sk:1, $kill_stalfos, $use_seeds, mysteryseeds, [emberseeds]",
+										"d1sk:1, bracelet, $use_seeds, mysteryseeds, [emberseeds]",
+										"d1sk:1, $kill_stalfos_hard, [$kill_stalfos], $use_seeds, mysteryseeds, [emberseeds]",
+										"d1sk:1, $kill_stalfos_hard, [bracelet], $use_seeds, mysteryseeds, [emberseeds]",
+									],
+								"item_count": 1
+							},
+							{
+								"name": "Block moving \nchest",
+								"access_rules": [
+										// Can get every single chest in D1
+										"$d1clear",
+										
+										"d1sk:1, $kill_stalfos, $kill_normal",
+										"d1sk:1, $kill_stalfos_hard, [$kill_stalfos], $kill_hard, [$kill_normal]",
+										"d1sk:1, bracelet, [$kill_stalfos], [$kill_normal]",
+									],
+								"item_count": 1
+							},
+							{
+								"name": "Lever \nchest",
+								"access_rules": [
+										// Can get every single chest in D1
+										"$d1clear",
+										
+										"d1sk:1, $kill_stalfos, $use_seeds, emberseeds",
+										"d1sk:1, bracelet, $use_seeds, emberseeds",
+										"d1sk:1, $kill_stalfos_hard, [$kill_stalfos]",
+										"d1sk:1, $kill_stalfos_hard, [bracelet]",
+									],
+								"item_count": 1
+							},
+							{
+								"name": "Minecart \nchest",
+								"access_rules": [
+										// Can get every single chest in D1
+										"$d1clear",
+										
+										"d1sk:1, $kill_stalfos, $hit_lever",
+										"d1sk:1, $kill_stalfos_hard, $hit_lever, [$kill_stalfos]",
+										"d1sk:1, bracelet, [$kill_stalfos]",
+									],
+								"item_count": 1
+							},
+							{
+								"name": "Button \nchest",
+								"access_rules": [
+										// Can get every single chest in D1
+										"$d1clear",
+										
+										"d1sk:1, $kill_stalfos, $hit_lever",
+										"d1sk:1, $kill_stalfos_hard, $hit_lever, [$kill_stalfos]",
+										"d1sk:1, bracelet, [$kill_stalfos]",
+									],
+								"item_count": 1
+							},
+							{
+								"name": "Underground \nitem",
+								"access_rules": [
+										// Can get every single chest in D1
+										"$d1clear",
+										
+										"d1sk:2, [$kill_stalfos], $hit_lever, [$kill_goriyabros], bombs",
+										"d1sk:2, [$kill_stalfos], bracelet, [$kill_goriyabros], bombs"
+									],
+								"item_count": 1
+							},
+							{
+								"name": "Floormaster \nchest",
+								"access_rules": [
+										// Can get every single chest in D1
+										"$d1clear",
+										
+										"$use_seeds, emberseeds",
+										"$use_seeds, mysteryseeds, [emberseeds]",
+									],
+								"item_count": 1
+							},
+							
+							{
+								"name": "Aquamentus \nreward",
+								"access_rules": [
+										// Can get every single chest in D1
+										"$d1clear",
+								  
+										"d1bk, $use_seeds, emberseeds, $kill_aquamentus",
+										"d1bk, $use_seeds, emberseeds, [$kill_aquamentus], $kill_aquamentus_hard",
+										"d1bk, $use_seeds, mysteryseeds, [emberseeds], $kill_aquamentus",
+										"d1bk, $use_seeds, mysteryseeds, [emberseeds], [$kill_aquamentus], $kill_aquamentus_hard"
+									],
+								"item_count": 1
+							},
+							{
+								"name": "Fertile \nSoil",
+								"access_rules": [
+										// Can get every single chest in D1
+										"$d1clear",
+								  
+										"d1bk, $use_seeds, emberseeds, $kill_aquamentus",
+										"d1bk, $use_seeds, emberseeds, [$kill_aquamentus], $kill_aquamentus_hard",
+										"d1bk, $use_seeds, mysteryseeds, [emberseeds], $kill_aquamentus",
+										"d1bk, $use_seeds, mysteryseeds, [emberseeds], [$kill_aquamentus], $kill_aquamentus_hard"
+									],
+								"hosted_item": "d1",
+								"item_count": 0
+							},
+							{
+								"name": "D1 small\nkeys",
+								"hosted_item": "d1sk",
+								"item_count": 0
+							},
+							{
+								"name": "D1 boss \nkey",
+								"hosted_item": "d1bk",
+								"item_count": 0
+							},	
+						],
+						"map_locations": [
+						  {
+							"map": "holodrum",
+							"x": 281,
+							"y": 407
+						  }
+						]
+					},
+					{
+						"name": "Unicorn's Cave",
+						"access_rules": [
+							"$d5_shuffle",
+							"[$d5_shuffle], $d5_shuffle_hard",
+						],
+						"sections": [
+						  {
+							"name": "Cart \nchest",
+								"access_rules": [
+									// Can get every single chest in D5
+									"$d5clear",
+									
+									"$hit_lever, $max_jump:2",
+									"$hit_lever, $max_jump:1, bombs, [$max_jump:2]",
+									"$hit_lever, flippers",
+								],
+							"item_count": 1
+						  },
+						  {
+							"name": "East gibdo \nroom chest",
+								"access_rules": [
+									// Can get every single chest in D5
+									"$d5clear",
+									
+									// water room way
+									"$kill_normal, $kill_gibdo, $max_jump:2",
+									"$kill_normal, $kill_gibdo, $max_jump:1, bombs, [$max_jump:2]",
+									"$kill_normal, $kill_gibdo, flippers, $max_jump:1",
+									"$kill_normal, $kill_gibdo, flippers, satchel, pegasusseeds, [$max_jump:1]",
+									
+									// west wing way
+									"$kill_normal, $kill_gibdo, magnet, bombs, $max_jump:1",
+								],
+							"item_count": 1
+						  },
+						  {
+							"name": "Magnet ball \nchest",
+							"access_rules": [
+									// Can get every single chest in D5
+									"$d5clear",
+									
+									// water room way
+									"d5sk:5, $hit_lever, $max_jump:4",
+									"d5sk:1, [d5sk:5], $hit_lever, $max_jump:4",
+									"d5sk:5, $hit_lever, $max_jump:3, [$max_jump:4]",
+									"d5sk:1, [d5sk:5], $hit_lever, $max_jump:3, [$max_jump:4]",
+									"d5sk:5, $hit_lever, flippers, $max_jump:1",
+									"d5sk:1, [d5sk:5], $hit_lever, flippers, $max_jump:1",
+									
+									// water room way
+									"d5sk:5, magnet, bombs, $max_jump:4",
+									"d5sk:1, [d5sk:5], magnet, bombs, $max_jump:4",
+									"d5sk:5, magnet, bombs, $max_jump:3, [$max_jump:4]",
+									"d5sk:1, [d5sk:5], magnet, bombs, $max_jump:3, [$max_jump:4]",
+									"d5sk:5, magnet, bombs, $max_jump:1, flippers",
+									"d5sk:1, [d5sk:5], magnet, bombs, $max_jump:1, flippers",
+								],
+							"item_count": 1
+						  },
+						  {
+							"name": "West gap \nchest",
+							"access_rules": [
+									// Can get every single chest in D5
+									"$d5clear",
+									
+									"$max_jump:3",
+									"magnet",
+								],
+							"item_count": 1
+						  },
+						  {
+							"name": "Moving floor \nchest",
+							"access_rules": [
+									// Can get every single chest in D5
+									"$d5clear",
+									
+									"$kill_moldorm, $kill_ironmask",
+								],
+							"item_count": 1
+						  },
+						  {
+							"name": "West terrace \nchest",
+							"access_rules": [
+									// Can get every single chest in D5
+									"$d5clear",
+									
+									"magnet",
+									"$max_jump:2, bombs",
+									"$max_jump:1, bombs, [$max_jump:2]",
+									"flippers, $max_jump:1, bombs",
+								],
+							"item_count": 1
+						  },
+						  {
+							"name": "Four Armos \nchest",
+							"access_rules": [
+									// Can get every single chest in D5
+									"$d5clear",
+									
+									"magnet, $kill_moldorm, $kill_ironmask",
+									"$max_jump:2, bombs, $kill_moldorm, $kill_ironmask",
+									"$max_jump:1, bombs, [$max_jump:2], $kill_moldorm, $kill_ironmask",
+									"flippers, $max_jump:1, bombs, $kill_moldorm, $kill_ironmask",
+								],
+							"item_count": 1
+						  },
+						  {
+							"name": "Magnet spinner \nchest",
+							"access_rules": [
+									// Can get every single chest in D5
+									"$d5clear",
+									
+									"$max_jump:4",
+									"$max_jump:2, magnet",
+									"$max_jump:1, bombs, [$max_jump:2], magnet",
+									"flippers, magnet",
+								],
+							"item_count": 1
+						  },
+						  {
+							"name": "Chest before\nSyger",
+							"access_rules": [
+									// Can get every single chest in D5
+									"$d5clear",
+									
+									"$max_jump:3",
+									"$max_jump:2, magnet",
+									"$max_jump:1, bombs, [$max_jump:2], magnet",
+									"flippers, magnet",
+								],
+							"item_count": 1
+						  },
+						  {
+							"name": "Underground item \nafter midboss",
+							"access_rules": [
+									// Can get every single chest in D5
+									"$d5clear",
+								
+									"d5sk:5, $hit_lever, $max_jump:2, magnet, $kill_syger, $kill_darknut, $kill_magunesu",
+									"d5sk:3, [d5sk:5], $hit_lever, $max_jump:2, magnet, $kill_syger, $kill_darknut, $kill_magunesu",
+									"d5sk:5, $hit_lever, flippers, magnet, $kill_syger, $kill_darknut, $kill_magunesu",
+									"d5sk:3, [d5sk:5], $hit_lever, flippers, magnet, $kill_syger, $kill_darknut, $kill_magunesu",
+								],
+							"item_count": 1
+						  },
+						  
+						  {
+							"name": "Digdogger \nreward",
+							"access_rules": [
+									// Can get every single chest in D5
+									"$d5clear",
+									
+									"d5bk, d5sk:5, $max_jump:2, magnet, $kill_syger",
+									"d5bk, d5sk:2, [d5sk:5], $max_jump:2, magnet, $kill_syger",
+									"d5bk, d5sk:5, $max_jump:1, flippers, magnet, $kill_syger",
+									"d5bk, d5sk:2, [d5sk:5], $max_jump:1, flippers, magnet, $kill_syger",
+								],
+							"item_count": 1
+						  },
+						  {
+							"name": "Nurturing \nWarmth",
+							"access_rules": [
+									// Can get every single chest in D5
+									"$d5clear",
+									
+									"d5bk, d5sk:5, $max_jump:2, magnet, $kill_syger",
+									"d5bk, d5sk:2, [d5sk:5], $max_jump:2, magnet, $kill_syger",
+									"d5bk, d5sk:5, $max_jump:1, flippers, magnet, $kill_syger",
+									"d5bk, d5sk:2, [d5sk:5], $max_jump:1, flippers, magnet, $kill_syger",
+								],
+							"hosted_item": "d5",
+							"item_count": 0
+						  },
+						  {
+							"name": "D5 small\nkeys",
+							"hosted_item": "d5sk",
+							"item_count": 0
+						  },
+					      {
+							"name": "D5 boss \nkey",
+							"hosted_item": "d5bk",
+							"item_count": 0
+						  },
+						],
+						"map_locations": [
+						  {
+							"map": "holodrum",
+							"x": 449,
+							"y": 364
+						  }
+						]
+					},
+					{
+						"name": "Get ember seeds in \nD5's Armos room",
+						"access_rules": [
+								"$d5_shuffle",
+								"[$d5_shuffle], $d5_shuffle_hard",
+							],
+						"sections": [
+						  {
+							"name": "Inside the 3rd chest",
+							"access_rules": [
+								"[emberseeds], magnet, $kill_ironmask, $kill_moldorm, $kill_armos",
+								"[emberseeds], $max_jump:2, bombs",
+								"[emberseeds], $max_jump:1, bombs, [$max_jump:2]",
+								"[emberseeds], flippers, $max_jump:1, bombs",
+							],
+							"hosted_item": "emberseeds",
+							"item_count": 0
+						  },
+						],
+						"map_locations": [
+						  {
+							"map": "holodrum",
+							"x": 435,
+							"y": 350
+						  }
+						]
+					},
+				]
+			},
+			{
+				"name": "Eastern Suburbs",
+				"access_rules": [
+				],
+				"children": [
+					{
+						"name": "Outside D2",
+						"access_rules": [
+							"$suburbs_to_fountain, $fountain_to_D2",
+							
+							"$sunken_city, $natzu_to_suburbs, $fountain_to_D2",
+							"$scent_tree_hard, $natzu_to_moblin_hard, $moblin_keep_to_sunken, $natzu_to_suburbs, $fountain_to_D2",
+							"$mount_cucco, flippers, $cucco_to_sunken, $natzu_to_suburbs, $fountain_to_D2",
+						],
+						"sections": [
+						  {
+							"name": "Lone chest",
+							"access_rules": [
+								"$ricky, bracelet",
+								"wow_summer, bracelet",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Mushroom cave chest",
+							"access_rules": [
+								"wow_fall, $destroy_mushroom, magnet",
+								"wow_fall, $destroy_mushroom, $max_jump:3",
+								"wow_fall, $destroy_mushroom, [$max_jump:3], $max_jump:2, bombs",
+								
+								"fall, $ricky, $destroy_mushroom, magnet",
+								"fall, wow_summer, $destroy_mushroom, magnet",
+								"fall, $ricky, $destroy_mushroom, $max_jump:3",
+								"fall, wow_summer, $destroy_mushroom, $max_jump:3",
+							],
+							"item_count": 1
+						  },
+						],
+						"map_locations": [
+						  {
+							"map": "holodrum",
+							"x": 621,
+							"y": 364
+						  }
+						]
+					},
+					
+					{
+						"name": "Snake's Remains",
+						"access_rules": [
+							"$d2_shuffle",
+							"[$d2_shuffle], $d2_shuffle_hard",
+						],
+						"sections": [
+						  {
+							"name": "Hole room \nchest",
+							"item_count": 1
+						  },
+						  {
+							"name": "Rope \ndrop",
+							"access_rules": [
+								// Can get every single chest in D2
+								"$d2clear",
+								
+								"$d2_A, $kill_normal",
+								"$d2_B, $kill_normal, bracelet",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Block rectangle \nchest",
+							"access_rules": [
+								// Can get every single chest in D2
+								"$d2clear",
+								
+								"$d2_A, $kill_normal, $use_seeds, emberseeds",
+								"$d2_A, $kill_normal, $use_seeds, mysteryseeds, [emberseeds]",
+								"$d2_B, $kill_normal, bracelet",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Chest surrounded \nby pots",
+							"access_rules": [
+								// Can get every single chest in D2
+								"$d2clear",
+								
+								"d2sk:3, $d2_A, $kill_normal, $use_seeds, emberseeds, $destroy_pot",
+								"d2sk:1, [d2sk:3], $d2_A, $kill_normal, $use_seeds, emberseeds, $destroy_pot",
+								"d2sk:3, $d2_A, $kill_normal, $use_seeds, mysteryseeds, [emberseeds], $destroy_pot",
+								"d2sk:1, [d2sk:3], $d2_A, $kill_normal, $use_seeds, mysteryseeds, [emberseeds], $destroy_pot",
+								"d2sk:3, $d2_B, bracelet, $destroy_pot",
+								"d2sk:1, [d2sk:3], $d2_B, bracelet, $destroy_pot",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Moblin \nchest",
+							"access_rules": [
+								// Can get every single chest in D2
+								"$d2clear",
+								
+								"d2sk:3, $d2_A, $kill_rope, $use_seeds, emberseeds, $kill_hardhat_pit, $kill_moblin_pit",
+								"d2sk:1, [d2sk:3], $d2_A, $kill_rope, $use_seeds, emberseeds, $kill_hardhat_pit, $kill_moblin_pit",
+								"d2sk:3, $d2_A, $kill_rope, $use_seeds, emberseeds, bracelet, [$kill_hardhat_pit], [$kill_moblin_pit]",
+								"d2sk:1, [d2sk:3], $d2_A, $kill_rope, $use_seeds, emberseeds, bracelet, [$kill_hardhat_pit], [$kill_moblin_pit]",
+								"d2sk:3, $d2_A, $kill_rope, $use_seeds, mysteryseeds, [emberseeds], $kill_hardhat_pit, $kill_moblin_pit",
+								"d2sk:1, [d2sk:3], $d2_A, $kill_rope, $use_seeds, mysteryseeds, [emberseeds], $kill_hardhat_pit, $kill_moblin_pit",
+								"d2sk:3, $d2_A, $kill_rope, $use_seeds, mysteryseeds, [emberseeds], bracelet, [$kill_hardhat_pit], [$kill_moblin_pit]",
+								"d2sk:1, [d2sk:3], $d2_A, $kill_rope, $use_seeds, mysteryseeds, [emberseeds], bracelet, [$kill_hardhat_pit], [$kill_moblin_pit]",
+								"d2sk:3, $d2_B, bracelet, $destroy_pot, [$kill_hardhat_pit], [$kill_moblin_pit]",
+								"d2sk:1, [d2sk:3], $d2_B, bracelet, $destroy_pot, [$kill_hardhat_pit], [$kill_moblin_pit]",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Blade trap \nchest",
+							"access_rules": [
+								// Can get every single chest in D2
+								"$d2clear",
+								
+								"$d2_A, $use_seeds, emberseeds, $kill_normal",
+								"$d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal",
+								"$d2_B, bracelet",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Spiral \nchest",
+							"access_rules": [
+								// Can get every single chest in D2
+								"$d2clear",
+								
+								"$d2_A, $use_seeds, emberseeds, $kill_normal, bracelet, bombs",
+								"$d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
+								"$d2_B, bracelet, bombs",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Chest before \nFaçade",
+							"access_rules": [
+								// Can get every single chest in D2
+								"$d2clear",
+								
+								"$d2_A, $use_seeds, emberseeds, $kill_normal, bracelet, bombs",
+								"$d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
+								"$d2_B, bracelet, bombs",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Chest east of \nmoving platforms",
+							"access_rules": [
+								// Can get every single chest in D2
+								"$d2clear",
+								
+								"d2sk:2, $d2_A, $use_seeds, emberseeds, $kill_normal, bracelet, bombs",
+								"d2sk:2, $d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
+								"d2sk:2, $d2_B, bracelet, bombs",
+							],
+							"item_count": 1
+						  },
+						  
+						  {
+							"name": "Dodongo \nreward",
+							"access_rules": [
+								// Can get every single chest in D2
+								"$d2clear",
+								
+								"d2bk, d2sk:2, $d2_A, $use_seeds, emberseeds, $kill_normal, bracelet, bombs",
+								"d2bk, d2sk:1, [d2sk:2], $d2_A, $use_seeds, emberseeds, $kill_normal, bracelet, bombs",
+								"d2bk, d2sk:2, $d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
+								"d2bk, d2sk:1, [d2sk:2], $d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
+								"d2bk, d2sk:2, $d2_B, bracelet, bombs",
+								"d2bk, d2sk:1, [d2sk:2], $d2_B, bracelet, bombs",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Gift \nof Time",
+							"access_rules": [
+								// Can get every single chest in D2
+								"$d2clear",
+								
+								"d2bk, d2sk:2, $d2_A, $use_seeds, emberseeds, $kill_normal, bracelet, bombs",
+								"d2bk, d2sk:1, [d2sk:2], $d2_A, $use_seeds, emberseeds, $kill_normal, bracelet, bombs",
+								"d2bk, d2sk:2, $d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
+								"d2bk, d2sk:1, [d2sk:2], $d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
+								"d2bk, d2sk:2, $d2_B, bracelet, bombs",
+								"d2bk, d2sk:1, [d2sk:2], $d2_B, bracelet, bombs",
+							],
+							"hosted_item": "d2",
+							"item_count": 0
+						  },
+						  {
+							"name": "D2 small\nkeys",
+							"hosted_item": "d2sk",
+							"item_count": 0
+						  },
+					      {
+							"name": "D2 boss \nkey",
+							"hosted_item": "d2bk",
+							"item_count": 0
+						  },
+						],
+						"map_locations": [
+						  {
+							"map": "holodrum",
+							"x": 578,
+							"y": 364
+						  }
+						]
+					},
+					{
+						"name": "Get bombs in \nD2's Moblin room",
+						"access_rules": [
+								"$d2_shuffle"
+							],
+						"sections": [
+						  {
+							"name": "Respawnable bushes",
+							"access_rules": [
+								"[bombs], $destroy_bush_respawn, $d2_A, $kill_rope, $use_seeds, emberseeds, $kill_hardhat_pit",
+								"[bombs], $destroy_bush_respawn, $d2_A, $kill_rope, $use_seeds, mysteryseeds, [emberseeds], $kill_hardhat_pit",
+								"[bombs], $destroy_bush_respawn, $d2_B, bracelet, $destroy_pot, $kill_hardhat_pit",
+							],
+							"hosted_item": "bombs",
+							"item_count": 0
+						  },
+						],
+						"map_locations": [
+						  {
+							"map": "holodrum",
+							"x": 564,
+							"y": 350
+						  }
+						]
+					},
+				]
+			},
+			{
+				"name": "Spool Swamp",
+				"children": [
+					{
+						"name": "Poison Moth's Lair",
+						"access_rules": [
+							"$d3_shuffle",
+							"[$d3_shuffle], $d3_shuffle_hard",
+						],
+						"sections": [
+						  {
+							"name": "Roller \nchest",
+							"access_rules": [
+								// Can get every single chest in D3
+								"$d3clear",
+								
+								"$kill_beetle, bracelet",
+								"bracelet, shovel",
+								"bracelet, shield1",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Moldorm \nchest",
+							"access_rules": [
+								// Can get every single chest in D3
+								"$d3clear",
+								
+								"$kill_beetle, $kill_moldorm",
+								"bracelet, shovel, $kill_moldorm",
+								"bracelet, shield1, $kill_moldorm",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Bombable \nwall chest",
+							"access_rules": [
+								// Can get every single chest in D3
+								"$d3clear",
+								
+								"$kill_beetle, bombs",
+								"bracelet, shovel, bombs",
+								"bracelet, shield1, bombs",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Mimic \nchest",
+							"access_rules": [
+								// Can get every single chest in D3
+								"$d3clear",
+								
+								"d3sk:2, $kill_beetle, $kill_mimic",
+								"d3sk:1, [d3sk:2], $kill_beetle, $kill_mimic",
+								"d3sk:2, shovel, bracelet, $kill_mimic",
+								"d3sk:1, [d3sk:2], shovel, bracelet, $kill_mimic",
+								"d3sk:2, shield1, bracelet, $kill_mimic",
+								"d3sk:1, [d3sk:2], shield1, bracelet, $kill_mimic",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Water room \nchest",
+							"access_rules": [
+								// Can get every single chest in D3
+								"$d3clear",
+								
+								"$kill_beetle, bracelet",
+								"shovel, bracelet",
+								"shield1, bracelet",
+								"$kill_beetle, $max_jump:1",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Isolated Zol \nchest",
+							"access_rules": [
+								// Can get every single chest in D3
+								"$d3clear",
+								
+								"$kill_beetle, $max_jump:1",
+								"bracelet, shovel, $max_jump:1",
+								"bracelet, shield1, $max_jump:1",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Trampoline \nchest",
+							"access_rules": [
+								// Can get every single chest in D3
+								"$d3clear",
+								
+								"$kill_beetle, $max_jump:1",
+								"bracelet, shovel, $max_jump:1",
+								"bracelet, shield1, $max_jump:1",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Chest before \nOmuai",
+							"access_rules": [
+								// Can get every single chest in D3
+								"$d3clear",
+								
+								"$kill_beetle, $max_jump:1",
+								"bracelet, shovel, $max_jump:1",
+								"bracelet, shield1, $max_jump:1",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Far left chest \nafter Omuai",
+							"access_rules": [
+								// Can get every single chest in D3
+								"$d3clear",
+								
+								"d3sk:2, $kill_beetle, $kill_omuai, $max_jump:1",
+								"d3sk:1, [d3sk:2], $kill_beetle, $kill_omuai, $max_jump:1",
+								"d3sk:2, shovel, $kill_omuai, $max_jump:1",
+								"d3sk:1, [d3sk:2], shovel, $kill_omuai, $max_jump:1",
+								"d3sk:2, shield1, $kill_omuai, $max_jump:1",
+								"d3sk:1, [d3sk:2], shield1, $kill_omuai, $max_jump:1",
+							],
+							"item_count": 1
+						  },
+						  
+						  {
+							"name": "Mothula \nreward",
+							"access_rules": [
+								// Can get every single chest in D3
+								"$d3clear",
+								
+								"d3bk, d3sk:2, $kill_beetle, $kill_omuai, $max_jump:1, $kill_mothula",
+								"d3bk, d3sk:1, [d3sk:2], $kill_beetle, $kill_omuai, $max_jump:1, $kill_mothula",
+								"d3bk, d3sk:2, shovel, $kill_omuai, $max_jump:1, $kill_mothula",
+								"d3bk, d3sk:1, [d3sk:2], shovel, $kill_omuai, $max_jump:1, $kill_mothula",
+								"d3bk, d3sk:2, shield1, $kill_omuai, $max_jump:1, $kill_mothula",
+								"d3bk, d3sk:1, [d3sk:2], shield1, $kill_omuai, $max_jump:1, $kill_mothula",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Bright \nSun",
+							"access_rules": [
+								// Can get every single chest in D3
+								"$d3clear",
+								
+								"d3bk, d3sk:2, $kill_beetle, $kill_omuai, $max_jump:1, $kill_mothula",
+								"d3bk, d3sk:1, [d3sk:2], $kill_beetle, $kill_omuai, $max_jump:1, $kill_mothula",
+								"d3bk, d3sk:2, shovel, $kill_omuai, $max_jump:1, $kill_mothula",
+								"d3bk, d3sk:1, [d3sk:2], shovel, $kill_omuai, $max_jump:1, $kill_mothula",
+								"d3bk, d3sk:2, shield1, $kill_omuai, $max_jump:1, $kill_mothula",
+								"d3bk, d3sk:1, [d3sk:2], shield1, $kill_omuai, $max_jump:1, $kill_mothula",
+							],
+							"hosted_item": "d3",
+							"item_count": 0
+						  },
+						  {
+							"name": "D3 small\nkeys",
+							"hosted_item": "d3sk",
+							"item_count": 0
+						  },
+					      {
+							"name": "D3 boss \nkey",
+							"hosted_item": "d3bk",
+							"item_count": 0
+						  },
+						  
+						],
+						"map_locations": [
+						  {
+							"map": "holodrum",
+							"x": 25,
+							"y": 279
+						  }
+						]
+					},
+				]
+			},
+			{
+				"name": "Mount Cucco Area",
+				"access_rules": [
+				],
+				"children": [
+					{
+						"name": "Dancing Dragon Dungeon",
+						"access_rules": [
+								"$d4_shuffle",
+								"[$d4_shuffle], $d4_shuffle_hard",
+							],
+						"sections": [
+						  {
+							"name": "Chest before \nminecart",
+							"access_rules": [
+								// Can get every single chest in D4
+								"$d4clear",
+								
+								"flippers",
+								"$max_jump:4",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Pot puzzle \ndrop",
+							"access_rules": [
+								// Can get every single chest in D4
+								"$d4clear",
+								
+								"flippers, bombs, bracelet",
+								"$max_jump:4, bombs, bracelet",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Maze \nchest",
+							"access_rules": [
+								// Can get every single chest in D4
+								"$d4clear",
+								
+								"flippers, $hit_lever",
+								"$max_jump:4, $hit_lever",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Dark room \nchest",
+							"access_rules": [
+								// Can get every single chest in D4
+								"$d4clear",
+								
+								"flippers, $hit_lever, $max_jump:1",
+								"$max_jump:4, $hit_lever",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Chest in \nbombable wall",
+							"access_rules": [
+								// Can get every single chest in D4
+								"$d4clear",
+								
+								"d4sk:1, flippers, $max_jump:1, bombs",
+								"d4sk:1, $max_jump:4, bombs",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Pool room \ndrop",
+							"access_rules": [
+								// Can get every single chest in D4
+								"$d4clear",
+								
+								"d4sk:1, flippers, $max_jump:1, $hit_lever, $kill_normal",
+								"d4sk:1, flippers, $max_jump:1, $hit_lever, bracelet",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Minecart terrace \nchest",
+							"access_rules": [
+								// Can get every single chest in D4
+								"$d4clear",
+								
+								"d4sk:2, flippers, $max_jump:1, $hit_lever, $kill_shroudedstalfos",
+								"d4sk:2, flippers, $max_jump:1, $hit_lever, bracelet",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Minecart torch \nchest",
+							"access_rules": [
+								// Can get every single chest in D4
+								"$d4clear",
+								
+								"d4sk:2, flippers, $max_jump:1, $kill_shroudedstalfos, $shoot_seeds, emberseeds",
+								"d4sk:2, flippers, $max_jump:1, $kill_shroudedstalfos, $shoot_seeds, mysteryseeds, [emberseeds]",
+								"d4sk:2, flippers, $max_jump:1, bracelet, $shoot_seeds, emberseeds",
+								"d4sk:2, flippers, $max_jump:1, bracelet, $shoot_seeds, mysteryseeds, [emberseeds]",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Crumbling floors \nchest",
+							"access_rules": [
+								// Can get every single chest in D4
+								"$d4clear",
+								
+								"d4sk:5, flippers, $max_jump:1, $kill_shroudedstalfos, $kill_agunima",
+								"d4sk:3, [d4sk:5], flippers, $max_jump:1, $kill_shroudedstalfos, $kill_agunima",
+								"d4sk:5, flippers, $max_jump:1, bracelet, $kill_agunima",
+								"d4sk:3, [d4sk:5], flippers, $max_jump:1, bracelet, $kill_agunima",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Dive in the \nright eye",
+							"access_rules": [
+								// Can get every single chest in D4
+								"$d4clear",
+								
+								"d4sk:5, flippers, $max_jump:1, $kill_shroudedstalfos, $kill_agunima, $hit_far_lever",
+								"d4sk:3, [d4sk:5], flippers, $max_jump:1, $kill_shroudedstalfos, $kill_agunima, $hit_far_lever",
+								"d4sk:5, flippers, $max_jump:1, bracelet, $kill_agunima, $hit_far_lever",
+								"d4sk:3, [d4sk:5], flippers, $max_jump:1, bracelet, $kill_agunima, $hit_far_lever",
+							],
+							"item_count": 1
+						  },
+						  
+						  {
+							"name": "Gohma \nreward",
+							"access_rules": [
+								// Can get every single chest in D4
+								"$d4clear",
+								
+								"d4bk, d4sk:5, flippers, $max_jump:1, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $shoot_seeds, emberseeds, $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:1, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $shoot_seeds, emberseeds, $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:5, flippers, $max_jump:1, bombs, $hit_lever, bracelet, $kill_agunima, $shoot_seeds, emberseeds, $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:1, bombs, $hit_lever, bracelet, $kill_agunima, $shoot_seeds, emberseeds, $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:5, flippers, $max_jump:1, bombs, $hit_lever, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $shoot_seeds, mysteryseeds, [emberseeds], $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:1, bombs, $hit_lever, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $shoot_seeds, mysteryseeds, [emberseeds], $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:5, flippers, $max_jump:1, bombs, $hit_lever, bracelet, $kill_agunima, $shoot_seeds, mysteryseeds, [emberseeds], $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:1, bombs, $hit_lever, bracelet, $kill_agunima, $shoot_seeds, mysteryseeds, [emberseeds], $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:5, flippers, $max_jump:2, bombs, $hit_lever, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:5, flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $kill_gohma",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Soothing \nRain",
+							"access_rules": [
+								// Can get every single chest in D4
+								"$d4clear",
+								
+								"d4bk, d4sk:5, flippers, $max_jump:1, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $shoot_seeds, emberseeds, $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:1, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $shoot_seeds, emberseeds, $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:5, flippers, $max_jump:1, bombs, $hit_lever, bracelet, $kill_agunima, $shoot_seeds, emberseeds, $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:1, bombs, $hit_lever, bracelet, $kill_agunima, $shoot_seeds, emberseeds, $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:5, flippers, $max_jump:1, bombs, $hit_lever, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $shoot_seeds, mysteryseeds, [emberseeds], $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:1, bombs, $hit_lever, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $shoot_seeds, mysteryseeds, [emberseeds], $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:5, flippers, $max_jump:1, bombs, $hit_lever, bracelet, $kill_agunima, $shoot_seeds, mysteryseeds, [emberseeds], $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:1, bombs, $hit_lever, bracelet, $kill_agunima, $shoot_seeds, mysteryseeds, [emberseeds], $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:5, flippers, $max_jump:2, bombs, $hit_lever, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $max_jump:2, $kill_gohma",
+								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $max_jump:2, $kill_gohma",
+								"d4bk, d4sk:5, flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $max_jump:2, $kill_gohma",
+								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $max_jump:2, $kill_gohma",
+							],
+							"hosted_item": "d4",
+							"item_count": 0
+						  },
+						  {
+							"name": "D4 small\nkeys",
+							"hosted_item": "d4sk",
+							"item_count": 0
+						  },
+					      {
+							"name": "D4 boss \nkey",
+							"hosted_item": "d4bk",
+							"item_count": 0
+						  },
+						  
+						],
+						"map_locations": [
+						  {
+							"map": "holodrum",
+							"x": 578,
+							"y": 68
+						  }
+						]
+					},
+				]
+			},
+			{
+				"name": "Tarm Ruins",
+				"access_rules": [
+					//"$tarm_ruins"
+				],
+				"children": [
+					{
+						"name": "Ancient Ruins",
+						"access_rules": [
+								"$d6_shuffle",
+								"[$d6_shuffle], $d6_shuffle_hard",
+							],
+						"sections": [
+						  {
+							"name": "Crumbling \nfloor chest",
+							"item_count": 1
+						  },
+						  {
+							"name": "Magnet ball\ndrop",
+							"access_rules": [
+								// Can get every single chest in D6
+								"$d6clear",
+								
+								"$max_jump:3",
+								"$max_jump:1, magnet",
+								],
+							"item_count": 1
+						  },
+						  {
+							"name": "Moving platforms \nroom",
+							"access_rules": [
+								// Can get every single chest in D6
+								"$d6clear",
+								
+								"d6sk:3",
+								"d6sk:1, [d6sk:3]"
+								],
+							"item_count": 1
+						  },
+						  {
+							"name": "Gibdo room \nchest",
+							"access_rules": [
+								// Can get every single chest in D6
+								"$d6clear",
+								
+								"d6sk:3",
+								"d6sk:1, [d6sk:3]"
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "2F Armos \nchest",
+							"access_rules": [
+								// Can get every single chest in D6
+								"$d6clear",
+								
+								"d6sk:3, bombs",
+								"d6sk:1, [d6sk:3], bombs",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Armos hall \nchest",
+							"access_rules": [
+								// Can get every single chest in D6
+								"$d6clear",
+								
+								"d6sk:3, bombs, $max_jump:1",
+								"d6sk:1, [d6sk:3], bombs, $max_jump:1",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Chest north\nof spinner",
+							"access_rules": [
+								// Can get every single chest in D6
+								"$d6clear",
+								
+								// 3 keys, opening the key block to the left of the entrance
+								"d6sk:3, $kill_normal, magnet, $destroy_crystal, [$max_jump:1]",
+								"d6sk:2, [d6sk:3], $kill_normal, magnet, $destroy_crystal, [$max_jump:1]",
+								
+								// 2 keys, drops from above to skip opening the block
+								"d6sk:2, bombs, magnet, $destroy_crystal, $max_jump:1",
+								"d6sk:1, [d6sk:2], bombs, magnet, $destroy_crystal, $max_jump:1",
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "West terrace \nchest",
+							"item_count": 1
+						  },
+						  {
+							"name": "Crystals room \nchest",
+							"item_count": 1
+						  },
+						  {
+							"name": "Chest after \ntrap room",
+							"access_rules": [
+								// Can get every single chest in D6
+								"$d6clear",
+								
+								"$destroy_crystal, $max_jump:1, magicboomerang, $use_seeds, emberseeds",
+								"$destroy_crystal, $max_jump:1, magicboomerang, $use_seeds, mysteryseeds, [emberseeds]"
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Chest before\nVire",
+							"access_rules": [
+								// Can get every single chest in D6
+								"$d6clear",
+								
+								"$destroy_crystal, $max_jump:1, magicboomerang, $use_seeds, emberseeds, $kill_stalfos",
+								"$destroy_crystal, $max_jump:1, magicboomerang, $use_seeds, mysteryseeds, [emberseeds], $kill_stalfos"
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Manhandla \nreward",
+							"access_rules": [
+								// Can get every single chest in D6
+								"$d6clear",
+								
+								"d6bk, d6sk:3, $destroy_crystal, $max_jump:1, magicboomerang, $use_seeds, emberseeds, $kill_stalfos, $kill_vire, $kill_hardhat_magnet, $kill_manhandla",
+								"d6bk, d6sk:1, [d6sk:3], $destroy_crystal, $max_jump:1, magicboomerang, $use_seeds, emberseeds, $kill_stalfos, $kill_vire, $kill_hardhat_magnet, $kill_manhandla",
+								"d6bk, d6sk:3, $destroy_crystal, $max_jump:1, magicboomerang, $use_seeds, mysteryseeds, [emberseeds], $kill_stalfos, $kill_vire, $kill_hardhat_magnet, $kill_manhandla",
+								"d6bk, d6sk:1, [d6sk:3], $destroy_crystal, $max_jump:1, magicboomerang, $use_seeds, mysteryseeds, [emberseeds], $kill_stalfos, $kill_vire, $kill_hardhat_magnet, $kill_manhandla"
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Blowing \nWind",
+							"access_rules": [
+								// Can get every single chest in D6
+								"$d6clear",
+								
+								"d6bk, d6sk:3, $destroy_crystal, $max_jump:1, magicboomerang, $use_seeds, emberseeds, $kill_stalfos, $kill_vire, $kill_hardhat_magnet, $kill_manhandla",
+								"d6bk, d6sk:1, [d6sk:3], $destroy_crystal, $max_jump:1, magicboomerang, $use_seeds, emberseeds, $kill_stalfos, $kill_vire, $kill_hardhat_magnet, $kill_manhandla",
+								"d6bk, d6sk:3, $destroy_crystal, $max_jump:1, magicboomerang, $use_seeds, mysteryseeds, [emberseeds], $kill_stalfos, $kill_vire, $kill_hardhat_magnet, $kill_manhandla",
+								"d6bk, d6sk:1, [d6sk:3], $destroy_crystal, $max_jump:1, magicboomerang, $use_seeds, mysteryseeds, [emberseeds], $kill_stalfos, $kill_vire, $kill_hardhat_magnet, $kill_manhandla"
+							],
+							"hosted_item": "d6",
+							"item_count": 0
+						  },
+						  {
+							"name": "D6 small\nkeys",
+							"hosted_item": "d6sk",
+							"item_count": 0
+						  },
+					      {
+							"name": "D6 boss \nkey",
+							"hosted_item": "d6bk",
+							"item_count": 0
+						  },
+
+						],
+						"map_locations": [
+						  {
+							"map": "holodrum",
+							"x": 25,
+							"y": 25
+						  }
+						]
+					},
+				]
+			},
+		]
+	},
+	
+	{
+		"name": "Subrosia",
+		"chest_unopened_img": "images/chest.png",
+		"chest_opened_img": "images/chestopen.png",
+		"children": [
+			{
+				"name": "Sword and Shield Maze",
+				"color": "#ff3c00",
+				"access_rules": [
+					"$d8_shuffle",
+					"[$d8_shuffle], $d8_shuffle_hard",
+				],
+				"sections": [
+				  {
+					"name": "Eye\ndrop",
+					"access_rules": [
+						// Can get every single chest in D8
+						"$d8clear",
+						
+						"$destroy_pot, $shoot_seeds",
+						"$destroy_pot, $max_jump:1, satchel, emberseeds, [$shoot_seeds]",
+						"$destroy_pot, $max_jump:1, satchel, scentseeds, [$shoot_seeds]",
+						"$destroy_pot, $max_jump:1, satchel, mysteryseeds, [$shoot_seeds]",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Three eyes \nchest",
+					"access_rules": [
+						// Can get every single chest in D8
+						"$d8clear",
+						
+						"$max_jump:1, slingshot2",
+						"$max_jump:1, satchel, emberseeds, [slingshot2]",
+						"$max_jump:1, satchel, mysteryseeds, [slingshot2]",
+						"$max_jump:1, satchel, scentseeds, [slingshot2]",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Hardhat room\ndrop",
+					"access_rules": [
+						// Can get every single chest in D8
+						"$d8clear",
+						
+						"$kill_magunesu, $kill_hardhat_magnet",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Spike room \nchest",
+					"access_rules": [
+						// Can get every single chest in D8
+						"$d8clear",
+						
+						"d8sk:1, $kill_magunesu, $max_jump:3",
+						"d8sk:1, $kill_magunesu, $max_jump:2, [$max_jump:3]",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Wait for \nthe Armos",
+					"access_rules": [
+						// Can get every single chest in D8
+						"$d8clear",
+						
+						"d8sk:2, $kill_magunesu, $max_jump:3",
+						"d8sk:2, $kill_magunesu, $max_jump:2, [$max_jump:3]",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Chest surrounded \nby Armos",
+					"access_rules": [
+						// Can get every single chest in D8
+						"$d8clear",
+						
+						"d8sk:2, $kill_magunesu, $max_jump:3, magnet",
+						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, [$max_jump:3]",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Spinner\nchest",
+					"access_rules": [
+						// Can get every single chest in D8
+						"$d8clear",
+						
+						"d8sk:2, $kill_magunesu, $max_jump:3, magnet",
+						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, [$max_jump:3]",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Cracked blocks\nchest",
+					"access_rules": [
+						// Can get every single chest in D8
+						"$d8clear",
+						
+						"d8sk:2, $kill_magunesu, $max_jump:3, magnet, bombs, slingshot2",
+						"d8sk:2, $kill_magunesu, $max_jump:3, magnet, bombs, satchel, emberseeds, [slingshot2]",
+						"d8sk:2, $kill_magunesu, $max_jump:3, magnet, bombs, satchel, scentseeds, [slingshot2]",
+						"d8sk:2, $kill_magunesu, $max_jump:3, magnet, bombs, satchel, mysteryseeds, [slingshot2]",
+						
+						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, bombs, slingshot2, [$max_jump:3]",
+						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, bombs, satchel, emberseeds, [slingshot2], [$max_jump:3]",
+						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, bombs, satchel, scentseeds, [slingshot2], [$max_jump:3]",
+						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, bombs, satchel, mysteryseeds, [slingshot2], [$max_jump:3]",
+						
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Chest after \nPols Voice",
+					"access_rules": [
+						// Can get every single chest in D8
+						"$d8clear",
+						
+						"[d8sk:3], $kill_magunesu, $max_jump:3, magnet, [slingshot2], [emberseeds], [magicboomerang], $kill_keese, $kill_polsvoice_pit",
+						"[d8sk:3], $kill_magunesu, $max_jump:2, [$max_jump:3], [slingshot2], [emberseeds], [magicboomerang], $kill_keese, $kill_polsvoice_pit",
+						"[d8sk:3], $kill_magunesu, $max_jump:4, magnet, [slingshot2], [emberseeds], $kill_keese, $kill_polsvoice_pit",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Ghost Armos\ndrop",
+					"access_rules": [
+						// Can get every single chest in D8
+						"$d8clear",
+						
+						"d8sk:4, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds, bombs",
+						"d8sk:1, [d8sk:4], $kill_magunesu, $max_jump:4, bombs, [slingshot2], [emberseeds]",
+						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, bombs",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "SE lava\nchest",
+					"access_rules": [
+						// Can get every single chest in D8
+						"$d8clear",
+						
+						"d8sk:4, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds, bracelet",
+						"d8sk:1, [d8sk:4], $kill_magunesu, $max_jump:4, bracelet, [slingshot2], [emberseeds]",
+						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, bracelet",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "NE lava \nchest",
+					"access_rules": [
+						// Can get every single chest in D8
+						"$d8clear",
+						
+						"d8sk:4, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds, bracelet",
+						"d8sk:1, [d8sk:4], $kill_magunesu, $max_jump:4, bracelet, [slingshot2], [emberseeds]",
+						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, bracelet",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "SW lava \nchest",
+					"access_rules": [
+						// Can get every single chest in D8
+						"$d8clear",
+						
+						"d8sk:4, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds",
+						"d8sk:1, [d8sk:4], $kill_magunesu, $max_jump:4, [slingshot2], [emberseeds]",
+						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds",
+					],
+					"item_count": 1
+				  },
+				  
+				  {
+					"name": "Medusa Head \nreward",
+					"access_rules": [
+						// Can get every single chest in D8
+						"$d8clear",
+						
+						"d8bk, d8sk:7, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds, magicboomerang, $hit_lever, bracelet, $kill_medusahead",
+						"d8bk, d8sk:7, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, magicboomerang, $hit_lever, bracelet, $kill_medusahead",
+						"d8bk, d8sk:7, $kill_magunesu, $max_jump:4, magnet, slingshot2, emberseeds, $hit_lever, bracelet, $kill_medusahead",
+						"d8bk, d8sk:4, [d8bk:7], $kill_magunesu, $max_jump:4, bombs, bracelet, $kill_medusahead, [slingshot2], [emberseeds]",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Changing \nSeasons",
+					"access_rules": [
+						// Can get every single chest in D8
+						"$d8clear",
+						
+						"d8bk, d8sk:7, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds, magicboomerang, $hit_lever, bracelet, $kill_medusahead",
+						"d8bk, d8sk:7, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, magicboomerang, $hit_lever, bracelet, $kill_medusahead",
+						"d8bk, d8sk:7, $kill_magunesu, $max_jump:4, magnet, slingshot2, emberseeds, $hit_lever, bracelet, $kill_medusahead",
+						"d8bk, d8sk:4, [d8bk:7], $kill_magunesu, $max_jump:4, bracelet, $kill_medusahead, [slingshot2], [emberseeds]",
+					],
+					"hosted_item": "d8",
+					"item_count": 0
+				  },
+				  {
+					"name": "D8 small\nkeys",
+					"hosted_item": "d8sk",
+					"item_count": 0
+				  },
+				  {
+					"name": "D8 boss \nkey",
+					"hosted_item": "d8bk",
+					"item_count": 0
+				  },
+				],
+				"map_locations": [
+				  {
+					"map": "subrosia",
+					"x": 12,
+					"y": 12
+				  },
+				  {
+					"map": "holodrum",
+					"x": 194,
+					"y": 25
+				  }
+				]
+			},
+			{
+				"name": "Get mystery seeds in \nD8's Frypolar room",
+				"color": "#ff3c00",
+				"access_rules": [
+					"$scent_tree, $enter_remains, $portal_remains, bombs, $portal_d8"
+				],
+				"sections": [
+				  {
+					"name": "Respawnable bushes",
+					"access_rules": [
+						"[mysteryseeds], $destroy_bush_respawn, $kill_magunesu, $destroy_pot, $shoot_seeds, $max_jump:3, $kill_hardhat_magnet, magnet",
+					],
+					"hosted_item": "mysteryseeds",
+					"item_count": 0
+				  }
+				],
+				"map_locations": [
+				  {
+					"map": "subrosia",
+					"x": 19,
+					"y": 19
+				  },
+				  {
+					"map": "holodrum",
+					"x": 210,
+					"y": 40
+				  }
+				]
+			},
+		]
+	}
+]

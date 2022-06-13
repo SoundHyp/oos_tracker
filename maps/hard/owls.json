@@ -1,0 +1,269 @@
+﻿[
+	{
+		"name": "Owls",
+		"chest_unopened_img": "images/owl_closed.png",
+		"chest_opened_img": "images/owl_open.png",
+		"color": "#06435c",
+		"children": [
+			{
+				"name": "Woods of Winter",
+				"access_rules": [
+					"$suburbs_to_fountain, $fountain_to_D2",
+							
+							"$sunken_city, $natzu_to_suburbs, $fountain_to_D2",
+							"$scent_tree_hard, $natzu_to_moblin_hard, $moblin_keep_to_sunken, $natzu_to_suburbs, $fountain_to_D2",
+							"$mount_cucco, flippers, $cucco_to_sunken, $natzu_to_suburbs, $fountain_to_D2",
+					],
+				"sections": [
+				  {
+					"name": "Tree owl",
+					"access_rules": [
+						"$check_hint",
+					],
+					"item_count": 1
+				  }
+				],
+				"map_locations": [
+				  {
+					"map": "owls",
+					"x": 621,
+					"y": 407
+				  }
+				]
+			},
+			{
+				"name": "Snake's Remains",
+				"access_rules": [
+					"$suburbs_to_fountain, $fountain_to_D2, $enter_d2",
+					"$scent_tree_hard, $cross_natzu_hard, $natzu_to_suburbs, $fountain_to_D2, $enter_d2",
+					"$scent_tree_hard, $natzu_to_moblin_hard, $moblin_keep_to_sunken, $natzu_to_suburbs, $fountain_to_D2, $enter_d2",
+				],
+				"sections": [
+				  {
+					"name": "Dodongo owl",
+					"access_rules": [
+						"$check_hint, $d2clear_hard",
+						
+						"$check_hint, d2sk:2, $d2_A, $use_seeds, emberseeds, $kill_hard, bracelet, bombs",
+						"$check_hint, d2sk:1, [d2sk:2], $d2_A, $use_seeds, emberseeds, $kill_hard, bracelet, bombs",
+						"$check_hint, d2sk:2, $d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_hard, bracelet, bombs",
+						"$check_hint, d2sk:1, [d2sk:2], $d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_hard, bracelet, bombs",
+						"$check_hint, d2sk:2, $d2_B, bracelet, bombs",
+						"$check_hint, d2sk:1, [d2sk:2], $d2_B, bracelet, bombs",
+					],
+					"item_count": 1
+				  }
+				],
+				"map_locations": [
+				  {
+					"map": "owls",
+					"x": 578,
+					"y": 364
+				  }
+				]
+			},
+			{
+				"name": "Spool Swamp",
+				"access_rules": [
+					"$pegasus_tree_hard"
+				],
+				"sections": [
+				  {
+					"name": "Floodgate tunnel owl",
+					"access_rules": [
+						"$check_hint, $hit_lever",
+					],
+					"item_count": 1
+				  }
+				],
+				"map_locations": [
+				  {
+					"map": "owls",
+					"x": 109,
+					"y": 279
+				  }
+				]
+			},
+			{
+				"name": "Poison Moth's Lair",
+				"access_rules": [
+					"$enter_d3_hard"
+				],
+				"sections": [
+				  {
+					"name": "Spike beetles owl",
+					"access_rules": [
+						"$check_hint",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Trampoline owl",
+					"access_rules": [		
+						"$check_hint, $d3clear_hard",
+						
+						"$check_hint, $kill_beetle_hard, $max_jump:1",
+						"$check_hint, bracelet, shovel, $max_jump:1",
+						"$check_hint, bracelet, shield1, $max_jump:1",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Omuai owl",
+					"access_rules": [		
+						"$check_hint, $d3clear_hard",
+						
+						"$check_hint, $kill_beetle_hard, $max_jump:1",
+						"$check_hint, bracelet, shovel, $max_jump:1",
+						"$check_hint, bracelet, shield1, $max_jump:1",
+					],
+					"item_count": 1
+				  },
+				],
+				"map_locations": [
+				  {
+					"map": "owls",
+					"x": 25,
+					"y": 279
+				  }
+				]
+			},
+			{
+				"name": "Dancing Dragon Dungeon",
+				"access_rules": [
+					"$enter_d4_hard",
+				],
+				"sections": [
+				  {
+					"name": "Stalfos owl",
+					"access_rules": [			
+						"$check_hint, $d4clear_hard",
+						
+						"$check_hint, d4sk:2, flippers, $max_jump:1, $hit_lever",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Gohma jump owl",
+					"access_rules": [		
+						"$check_hint, $d4clear_hard",
+						
+						"$check_hint, d4sk:5, flippers, $max_jump:2, bombs, $hit_lever, $kill_stalfos_hard, $kill_hard, $kill_agunima, $hit_far_lever",
+						"$check_hint, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, $kill_stalfos_hard, $kill_hard, $kill_agunima, $hit_far_lever",
+						"$check_hint, d4sk:5, flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever",
+						"$check_hint, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever",
+					],
+					"item_count": 1
+				  },
+				],
+				"map_locations": [
+				  {
+					"map": "owls",
+					"x": 578,
+					"y": 68
+				  }
+				]
+			},
+			{
+				"name": "Unicorn's Cave",
+				"access_rules": [
+					"$enter_d5",
+				],
+				"sections": [
+				  {
+					"name": "Four Armos owl",
+					"access_rules": [			
+						"$check_hint, $d5clear_hard",
+						
+						"$check_hint, magnet, $kill_moldorm_hard, $kill_hard",
+						"$check_hint, $max_jump:1, bombs, $kill_moldorm_hard, $kill_hard",
+					],
+					"item_count": 1
+				  },
+				],
+				"map_locations": [
+				  {
+					"map": "owls",
+					"x": 449,
+					"y": 364
+				  }
+				]
+			},
+			{
+				"name": "Explorer's Crypt",
+				"access_rules": [
+					"$graveyard_hard"
+				],
+				"sections": [
+				  {
+					"name": "Poe curse owl",
+					"access_rules": [			
+						"$check_hint",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Stalfos hint owl",
+					"access_rules": [			
+						"$check_hint, $d7clear_hard",
+						
+						"$check_hint, d7sk:5, bracelet, $kill_hard, $shoot_seeds, emberseeds, $kill_poe_hard, [magnet], flippers, $max_jump:4",
+						"$check_hint, d7sk:4, [d7sk:5], bracelet, $kill_hard, $shoot_seeds, emberseeds, $kill_poe_hard, [magnet], flippers, $max_jump:4",
+					],
+					"item_count": 1
+				  },
+				],
+				"map_locations": [
+				  {
+					"map": "owls",
+					"x": 25,
+					"y": 578
+				  }
+				]
+			},
+			{
+				"name": "Sword and Shield Maze",
+				"access_rules": [
+					"$scent_tree, $enter_remains_hard, $portal_remains_hard, bombs, $portal_d8_hard"
+				],
+				"sections": [
+				  {
+					"name": "Armos wait owl",
+					"access_rules": [			
+						"$check_hint, $d8clear_hard",
+						
+						"$check_hint, d8sk:2, $kill_magunesu, $max_jump:2",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Frypolar owl",
+					"access_rules": [			
+						"$check_hint, $d8clear_hard",
+
+						"$check_hint, d8sk:2, $kill_magunesu, $max_jump:2, magnet",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Ice crystals owl",
+					"access_rules": [			
+						"$check_hint, $d8clear_hard",
+						
+						"$check_hint, d8sk:4, $kill_magunesu, $max_jump:2, magnet, slingshot2, emberseeds",
+						"$check_hint, d8sk:1, [d8sk:4], $kill_magunesu, $max_jump:4, [slingshot2], [emberseeds]",
+					],
+					"item_count": 1
+				  },
+				],
+				"map_locations": [
+				  {
+					"map": "owls",
+					"x": 194,
+					"y": 25
+				  }
+				]
+			},
+		]
+	}
+]

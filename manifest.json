@@ -1,0 +1,40 @@
+﻿{
+  "name": "Oracle of Seasons Randomizer - Test",
+  "game_name": "Zelda Oracles Randomizer",
+  "package_version": "2.4.1.1",
+  "package_uid": "oos_items_and_map_herreteman_soundhyp",
+  "author": "Herreteman, SoundHyp",
+  
+  "variants": {
+    "standard": {
+      "display_name": "Map Tracker - Normal logic"
+    },
+    "hard": {
+      "display_name": "Map Tracker - Hard Logic"
+    },
+    "items_only": {
+      "display_name": "Items Only"
+    },
+	  "dungeon_shuffle": {
+      "display_name": "Dungeon Shuffle - Normal Logic"
+    },
+    "dungeon_shuffle_hard": {
+      "display_name": "Dungeon Shuffle - Hard Logic"
+    },
+    "cross_items": {
+      "display_name": "Cross Items - Normal Logic"
+    },
+    "cross_items_dungeon": {
+      "display_name": "Cross Items - Dungeon Shuffle"
+    },
+    "cross_items_shuffle": {
+      "display_name": "Cross Items - Dungeon/Portal Shuffle"
+    },
+    "portal": {
+      "display_name": "Portal Shuffle - Normal Logic"
+    },
+    "portal_shuffle": {
+      "display_name": "Portal Shuffle - Dungeon Shuffle"
+    }
+  }
+}

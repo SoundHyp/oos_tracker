@@ -1,0 +1,495 @@
+﻿[
+	{
+		"name": "Subrosia",
+		"chest_unopened_img": "images/chest.png",
+		"chest_opened_img": "images/chestopen.png",
+		"children": [
+			{
+				"name": "Temple of Seasons",
+				"color": "#ff3c00",
+				"access_rules": [
+					// Rosa portal, including sequence breaks
+					"$use_seeds, emberseeds, $destroy_bush",
+					"$scent_tree, $cross_natzu, $natzu_to_suburbs, $suburbs_to_fountain",
+					"$mount_cucco, $cucco_to_sunken, $natzu_to_suburbs, $suburbs_to_fountain, $destroy_bush",
+					
+					// Swamp portal
+					"$south_swamp, flippers, bracelet, $temple_to_beach",
+					"$south_swamp, $dimitri, bracelet, $temple_to_beach",
+					
+					// Mountain portal
+					"$portal_mountain, $hns_to_beach, $temple_to_beach",
+					"$portal_village, $hns_to_beach, $temple_to_beach",
+					"$portal_mountain, $temple_to_hns",
+					"$portal_village, $temple_to_hns",
+					
+					// Lake portal
+					"$portal_lake, $max_jump:1, $furnace_to_beach",
+					
+					// Remains portal
+					"$portal_remains, $remains_to_temple"
+				],
+				"children": [
+					{
+						"name": "Main chamber",
+						"sections": [
+						  {
+							"name": "Rod of Seasons item",
+							"item_count": 1
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "subrosia",
+							"x": 408,
+							"y": 24
+						  }
+						]
+					},
+					{
+						"name": "Summer tower",
+						"sections": [
+						  {
+							"name": "Summer spirit item",
+							"access_rules": [
+								"$beach, ribbon, bracelet"
+							],
+							"item_count": 1
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "subrosia",
+							"x": 364,
+							"y": 24
+						  }
+						]
+					},
+					{
+						"name": "Fall tower",
+						"sections": [
+						  {
+							"name": "Fall spirit item",
+							"access_rules": [
+								// Rosa portal, including sequence breaks
+								"$village_to_suburbs, $destroy_bush, $temple_to_beach, $beach_to_furnace, bracelet, $max_jump:1",
+								"$scent_tree, $cross_natzu, $natzu_to_suburbs, $suburbs_to_fountain, $temple_to_beach, $beach_to_furnace, bracelet, $max_jump:1",
+								"$mount_cucco, $cucco_to_sunken, $natzu_to_suburbs, $suburbs_to_fountain, $destroy_bush, $temple_to_beach, $beach_to_furnace, bracelet, $max_jump:1",
+								
+								// Swamp portal
+								"$beach, $beach_to_furnace, bracelet, $max_jump:1",
+								//"$beach, $beach_to_furnace",
+								
+								// Mountain portal
+								"$portal_mountain, $hns_to_beach, $beach_to_furnace, bracelet, $max_jump:1",
+								"$portal_village, $hns_to_beach, $beach_to_furnace, bracelet, $max_jump:1",
+								"$portal_mountain, $temple_to_hns, $beach_to_furnace, bracelet, $max_jump:1",
+								"$portal_village, $temple_to_hns, $beach_to_furnace, bracelet, $max_jump:1",
+								
+								// Lake portal
+								"$portal_lake, $max_jump:1, bracelet",
+								
+								// Remains portal
+								"$portal_remains, $remains_to_temple, $beach_to_furnace, bracelet, $max_jump:1"
+							],
+							"item_count": 1
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "subrosia",
+							"x": 450,
+							"y": 24
+						  }
+						]
+					},
+					{
+						"name": "Winter tower",
+						"sections": [
+						  {
+							"name": "Winter spirit item",
+							"access_rules": [
+								"$hit_far_switch",
+								"$max_jump:1"
+							],
+							"item_count": 1
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "subrosia",
+							"x": 450,
+							"y": 108
+						  }
+						]
+					},
+					{
+						"name": "Subrosian Smithy",
+						"sections": [
+						  {
+							"name": "Deliver the Hard Ore",
+							"access_rules": [
+								"hardore"
+							],
+							"item_count": 1
+						  },
+						  {
+							"name": "Polish the Rusty Bell",
+							"access_rules": [
+								"rustybell"
+							],
+							"hosted_item": "polishedbell",
+							"item_count": 0
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "subrosia",
+							"x": 150,
+							"y": 150
+						  }
+						]
+					},
+				]
+			},
+			{
+				"name": "Northern region",
+				"color": "#ff3c00",
+				"access_rules": [
+					// Rosa portal, including sequence breaks
+					"$use_seeds, emberseeds, $destroy_bush",
+					"$scent_tree, $cross_natzu, $natzu_to_suburbs, $suburbs_to_fountain",
+					"$mount_cucco, $cucco_to_sunken, $natzu_to_suburbs, $suburbs_to_fountain, $destroy_bush",
+					
+					// Swamp portal
+					"$south_swamp, flippers, bracelet, $temple_to_beach",
+					"$south_swamp, $dimitri, bracelet, $temple_to_beach",
+					
+					// Mountain portal
+					"$portal_mountain, $hns_to_beach, $temple_to_beach",
+					"$portal_village, $hns_to_beach, $temple_to_beach",
+					"$portal_mountain, $temple_to_hns",
+					"$portal_village, $temple_to_hns",
+					
+					// Lake portal
+					"$portal_lake, $max_jump:1, $furnace_to_beach",
+					
+					// Remains portal
+					"$portal_remains, $remains_to_temple"
+				],
+				"children": [
+					{
+						"name": "Subrosian dancing",
+						"sections": [
+						  {
+							"name": "┏(-_-)┓┏(-_-)┛\n┗(-_- )┓┗(-_-)┛",
+							"item_count": 1
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "subrosia",
+							"x": 194,
+							"y": 108
+						  }
+						]
+					},
+					{
+						"name": "Cave in the mountain",
+						"sections": [
+						  {
+							"name": "Chest",
+							"access_rules": [
+								"$temple_to_bridge"
+							],
+							"item_count": 1
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "subrosia",
+							"x": 66,
+							"y": 66
+						  }
+						]
+					},
+				]
+			},
+			{
+				"name": "Southern region",
+				"color": "#ff3c00",
+				"access_rules": [
+					// Rosa portal, including sequence breaks
+					"$village_to_suburbs, $destroy_bush, $temple_to_beach",
+					"$scent_tree, $cross_natzu, $natzu_to_suburbs, $suburbs_to_fountain, $temple_to_beach",
+					"$mount_cucco, $cucco_to_sunken, $natzu_to_suburbs, $suburbs_to_fountain, $destroy_bush, $temple_to_beach",
+					
+					// Swamp portal
+					"$portal_swamp",
+					
+					// Mountain portal
+					"$portal_mountain, $hns_to_beach",
+					"$portal_village, $hns_to_beach",
+					"$portal_mountain, $temple_to_hns",
+					"$portal_village, $temple_to_hns",
+					
+					// Lake portal
+					"$portal_lake, $max_jump:1, $furnace_to_beach",
+					
+					// Remains portal
+					"$portal_remains, $remains_to_temple"
+				],
+				"children": [
+					{
+						"name": "Subrosian seaside",
+						"sections": [
+						  {
+							"name": "Star Ore item",
+							"access_rules": [
+								"shovel"
+							],
+							"item_count": 1
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "subrosia",
+							"x": 260,
+							"y": 300
+						  }
+						]
+					},
+					{
+						"name": "Subrosian market",
+						"sections": [
+						  {
+							"name": "Exchange \nStar Ore",
+							"access_rules": [
+								"{}", "starore"
+							],
+							"capture_item": true,
+							"item_count": 1
+						  },
+						  {
+							"name": "Second item \n(20 + 10 ember seeds)",
+							"access_rules": [
+								"{}", 
+								"emberseeds, $ore_chunks",
+								"emberseeds, $temple_to_beach",
+							],
+							"capture_item": true,
+							"item_count": 1
+						  },
+						  {
+							"name": "Fifth item \n(5)",
+							"access_rules": [
+								"{}", 
+								"$ore_chunks",
+								"$temple_to_beach",
+							],
+							"capture_item": true,
+							"item_count": 1
+						  },
+						],
+						"map_locations": [
+						  {
+							"map": "subrosia",
+							"x": 238,
+							"y": 194
+						  }
+						]
+					},
+					{
+						"name": "Get pegasus seeds \nin the Subrosian Market",
+						"sections": [
+						  {
+							"name": "25 ore chunks",
+							"access_rules": [
+								"[pegasusseeds], shield1"
+							],
+							"hosted_item": "pegasusseeds",
+							"item_count": 0
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "subrosia",
+							"x": 224,
+							"y": 180
+						  }
+						]
+					},
+					{
+						"name": "Rosa's world tour",
+						"sections": [
+						  {
+							"name": "Open the cave",
+							"access_rules": [
+								"$max_jump:1, ribbon"
+							],
+							"item_count": 1
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "subrosia",
+							"x": 108,
+							"y": 66
+						  }
+						]
+					},
+					{
+						"name": "Furnace area",
+						"access_rules": [
+							// Rosa portal, including sequence breaks
+							"$village_to_suburbs, $destroy_bush, $temple_to_beach, $beach_to_furnace",
+							"$scent_tree, $cross_natzu, $natzu_to_suburbs, $suburbs_to_fountain, $temple_to_beach, $beach_to_furnace",
+							"$mount_cucco, $cucco_to_sunken, $natzu_to_suburbs, $suburbs_to_fountain, $destroy_bush, $temple_to_beach, $beach_to_furnace",
+							
+							// Swamp portal
+							"$beach_to_furnace",
+							//"$beach, $beach_to_furnace",
+							
+							// Mountain portal
+							"$portal_mountain, $hns_to_beach, $beach_to_furnace",
+							"$portal_village, $hns_to_beach, $beach_to_furnace",
+							"$portal_mountain, $temple_to_hns, $beach_to_furnace",
+							"$portal_village, $temple_to_hns, $beach_to_furnace",
+							
+							// Lake portal
+							"$portal_lake, $max_jump:1",
+							
+							// Remains portal
+							"$portal_remains, $remains_to_temple, $beach_to_furnace"
+						],
+						"sections": [
+						  {
+							"name": "Isolated chest",
+							"access_rules": [
+								"cape",
+								"magnet"
+							],
+							"item_count": 1
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "subrosia",
+							"x": 364,
+							"y": 236
+						  }
+						]
+					},
+					{
+						"name": "Great Furnace",
+						"access_rules": [
+							// Rosa portal, including sequence breaks
+							"$village_to_suburbs, $destroy_bush, $temple_to_beach, $beach_to_furnace",
+							"$scent_tree, $cross_natzu, $natzu_to_suburbs, $suburbs_to_fountain, $temple_to_beach, $beach_to_furnace",
+							"$mount_cucco, $cucco_to_sunken, $natzu_to_suburbs, $suburbs_to_fountain, $destroy_bush, $temple_to_beach, $beach_to_furnace",
+							
+							// Swamp portal
+							"$south_swamp, flippers, bracelet, $beach_to_furnace",
+							"$south_swamp, $dimitri, bracelet, $beach_to_furnace",
+							
+							// Mountain portal
+							"$portal_mountain, $hns_to_beach, $beach_to_furnace",
+							"$portal_village, $hns_to_beach, $beach_to_furnace",
+							"$portal_mountain, $temple_to_hns, $beach_to_furnace",
+							"$portal_village, $temple_to_hns, $beach_to_furnace",
+							
+							// Lake portal
+							"$portal_lake, $max_jump:1",
+							
+							// Remains portal
+							"$portal_remains, $remains_to_temple, $beach_to_furnace"
+						],
+						"sections": [
+						  {
+							"name": "Fuse the ores",
+							"access_rules": [
+								"$max_jump:1, bracelet, blueore, redore",
+							],
+							"item_count": 1
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "subrosia",
+							"x": 408,
+							"y": 194
+						  }
+						]
+					},
+				]
+			},
+			{
+				"name": "Western region",
+				"color": "#ff3c00",
+				"access_rules": [
+					//"$hns",
+					
+					// Rosa portal, including sequence breaks
+					"$village_to_suburbs, $destroy_bush, $temple_to_hns",
+					"$scent_tree, $cross_natzu, $natzu_to_suburbs, $suburbs_to_fountain, $temple_to_hns",
+					"$mount_cucco, $cucco_to_sunken, $natzu_to_suburbs, $suburbs_to_fountain, $destroy_bush, $temple_to_hns",
+						
+					// Swamp portal
+					"$south_swamp, flippers, bracelet, $temple_to_hns",
+					"$south_swamp, $dimitri, bracelet, $temple_to_hns",
+					
+					// Mountain portal
+					"$portal_mountain, $max_jump:1",
+					"$portal_village, $max_jump:1",
+					
+					// Lake portal
+					"$portal_lake, $furnace_to_beach, $temple_to_beach, $temple_to_hns",
+					
+					// Remains portal
+					"$portal_remains, $remains_to_temple, $temple_to_hns"
+				],
+				"children": [
+					{
+						"name": "Subrosian Wilds",
+						"sections": [
+						  {
+							"name": "Pits chest",
+							"access_rules": [
+								"$max_jump:3",
+								"magnet",
+							],
+							"item_count": 1
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "subrosia",
+							"x": 66,
+							"y": 194
+						  }
+						]
+					},
+					{
+						"name": "Spring tower",
+						"sections": [
+						  {
+							"name": "Spring spirit item",
+							"access_rules": [
+								"$max_jump:1"
+							],
+							"item_count": 1
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "subrosia",
+							"x": 364,
+							"y": 108
+						  }
+						]
+					},
+				]
+			},
+		]
+	}
+]

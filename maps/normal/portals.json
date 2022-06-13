@@ -1,0 +1,57 @@
+[
+	{
+        "name": "Portals",
+        "chest_unopened_img": "images/portal_lock.png",
+        "chest_opened_img": "images/portal.png",
+		"color": "#1100ff",
+        "img": "images/portal.png",
+		"children": [
+			{
+				"name": "Holodrum",
+                "children": [
+                    {
+                        "name": "Eyeglass Lake",
+                        "sections": [
+                            {
+                                "name": "Portal",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$portal_lake"
+                                ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "holodrum",
+                                "x": 407,
+                                "y": 492
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Subrosia",
+                "children": [
+                    {
+                        "name": "Mountain",
+                        "sections": [
+                            {
+                                "name": "Portal",
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "subrosia",
+                                "x": 300,
+                                "y": 300
+                            }
+                        ]
+
+                    }
+                ]
+            }
+        ]
+    }
+]

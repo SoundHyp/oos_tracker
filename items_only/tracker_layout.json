@@ -1,0 +1,201 @@
+﻿{
+	"allow_resize": false,
+	"layouts": {
+	  "shared_item_grid":{
+        "type": "array",
+        "orientation": "horizontal",
+        // Need 2 items in this array [Menu Items Array, Key Items/Essences Array]
+        "content": [
+        
+          // Menu Items
+          {
+            "type": "array",
+            "orientation": "vertical",
+            // need 1 for menu items (itemgrid), 1 for satchel/seeds([item, itemgrid]), 1 for rod/seasons ([item,itemgrid])
+            "content": [
+              
+              // Most Menu Items
+              {
+                "type": "itemgrid",
+                "item_size": 32,
+                "item_margin": "10,0,5,10",
+                "rows": [
+                  ["sword1", "shield"],
+                  ["strength", "feather"],
+                  ["slingshot1", "glove"],
+                  ["boomerang1", "shovel"],
+                  ["flute", "bestweapon"]            
+                ]
+              },
+              
+              // Satchel/Seeds
+              {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "10,0,0,0",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "satchel",
+                    "item_size": 40
+                  },
+                  
+                  {
+                    "type": "itemgrid",
+                    "item_size": 25,
+                    "margin": "1,-1,0,0",
+                    "item_margin": "0, 0, 0, -10",
+                    "h_alignment": "center",
+                    "rows": [
+                      ["emberseeds", "mysteryseeds"],
+                      ["scentseeds"],
+                      ["pegasusseeds", "galeseeds"]
+                    ]
+                  }
+                ]
+              },
+              
+              // Rod/Seasons
+              {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "10,13,0,0",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "rod",
+                    "item_size": 40,
+                  },
+                  
+                  {
+                    "type": "itemgrid",
+                    "item_size": 16,
+                    "margin": "0, -5, 0, 0",
+                    "item_margin": "6, 11, 0, -5",
+                    "h_alignment": "center",
+                    "rows": [
+                      ["summer", "fall"],
+                      ["spring", "winter"]
+                    ]
+                  },
+                ],
+              },     
+            ],
+          },
+        
+          // Key Items/Essences
+          {
+            "type": "array",
+            "orientation": "vertical",
+            // [Items, Keys/Jewels, Essences, Dungeon Items]
+            "content": [
+              // Items
+              {
+                "type": "itemgrid",
+                "item_size": 32,
+                "rows": [
+                  ["starore", "plaque", "flippers", "banana", "rustybell"],
+				  ["ribbon", "memberscard", "blueore", "redore", "hardore"]
+                ]
+              },
+            
+              // Keys/Jewels 
+              {
+                "type": "array",
+                "orientation": "horizontal",
+				"h_alignment": "center",
+                "margin": "4,0,0,0",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "gnarledkey",
+                    "item_size": 46
+                  },
+                  
+                  {
+                    "type": "item",
+                    "item": "floodkey",
+                    "item_size": 46
+                  },
+                  
+                  {
+                    "type": "item",
+                    "item": "dragonkey",
+                    "item_size": 46
+                  },
+                  
+                  {
+                    "type": "itemgrid",
+                    "item_size": 18,
+                    "margin": "1,0,0,0",
+                    "item_margin": "0,0,0,0",
+                    "rows": [
+                      ["roundjewel"],
+                      ["squarejewel"]
+                    ]
+                  },
+                  
+                  {
+                    "type": "itemgrid",
+                    "item_size": 18,
+                    "margin": "1,0,0,0",
+                    "item_margin": "0,0,0,0",
+                    "rows": [
+                      ["pyramidjewel"],
+                      ["xjewel"]
+                    ]
+                  }
+                ]
+              },
+            
+              // Essences
+              {
+                "type": "itemgrid",
+                "h_alignment": "center",
+                "item_margin": "6,10,6,6",
+                "margin": "0,3,0,0",
+                "item_size": 40,
+                "rows": [
+                  ["d1", "d2"],
+                  ["d8","","","d3"],
+                  ["d7","","","d4"],
+                  ["d6","d5"]
+                ]
+              },
+            
+              // Dungeon Items
+              {
+                "type": "itemgrid",
+                "h_alignment": "center",
+                "item_margin": "-6,-3,-6,-6",
+                "margin": "0,-90,0,0",
+                "item_size": 42,
+                "rows": [
+                  ["d1chests", "d2chests"],
+                  ["d8chests","","","d3chests"],
+                  ["d7chests","","","d4chests"],
+                  ["d6chests","d5chests"]
+                ]
+              }
+          
+            ] 
+          }
+        ]    
+    },
+	
+    "tracker_default": {
+      "type": "container",
+      "width": 325,
+      //"height": 400,
+      "background": "#333",
+      "content": {
+        "type": "layout",
+        "dropshadow": true,
+        "margin": 0,
+        "key": "shared_item_grid"
+      }
+    }
+	}
+}
+
+
