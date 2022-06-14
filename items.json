@@ -1,495 +1,443 @@
-﻿[
-	/// USABLE ITEMS ///
-
-  // Sword
-  {
-    "name": "Sword",
+[
+	/* 
+	Progress:
+	Got to Dungeon Shuffle
+	
+	Removed:
+	glove
+	noblesword
+	herosword
+	shield
+	ironshield
+	bracelet
+	powerglove
+	strength
+	feather
+	rocfeather
+	cape
+	roccape
+	seedslingshot
+	hyperslingshot
+	boomerang
+	magicboomerang
+	flute_generic
+	ore
+	bestweapon
+	seedsatchel
+	seasonsrod
+	gnarledkey
+	floodkey
+	star
+	dragonkey
+	rustybell
+	polishedbell
+	flippers
+	mermaidsuit
+	plaque
+	shooter
+	card
+	gnarledtree
+	snakeremains
+	poisonmoth
+	dancingdragon
+	unicorncave
+	ancientruins
+	explorercrypt
+	swordandshield
+	
+	Changed:
+	strength>power
+	feather>roc
+	flippers>swim
+	*/
+	{
+		"name": "Sword",
     "type": "progressive",
     "stages": [
       {
         "img": "images/sword1.png",
-        "codes": "sword1, herosword"
+        "codes": "sword1"
       },
       {
         "img": "images/sword2.png",
-        "codes": "sword2, noblesword"
+        "codes": "sword2"
       }
     ]
   },
-  // Shield
   {
     "name": "Shield",
     "type": "progressive",
     "stages": [
       {
         "img": "images/shield1.png",
-        "codes": "shield1, shield"
+        "codes": "shield1"
       },
       {
         "img": "images/shield2.png",
-        "codes": "shield2, ironshield"
+        "codes": "shield2"
       }
     ]
   },
-  // Power Bracelet
   {
-    "name": "Power Bracelet",
+    "name": "Power Bracelet/Glove",
     "type": "progressive",
     "stages": [
       {
-        "img": "images/strength.png",
-        "codes": "bracelet, strength"
+        "img": "images/strength1.png",
+        "codes": "power1"
       },
       {
         "img": "images/strength2.png",
-        "codes": "powerglove, strength2"
+        "codes": "power2"
       }
     ]
   },
-  // Feather/Cape
   {
-  "name": "Roc's items",
-  "type": "progressive",
-  "stages": [
-	  {
-		"img": "images/feather1.png",
-		"codes": "feather1, feather, rocfeather"
-	  },
-	  {
-		"img": "images/feather2.png",
-		"codes": "feather2, cape, roccape"
-	  }
-	]
+		"name": "Feather/Cape",
+		"type": "progressive",
+		"stages": [
+			{
+				"img": "images/roc1.png",
+				"codes": "roc1"
+			},
+			{
+				"img": "images/roc2.png",
+				"codes": "roc2"
+			}
+		]
   },
-  
-  // Slingshot
   {
-  "name": "Slingshot",
-  "type": "progressive",
-  "stages": [
-	  {
-		"img": "images/slingshot1.png",
-		"codes": "slingshot1, seedslingshot"
-	  },
-	  {
-		"img": "images/slingshot2.png",
-		"codes": "slingshot2, hyperslingshot"
-	  }
-	]
+		"name": "Slingshot",
+		"type": "progressive",
+		"stages": [
+			{
+				"img": "images/slingshot1.png",
+				"codes": "slingshot1"
+			},
+			{
+				"img": "images/slingshot2.png",
+				"codes": "slingshot2"
+			}
+		]
   },
-  
-  // Magnet Glove
   {
     "name": "Magnet Glove",
     "type": "toggle",
-    "img": "images/glove0.png",
-    "codes": "magnet, glove"
+    "img": "images/magnet.png",
+    "codes": "magnet"
   },
-  
-  // Boomerang
   {
-  "name": "Boomerang",
-  "type": "progressive",
-  "stages": [
-	  {
-		"img": "images/rang1.png",
-		"codes": "boomerang1, boomerang"
-	  },
-	  {
-		"img": "images/rang2.png",
-		"codes": "boomerang2, magicboomerang"
-	  }
-	]
+		"name": "Boomerang",
+		"type": "progressive",
+		"stages": [
+			{
+				"img": "images/rang1.png",
+				"codes": "boomerang1"
+			},
+			{
+				"img": "images/rang2.png",
+				"codes": "boomerang2"
+			}
+		]
   },
-  
-  // Shovel
   {
     "name": "Shovel",
     "type": "toggle",
     "img": "images/shovel.png",
     "codes": "shovel"
   },
-  
-  // Flute
   {
     "name": "Flute",
     "type": "toggle",
-    "img": "images/flute1.png",
-    "codes": "flute,flute_generic",
-    "inherit_codes": false
+    "img": "images/flute.png",
+    "codes": "flute"
   },
-  
-  // Fool's Ore
   {
     "name": "Fool's Ore",
     "type": "toggle",
     "img": "images/foolsore.png",
-    "codes": "ore, foolsore, bestweapon"
+    "codes": "foolsore"
   },
-  
-  // Seed Satchel
   {
     "name": "Seed Satchel",
     "type": "toggle",
     "img": "images/satchel.png",
-    "codes": "satchel, seedsatchel"
+    "codes": "satchel"
   },
-  
-  // Season's Rod
   {
-    "name": "Season's Rod",
+    "name": "Rod of Seasons",
     "type": "static",
     "img": "images/rod.png",
-    "codes": "rod, seasonsrod"
+    "codes": "rod"
   },
   
   // Toggleable rod
   // Used only for capture_item
+	// Is this needed?
   {
     "name": "Season's Rod",
     "type": "toggle",
     "img": "images/rod.png",
     "codes": "season"
   },
-  
-  // Bombs
   {
     "name": "Bombs",
     "type": "toggle",
     "img": "images/bomb.png",
     "codes": "bombs"
   },
-  
-  
-  /// PROGRESS ITEMS (chronological) ///
-  
-  // Gnarled Key
   {
     "name": "Gnarled Key",
     "type": "toggle",
-    "img": "images/keygnarled.png",
-    "codes": "d1key, gnarledkey"
+    "img": "images/d1key.png",
+    "codes": "d1key"
   },
-  
-  // Ricky's Gloves
   {
     "name": "Ricky's Glove",
     "type": "toggle",
     "img": "images/rickygloves.png",
     "codes": "rickygloves"
   },
-  
-  // Star Ore
   {
     "name": "Star Ore",
     "type": "toggle",
     "img": "images/starore.png",
-    "codes": "star, starore"
+    "codes": "starore"
   },
-  
-  // Ribbon
   {
     "name": "Ribbon",
     "type": "toggle",
     "img": "images/ribbon.png",
     "codes": "ribbon"
   },
-  
-  // Floodgate Key
   {
     "name": "Floodgate Key",
     "type": "toggle",
-    "img": "images/keyflood.png",
-    "codes": "d3key, floodkey"
+    "img": "images/d3key.png",
+    "codes": "d3key"
   },
-  
-  // Flippers
   {
     "name": "Flippers",
     "type": "progressive",
     "stages": [
       {
-        "img": "images/flippers.png",
-        "codes": "flippers"
+        "img": "images/swim1.png",
+        "codes": "swim1"
       },
       {
-        "img": "images/mermaidsuit.png",
-        "codes": "mermaidsuit"
+        "img": "images/swim2.png",
+        "codes": "swim2"
       }
     ]
   },
-  
-  // Master's Plaque
   {
     "name": "Master's Plaque",
     "type": "toggle",
-    "img": "images/plaque.png",
-    "codes": "plaque, masterplaque"
+    "img": "images/masterplaque.png",
+    "codes": "masterplaque"
   },
-  
-  // Banana
   {
     "name": "Banana",
     "type": "toggle",
     "img": "images/banana.png",
     "codes": "banana"
   },
-  
-  // Dragon Key
   {
     "name": "Dragon Key",
     "type": "toggle",
-    "img": "images/keydragon.png",
-    "codes": "d4key, dragonkey"
+    "img": "images/d4key.png",
+    "codes": "d4key"
   },
-  
-  // Bomb Flower
   {
     "name": "Bomb Flower",
     "type": "toggle",
     "img": "images/bombflower.png",
     "codes": "bombflower"
   },
-  
-  // Rusty Bell
   {
-  "name": "Rusty Bell",
-  "type": "progressive",
-  "stages": [
-	  {
-		"img": "images/bell1.png",
-		"codes": "rustybell, bell"
-	  },
-	  {
-		"img": "images/bell2.png",
-		"codes": "polishedbell"
-	  }
-	]
+		"name": "Rusty Bell",
+		"type": "progressive",
+		"stages": [
+			{
+				"img": "images/bell1.png",
+				"codes": "bell1"
+			},
+			{
+				"img": "images/bell2.png",
+				"codes": "bell2"
+			}
+		]
   },
-
-  // Seed Shooter
   {
     "name": "Seed Shooter",
     "type": "toggle",
-    "img": "images/shooter.png",
-    "codes": "shooter, seedshooter"
+    "img": "images/seedshooter.png",
+    "codes": "seedshooter"
   },
-  
-  // Switch Hook
   {
 	  "name": "Switch Hook",
 	  "type": "progressive",
 	  "stages": [
-	  {
-		"img": "images/hook1.png",
-		"codes": "hook1, switchhook"
-	  },
-	  {
-		"img": "images/hook2.png",
-		"codes": "hook2, longhook"
-	  }
-	]
+			{
+				"img": "images/hook1.png",
+				"codes": "hook1"
+			},
+			{
+				"img": "images/hook2.png",
+				"codes": "hook2"
+			}
+		]
   },
-  
-  // Cane of Somaria
   {
-	"name": "Cane of Somaria",
-	"type": "toggle",
-	"img": "images/cane.png",
-	"codes": "cane"
+		"name": "Cane of Somaria",
+		"type": "toggle",
+		"img": "images/cane.png",
+		"codes": "cane"
   },
-  
-  /// MISC ITEMS THAT LEAD TO SOMETHING///
-  
-  // Member's Card
   {
     "name": "Member's Card",
     "type": "toggle",
     "img": "images/membercard.png",
-    "codes": "card, memberscard"
+    "codes": "memberscard"
   },
-  
-  // Hard Ore
   {
     "name": "Hard Ore",
     "type": "toggle",
     "img": "images/orehard.png",
     "codes": "hardore"
   },
-  
-  // Blue Ore
   {
     "name": "Blue Ore",
     "type": "toggle",
     "img": "images/oreblue.png",
     "codes": "blueore"
   },
-  
-  // Red Ore
   {
     "name": "Red Ore",
     "type": "toggle",  
     "img": "images/orered.png",
     "codes": "redore"
-  },  
-  
-  /// SEEDS ///
-  
-  // Ember
+  },
   {
     "name": "Ember Seeds",
     "type": "toggle",
     "img": "images/seedember.png",
     "codes": "emberseeds"
   },
-  
-  // Mystery
   {
     "name": "Mystery Seeds",
     "type": "toggle",
     "img": "images/seedmystery.png",
     "codes": "mysteryseeds"
   },
-  
-  // Scent
   {
     "name": "Scent Seeds",
     "type": "toggle",
     "img": "images/seedscent.png",
     "codes": "scentseeds"
   },
-  
-  // Pegasus
   {
     "name": "Pegasus Seeds",
     "type": "toggle",
     "img": "images/seedpegasus.png",
     "codes": "pegasusseeds"
   },
-  
-  // Gale
   {
     "name": "Gale Seeds",
     "type": "toggle",
     "img": "images/seedgale.png",
     "codes": "galeseeds"
   },
-  
-  /// JEWELS ///
-  
   // All 4
   // Used only for capture_item
+	// Is this needed?
   {
     "name": "All Jewels",
     "type": "toggle",
     "img": "images/jewels.png",
     "codes": "jewels"
   },
-  
-  // Round
   {
     "name": "Round Jewel",
     "type": "toggle",
     "img": "images/jewelround.png",
     "codes": "roundjewel"
   },
-  
-  // Pyramid
   {
     "name": "Pyramid Jewel",
     "type": "toggle",
     "img": "images/jeweltriangle.png",
     "codes": "pyramidjewel"
   },
-  
-  // Square
   {
     "name": "Square Jewel",
     "type": "toggle",
     "img": "images/jewelsquare.png",
     "codes": "squarejewel"
   },
-  
-  // X
   {
     "name": "X Jewel",
     "type": "toggle",
     "img": "images/jewelx.png",
     "codes": "xjewel"
   },
-  
-  /// SEASONS ///
-  
-  // Summer
+	// Should these be toggle instead of progressive?
   {
-  "name": "Summer season",
-  "type": "progressive",
-  "allow_disabled": false,
-  "stages": [
-	  {
-		"img": "images/seasonsummer0.png"
-		
-	  },
-	  {
-		"img": "images/seasonsummer1.png",
-		"codes": "summer"
-	  }
-	]
+		"name": "Summer season",
+		"type": "progressive",
+		"allow_disabled": false,
+		"stages": [
+			{
+				"img": "images/seasonsummer0.png"
+			},
+			{
+				"img": "images/seasonsummer1.png",
+				"codes": "summer"
+			}
+		]
   },
-  
-  // Fall
   {
-  "name": "Fall season",
-  "type": "progressive",
-  "allow_disabled": false,
-  "stages": [
-	  {
-		"img": "images/seasonfall0.png"
-		
-	  },
-	  {
-		"img": "images/seasonfall1.png",
-		"codes": "fall"
-	  }
-	]
+		"name": "Fall season",
+		"type": "progressive",
+		"allow_disabled": false,
+		"stages": [
+			{
+				"img": "images/seasonfall0.png"
+			},
+			{
+				"img": "images/seasonfall1.png",
+				"codes": "fall"
+			}
+		]
   },
-  
-  // Spring
   {
-  "name": "Spring season",
-  "type": "progressive",
-  "allow_disabled": false,
-  "stages": [
-	  {
-		"img": "images/seasonspring0.png"
-		
-	  },
-	  {
-		"img": "images/seasonspring1.png",
-		"codes": "spring"
-	  }
-	]
+		"name": "Spring season",
+		"type": "progressive",
+		"allow_disabled": false,
+		"stages": [
+			{
+				"img": "images/seasonspring0.png"
+			},
+			{
+				"img": "images/seasonspring1.png",
+				"codes": "spring"
+			}
+		]
   },
-  
-  // Winter
   {
-  "name": "Winter season",
-  "type": "progressive",
-  "allow_disabled": false,
-  "stages": [
-	  {
-		"img": "images/seasonwinter0.png"
-	  },
-	  {
-		"img": "images/seasonwinter1.png",
-		"codes": "winter"
-	  }
-	]
-  },  
-  
-  /// DUNGEONS ///
-  
-  // Hero's cave
+		"name": "Winter season",
+		"type": "progressive",
+		"allow_disabled": false,
+		"stages": [
+			{
+				"img": "images/seasonwinter0.png"
+			},
+			{
+				"img": "images/seasonwinter1.png",
+				"codes": "winter"
+			}
+		]
+  },
   {
     "name": "D0 Small Key",
     "type": "consumable",
@@ -497,13 +445,11 @@
     "codes": "d0sk",
     "max_quantity": 1
   },
-  
-  // D1
   {
     "name": "Gnarled Root Dungeon",
     "type": "toggle",
     "img": "images/D1.png",
-    "codes": "d1, gnarledroot"
+    "codes": "d1"
   },
   {
     "name": "D1 Boss Key",
@@ -521,36 +467,34 @@
   {
     "name": "Gnarled Root items",
     "type": "progressive",
-	"allow_disabled": false,
-	"stages": [
-		{
-			"img": "images/chests5d.png",
-			"codes": "d1chests"
-		},
-		{
-			"img": "images/chests4d.png"
-		},
-		{
-			"img": "images/chests3d.png"
-		},
-		{
-			"img": "images/chests2d.png"
-		},
-		{
-			"img": "images/chests1d.png"
-		},
-		{
-			"img": "images/chests0d.png"
-		}
-	]
+		"allow_disabled": false,
+		"stages": [
+			{
+				"img": "images/chests5d.png",
+				"codes": "d1chests"
+			},
+			{
+				"img": "images/chests4d.png"
+			},
+			{
+				"img": "images/chests3d.png"
+			},
+			{
+				"img": "images/chests2d.png"
+			},
+			{
+				"img": "images/chests1d.png"
+			},
+			{
+				"img": "images/chests0d.png"
+			}
+		]
   },
-  
-  // D2
   {
     "name": "Snake's Remains",
     "type": "toggle",
     "img": "images/D2.png",
-    "codes": "d2, snakeremains"
+    "codes": "d2"
   },
   {
     "name": "D2 Boss Key",
@@ -588,13 +532,11 @@
       }
     ]
   },
-  
-  // D3
   {
     "name": "Poison Moth's Lair",
     "type": "toggle",
     "img": "images/D3.png",
-    "codes": "d3, poisonmoth"
+    "codes": "d3"
   },
   {
     "name": "D3 Boss Key",
@@ -635,13 +577,11 @@
       }
     ]
   },
-  
-  // D4
   {
     "name": "Dancing Dragon Dungeon",
     "type": "toggle",
     "img": "images/D4.png",
-    "codes": "d4, dancingdragon"
+    "codes": "d4"
   },
   {
     "name": "D4 Boss Key",
@@ -676,13 +616,11 @@
       }
     ]
   },
-  
-  // D5
   {
     "name": "Unicorn's Cave",
     "type": "toggle",
     "img": "images/D5.png",
-    "codes": "d5, unicorncave"
+    "codes": "d5"
   },
   {
     "name": "D5 Boss Key",
@@ -717,13 +655,11 @@
       }
     ]
   },
-  
-  // D6
   {
     "name": "Ancient Ruins",
     "type": "toggle",
     "img": "images/D6.png",
-    "codes": "d6, ancientruins"
+    "codes": "d6"
   },
   {
     "name": "D6 Boss Key",
@@ -741,39 +677,37 @@
   {
     "name": "Ancient Ruins items",
     "type": "progressive",
-	"allow_disabled": false,
-	"stages": [
-		{
-			"img": "images/chests6u.png",
-			"codes": "d6chests"
-		},
-		{
-			"img": "images/chests5u.png"
-		},
-		{
-			"img": "images/chests4u.png"
-		},
-		{
-			"img": "images/chests3u.png"
-		},
-		{
-			"img": "images/chests2u.png"
-		},
-		{
-			"img": "images/chests1u.png"
-		},
-		{
-			"img": "images/chests0u.png"
-		}
-	]
+		"allow_disabled": false,
+		"stages": [
+			{
+				"img": "images/chests6u.png",
+				"codes": "d6chests"
+			},
+			{
+				"img": "images/chests5u.png"
+			},
+			{
+				"img": "images/chests4u.png"
+			},
+			{
+				"img": "images/chests3u.png"
+			},
+			{
+				"img": "images/chests2u.png"
+			},
+			{
+				"img": "images/chests1u.png"
+			},
+			{
+				"img": "images/chests0u.png"
+			}
+		]
   },
-  
-  // D7
   {
     "name": "Explorer's Crypt",
     "type": "toggle",
     "img": "images/D7.png",
-    "codes": "d7, explorercrypt"
+    "codes": "d7"
   },
   {
     "name": "D7 Boss Key",
@@ -791,33 +725,31 @@
   {
     "name": "Explorer's Crypt items",
     "type": "progressive",
-	"allow_disabled": false,
-	"stages": [
-		{
-			"img": "images/chests4.png",
-			"codes": "d7chests"
-		},
-		{
-			"img": "images/chests3.png"
-		},
-		{
-			"img": "images/chests2.png"
-		},
-		{
-			"img": "images/chests1.png"
-		},
-		{
-			"img": "images/chests0.png"
-		}
-	]
+		"allow_disabled": false,
+		"stages": [
+			{
+				"img": "images/chests4.png",
+				"codes": "d7chests"
+			},
+			{
+				"img": "images/chests3.png"
+			},
+			{
+				"img": "images/chests2.png"
+			},
+			{
+				"img": "images/chests1.png"
+			},
+			{
+				"img": "images/chests0.png"
+			}
+		]
   },
-  
-  // D8
   {
     "name": "Sword & Shield Maze",
     "type": "toggle",
     "img": "images/D8.png",
-    "codes": "d8, swordandshield"
+    "codes": "d8"
   },
   {
     "name": "D8 Boss Key",
@@ -835,152 +767,142 @@
   {
     "name": "Sword & Shield items",
     "type": "progressive",
-	"allow_disabled": false,
-	"stages": [
-		{
-			"img": "images/chests4.png",
-			"codes": "d8chests"
-		},
-		{
-			"img": "images/chests3.png"
-		},
-		{
-			"img": "images/chests2.png"
-		},
-		{
-			"img": "images/chests1.png"
-		},
-		{
-			"img": "images/chests0.png"
-		}
-	]
+		"allow_disabled": false,
+		"stages": [
+			{
+				"img": "images/chests4.png",
+				"codes": "d8chests"
+			},
+			{
+				"img": "images/chests3.png"
+			},
+			{
+				"img": "images/chests2.png"
+			},
+			{
+				"img": "images/chests1.png"
+			},
+			{
+				"img": "images/chests0.png"
+			}
+		]
   },
-  
-  
-  
-  /// SEASON SELECTORS
-  
   {
     "name": "North Horon label",
     "type": "static",
     "img": "images/north_label.png",
     "codes": "north_label"
   },
-  
   {
     "name": "North Horon season",
     "type": "progressive",
     "allow_disabled": false,
-	"loop": true,
+		"loop": true,
     "stages": [
-	  {
-		"img": "images/selector_neutral.png",
-		"codes": "season_northhoron",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_winter.png",
-		"codes": "north_winter",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_spring.png",
-		"codes": "north_spring",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_summer.png",
-		"codes": "north_summer",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_fall.png",
-		"codes": "north_fall",
-		"inherit_codes": false
-	  }
-	]
+			{
+				"img": "images/selector_neutral.png",
+				"codes": "season_northhoron",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_winter.png",
+				"codes": "north_winter",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_spring.png",
+				"codes": "north_spring",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_summer.png",
+				"codes": "north_summer",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_fall.png",
+				"codes": "north_fall",
+				"inherit_codes": false
+			}
+		]
   },
-  
   {
     "name": "Eastern Suburbs label",
     "type": "static",
     "img": "images/suburbs_label.png",
     "codes": "suburbs_label"
   },
-  
   {
     "name": "Eastern Suburbs season",
     "type": "progressive",
     "allow_disabled": false,
-	"loop": true,
+		"loop": true,
     "stages": [
-	  {
-		"img": "images/selector_neutral.png",
-		"codes": "season_eastsuburbs",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_winter.png",
-		"codes": "suburbs_winter",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_spring.png",
-		"codes": "suburbs_spring",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_summer.png",
-		"codes": "suburbs_summer",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_fall.png",
-		"codes": "suburbs_fall",
-		"inherit_codes": false
-	  }
-	]
+			{
+				"img": "images/selector_neutral.png",
+				"codes": "season_eastsuburbs",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_winter.png",
+				"codes": "suburbs_winter",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_spring.png",
+				"codes": "suburbs_spring",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_summer.png",
+				"codes": "suburbs_summer",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_fall.png",
+				"codes": "suburbs_fall",
+				"inherit_codes": false
+			}
+		]
   },
-  
   {
     "name": "Woods of Winter label",
     "type": "static",
     "img": "images/wow_label.png",
     "codes": "wow_label"
   },
-  
   {
     "name": "Woods of Winter season",
     "type": "progressive",
     "allow_disabled": false,
-	"loop": true,
+		"loop": true,
     "stages": [
-	  {
-		"img": "images/selector_neutral.png",
-		"codes": "season_woodsofwinter",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_winter.png",
-		"codes": "wow_winter",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_spring.png",
-		"codes": "wow_spring",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_summer.png",
-		"codes": "wow_summer",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_fall.png",
-		"codes": "wow_fall",
-		"inherit_codes": false
-	  }
-	]
+			{
+				"img": "images/selector_neutral.png",
+				"codes": "season_woodsofwinter",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_winter.png",
+				"codes": "wow_winter",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_spring.png",
+				"codes": "wow_spring",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_summer.png",
+				"codes": "wow_summer",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_fall.png",
+				"codes": "wow_fall",
+				"inherit_codes": false
+			}
+		]
   },
   
   {
@@ -994,207 +916,197 @@
     "name": "Holodrum Plain season",
     "type": "progressive",
     "allow_disabled": false,
-	"loop": true,
+		"loop": true,
     "stages": [
-	  {
-		"img": "images/selector_neutral.png",
-		"codes": "season_holodrumplain",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_winter.png",
-		"codes": "plain_winter",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_spring.png",
-		"codes": "plain_spring",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_summer.png",
-		"codes": "plain_summer",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_fall.png",
-		"codes": "plain_fall",
-		"inherit_codes": false
-	  }
-	]
+			{
+				"img": "images/selector_neutral.png",
+				"codes": "season_holodrumplain",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_winter.png",
+				"codes": "plain_winter",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_spring.png",
+				"codes": "plain_spring",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_summer.png",
+				"codes": "plain_summer",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_fall.png",
+				"codes": "plain_fall",
+				"inherit_codes": false
+			}
+		]
   },
-  
   {
     "name": "Spool Swamp label",
     "type": "static",
     "img": "images/swamp_label.png",
     "codes": "swamp_label"
   },
-  
   {
     "name": "Spool Swamp season",
     "type": "progressive",
     "allow_disabled": false,
-	"loop": true,
+		"loop": true,
     "stages": [
-	  {
-		"img": "images/selector_neutral.png",
-		"codes": "season_spoolswamp",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_winter.png",
-		"codes": "swamp_winter",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_spring.png",
-		"codes": "swamp_spring",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_summer.png",
-		"codes": "swamp_summer",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_fall.png",
-		"codes": "swamp_fall",
-		"inherit_codes": false
-	  }
-	]
+			{
+				"img": "images/selector_neutral.png",
+				"codes": "season_spoolswamp",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_winter.png",
+				"codes": "swamp_winter",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_spring.png",
+				"codes": "swamp_spring",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_summer.png",
+				"codes": "swamp_summer",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_fall.png",
+				"codes": "swamp_fall",
+				"inherit_codes": false
+			}
+		]
   },
-  
   {
     "name": "Sunken City label",
     "type": "static",
     "img": "images/sunken_label.png",
     "codes": "sunken_label"
   },
-  
   {
     "name": "Sunken City season",
     "type": "progressive",
     "allow_disabled": false,
-	"loop": true,
+		"loop": true,
     "stages": [
-	  {
-		"img": "images/selector_neutral.png",
-		"codes": "season_sunkencity",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_winter.png",
-		"codes": "sunken_winter",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_spring.png",
-		"codes": "sunken_spring",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_summer.png",
-		"codes": "sunken_summer",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_fall.png",
-		"codes": "sunken_fall",
-		"inherit_codes": false
-	  }
-	]
+			{
+				"img": "images/selector_neutral.png",
+				"codes": "season_sunkencity",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_winter.png",
+				"codes": "sunken_winter",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_spring.png",
+				"codes": "sunken_spring",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_summer.png",
+				"codes": "sunken_summer",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_fall.png",
+				"codes": "sunken_fall",
+				"inherit_codes": false
+			}
+		]
   },
-  
   {
     "name": "Western Coast label",
     "type": "static",
     "img": "images/coast_label.png",
     "codes": "coast_label"
   },
-  
   {
     "name": "Western Coast season",
     "type": "progressive",
     "allow_disabled": false,
-	"loop": true,
+		"loop": true,
     "stages": [
-	  {
-		"img": "images/selector_neutral.png",
-		"codes": "season_coast",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_winter.png",
-		"codes": "coast_winter",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_spring.png",
-		"codes": "coast_spring",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_summer.png",
-		"codes": "coast_summer",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_fall.png",
-		"codes": "coast_fall",
-		"inherit_codes": false
-	  }
-	]
+			{
+				"img": "images/selector_neutral.png",
+				"codes": "season_coast",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_winter.png",
+				"codes": "coast_winter",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_spring.png",
+				"codes": "coast_spring",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_summer.png",
+				"codes": "coast_summer",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_fall.png",
+				"codes": "coast_fall",
+				"inherit_codes": false
+			}
+		]
   },
-  
   {
     "name": "Temple Remains label",
     "type": "static",
     "img": "images/temple_label.png",
     "codes": "temple_label"
   },
-  
   {
     "name": "Temple Remains season",
     "type": "progressive",
     "allow_disabled": false,
-	"loop": true,
+		"loop": true,
     "stages": [
-	  {
-		"img": "images/selector_neutral.png",
-		"codes": "season_templeremains",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_winter.png",
-		"codes": "temple_winter",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_spring.png",
-		"codes": "temple_spring",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_summer.png",
-		"codes": "temple_summer",
-		"inherit_codes": false
-	  },
-	  {
-		"img": "images/selector_fall.png",
-		"codes": "temple_fall",
-		"inherit_codes": false
-	  }
-	]
+			{
+				"img": "images/selector_neutral.png",
+				"codes": "season_templeremains",
+				"inherit_codes": false
+			},
+				{
+				"img": "images/selector_winter.png",
+				"codes": "temple_winter",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_spring.png",
+				"codes": "temple_spring",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_summer.png",
+				"codes": "temple_summer",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/selector_fall.png",
+				"codes": "temple_fall",
+				"inherit_codes": false
+			}
+		]
   },
-  
   {
     "name": "Natzu label",
     "type": "static",
     "img": "images/natzu_label.png",
     "codes": "natzu_label"
   },
-  
   {
     "name": "Natzu animal",
     "type": "progressive",
@@ -1217,45 +1129,36 @@
       }
 	  ]
   },
-  
-  /// RINGS ///
   {
     "name": "Fist Ring",
     "type": "toggle",
     "img": "images/ring_fist.png",
     "codes": "ring_fist"
   },
-  
   {
     "name": "Expert's Ring",
     "type": "toggle",
     "img": "images/ring_expert.png",
     "codes": "ring_expert"
   },
-  
   {
     "name": "Energy Ring",
     "type": "toggle",
     "img": "images/ring_energy.png",
     "codes": "ring_energy"
   },
-  // Presently not in logic
   {
     "name": "Toss Ring",
     "type": "toggle",
     "img": "images/ring_toss.png",
     "codes": "ring_toss"
   },
-  
   {
     "name": "Swimmer's Ring",
     "type": "toggle",
     "img": "images/ring_swimmer.png",
     "codes": "ring_swimmer"
   },
-  
-  /// SEED TREES ///
-  
   {
     "name": "Woods of Winter tree",
     "type": "toggle",
