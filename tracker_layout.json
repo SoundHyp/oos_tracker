@@ -5,34 +5,30 @@
   "allow_resize": true,
   "layout_swap_left_right": false,
   "layouts": {
-    // Menu Items and Key Items/Essences Layout
     "shared_item_grid": {
       "type": "array",
       "orientation": "horizontal",
-      // Menu Items and Key Items/Essences Arrays
       "content": [
-        // Menu Items Array
         {
           "type": "array",
           "orientation": "vertical",
           "content": [
-            // Menu Items
             {
               "type": "itemgrid",
+              "name": "Menu Items",
               "item_size": 32,
               "item_margin": "10,0,5,10",
               "rows": [
-                ["sword1", "shield"],
-                ["bracelet", "feather"],
-                ["slingshot1", "shooter"],
-                ["hook1", "glove"],
+                ["sword1", "shield1"],
+                ["power1", "roc1"],
+                ["slingshot1", "seedshooter"],
+                ["hook1", "magnet"],
                 ["boomerang1", "shovel"],
-                ["flute_generic", "natzu_moosh"],
+                ["flute", "natzu_moosh"],
                 ["cane", "bombs"],
-                ["bestweapon"]
+                ["foolsore"]
               ]
             },
-            // Satchel/Seeds
             {
               "type": "array",
               "orientation": "horizontal",
@@ -47,6 +43,7 @@
 
                 {
                   "type": "itemgrid",
+                  "name": "Seeds",
                   "item_size": 24,
                   "margin": "4,-4,0,0",
                   "item_margin": "2, 0, 2, -8",
@@ -61,25 +58,24 @@
             }
           ]
         },
-        // Key Items/Essences
         {
           "type": "array",
           "orientation": "vertical",
-          // Items, Keys/Jewels, Essences, Dungeon Items
+          "name": "Items, Keys/Jewels/Seasons, Essences, Dungeon Items",
           "content": [
-            // Items 1st Row
             {
               "type": "itemgrid",
+              "name": "Items",
               "item_size": 32,
               "margin": "4,3,3,3",
               "item_margin": "6, 0, 0, 0",
               "rows": [
-                ["starore", "plaque", "flippers", "banana", "rustybell"]
+                ["starore", "masterplaque", "swim1", "banana", "bell1"]
               ]
             },
-            // Items 2nd Row
             {
               "type": "itemgrid",
+              "name": "Items",
               "item_size": 32,
               "margin": "4,0,3,3",
               "item_margin": "6, 0, 0, 0",
@@ -87,34 +83,31 @@
                 ["ribbon", "memberscard", "blueore", "redore", "hardore"]
               ]
             },
-            // Keys/Jewels/Seasons
             {
               "type": "array",
+              "name": "Keys/Jewels/Seasons",
               "orientation": "horizontal",
               "h_alignment": "center",
               "margin": "3,3,0,0",
               "content": [
-                // Gnarled Key
                 {
                   "type": "item",
-                  "item": "gnarledkey",
+                  "item": "d1key",
                   "item_size": 46
                 },
-                // Flood Key
                 {
                   "type": "item",
-                  "item": "floodkey",
+                  "item": "d3key",
                   "item_size": 46
                 },
-                // Dragon Key
                 {
                   "type": "item",
-                  "item": "dragonkey",
+                  "item": "d4key",
                   "item_size": 46
                 },
-                // Jewels
                 {
                   "type": "itemgrid",
+                  "name": "Jewels",
                   "item_size": 18,
                   "margin": "4,-2,2,0",
                   "item_margin": "2,2,0,0",
@@ -123,10 +116,9 @@
                     ["squarejewel", "xjewel"]
                   ]
                 },
-                // Seasons
                 {
-                  
                       "type": "itemgrid",
+                      "name": "Seasons",
                       "item_size": 15,
                       "margin": "0, -5, 0, 10",
                       "item_margin": "6, 11, 0, -5",
@@ -138,30 +130,28 @@
                 }
               ]
             },
-            // Rings
             {
               "type": "itemgrid",
+              "name": "Rings",
               "item_size": 32,
               "margin": "0, 5, 0, -5",
               "item_margin": "5, 0, 5, 0",
               "rows": [
-                // Toss Ring not in Logic. Remove comment if changes in the future.
-                ["ring_fist", "ring_expert", "ring_energy",/* "ring_toss",*/ "ring_swimmer"]
+                ["ring_fist", "ring_expert", "ring_energy","ring_swimmer"]
               ]
             },
-            // Essences and Keys
             {
               "type": "array",
+              "name": "Essences/Keys",
               "orientation": "vertical",
               "content": [
-                // Dungeons 1-4 Essences
                 {
                   "type": "array",
+                  "name": "D1-D4 Essences",
                   "orientation": "horizontal",
                   "h_alignment": "center",
                   "margin": "0,40,0,0",
                   "content": [
-                    // Dungeon 1
                     {
                       "type": "item",
                       "item": "d1",
@@ -169,7 +159,6 @@
                       "width": 32,
                       "height": 32
                     },
-                    // Dungeon 2
                     {
                       "type": "item",
                       "item": "d2",
@@ -177,7 +166,6 @@
                       "width": 32,
                       "height": 32
                     },
-                    // Dungeon 3
                     {
                       "type": "item",
                       "item": "d3",
@@ -185,7 +173,6 @@
                       "width": 32,
                       "height": 32
                     },
-                    // Dungeon 4
                     {
                       "type": "item",
                       "item": "d4",
@@ -195,20 +182,18 @@
                     }
                   ]
                 },
-                // Dungeons 1-4 Small Keys and Boss Key
                 {
                   "type": "array",
+                  "name": "D1-D4 Keys",
                   "orientation": "horizontal",
                   "h_alignment": "center",
                   "content": [
-                    // Dungeon 1 Small Key
                     {
                       "type": "item",
                       "item": "d1sk",
                       "width": 24,
                       "height": 24
                     },
-                    // Dungeon 1 Boss Key
                     {
                       "type": "item",
                       "item": "d1bk",
@@ -216,7 +201,6 @@
                       "width": 24,
                       "height": 24
                     },
-                    // Dungeon 2 Small Key
                     {
                       "type": "item",
                       "item": "d2sk",
@@ -224,7 +208,6 @@
                       "width": 24,
                       "height": 24
                     },
-                    // Dungeon 2 Boss Key
                     {
                       "type": "item",
                       "item": "d2bk",
@@ -232,7 +215,6 @@
                       "width": 24,
                       "height": 24
                     },
-                    // Dungeon 3 Small Key
                     {
                       "type": "item",
                       "item": "d3sk",
@@ -240,7 +222,6 @@
                       "width": 24,
                       "height": 24
                     },
-                    // Dungeon 3 Boss Key
                     {
                       "type": "item",
                       "item": "d3bk",
@@ -248,7 +229,6 @@
                       "width": 24,
                       "height": 24
                     },
-                    // Dungeon 4 Small Key
                     {
                       "type": "item",
                       "item": "d4sk",
@@ -256,7 +236,6 @@
                       "width": 24,
                       "height": 24
                     },
-                    // Dungeon 4 Boss Key
                     {
                       "type": "item",
                       "item": "d4bk",
@@ -265,14 +244,13 @@
                     }
                   ]
                 },
-                // Dungeons 5-8 Essences
                 {
                   "type": "array",
+                  "name": "D5-D8 Essences",
                   "orientation": "horizontal",
                   "h_alignment": "center",
                   "margin": "0,20,0,0",
                   "content": [
-                    // Dungeon 5
                     {
                       "type": "item",
                       "item": "d5",
@@ -280,7 +258,6 @@
                       "width": 32,
                       "height": 32
                     },
-                    // Dungeon 6
                     {
                       "type": "item",
                       "item": "d6",
@@ -288,7 +265,6 @@
                       "width": 32,
                       "height": 32
                     },
-                    // Dungeon 7
                     {
                       "type": "item",
                       "item": "d7",
@@ -296,7 +272,6 @@
                       "width": 32,
                       "height": 32
                     },
-                    // Dungeon 8
                     {
                       "type": "item",
                       "item": "d8",
@@ -306,20 +281,18 @@
                     }
                   ]
                 },
-                // Dungeons 5-8 Small Keys & Boss Key
                 {
                   "type": "array",
+                  "name": "D5-D8 Keys",
                   "orientation": "horizontal",
                   "h_alignment": "center",
                   "content": [
-                    // Dungeon 5 Small Key
                     {
                       "type": "item",
                       "item": "d5sk",
                       "width": 24,
                       "height": 24
                     },
-                    // Dungeon 5 Boss Key
                     {
                       "type": "item",
                       "item": "d5bk",
@@ -327,7 +300,6 @@
                       "width": 24,
                       "height": 24
                     },
-                    // Dungeon 6 Small Key
                     {
                       "type": "item",
                       "item": "d6sk",
@@ -335,7 +307,6 @@
                       "width": 24,
                       "height": 24
                     },
-                    // Dungeon 6 Boss Key
                     {
                       "type": "item",
                       "item": "d6bk",
@@ -343,7 +314,6 @@
                       "width": 24,
                       "height": 24
                     },
-                    // Dungeon 7 Small Key
                     {
                       "type": "item",
                       "item": "d7sk",
@@ -351,7 +321,6 @@
                       "width": 24,
                       "height": 24
                     },
-                    // Dungeon 7 Boss Key
                     {
                       "type": "item",
                       "item": "d7bk",
@@ -359,7 +328,6 @@
                       "width": 24,
                       "height": 24
                     },
-                    // Dungeon 8 Small Key
                     {
                       "type": "item",
                       "item": "d8sk",
@@ -367,7 +335,6 @@
                       "width": 24,
                       "height": 24
                     },
-                    // Dungeon 8 Boss Key
                     {
                       "type": "item",
                       "item": "d8bk",
@@ -382,16 +349,16 @@
         }
       ] 
     },
-    // Pinned Item Grid
     "tracker_capture_item": {
         "type": "container",
+        "name": "Pinned Item Grid",
         "content": {
           "type": "array",
           "orientation": "horizontal",
-			    "content": [ 
-            // Seeds
-				    {
+          "content": [
+            {
               "type": "itemgrid",
+              "name": "Seeds",
               "h_alignment": "center",
               "item_margin": "1,2",
               "rows": [
@@ -402,37 +369,36 @@
                 ["mysteryseeds"]
               ]
             },
-            // Equipment/Key Items
             {
               "type": "itemgrid",
+              "name": "Equipment/Key Items",
               "h_alignment": "center",
               "item_margin": "1,2,5,10",
               "margin": "10,6,0,0",
               "rows": [
                 ["sword1", "shield", "feather", "boomerang", "slingshot1", "season", "satchel"],
                 ["bracelet", "magnet", "shovel", "flute_generic", "foolsore", "hook1", "cane"],
-                ["flippers","starore", "blueore", "redore", "hardore", "plaque", "memberscard"],
-                ["banana","ribbon", "gnarledkey", "floodkey", "dragonkey", "rustybell", "jewels"]
+                ["swim1","starore", "blueore", "redore", "hardore", "masterplaque", "memberscard"],
+                ["banana","ribbon", "gnarledkey", "d3key", "dragonkey", "bell1", "jewels"]
               ]
             }
           ]
         }
     },
-    // Tracker Layout
     "tracker_default": {
       "type": "container",
+      "name": "Tracker Layout",
       "background": "#595959",
       "content": {
         "type": "dock",
         "dropshadow": true,
         "content": [
-          // Left-side of Tracker
           {
             "type": "dock",
+            "name": "Left-side of Tracker",
             "dock": "left",
             "margin": "0,0,3,0",
             "content": [
-              // Key Items/Essences
               {
                 "type": "group",
                 "header": "Key Items/Essences",
@@ -443,7 +409,6 @@
                   "key": "shared_item_grid"
                 }
               },
-              // Seasons & Natzu
               {
                 "type": "group",
                 "header": "Seasons",
@@ -458,11 +423,10 @@
                     ["north_label", "north_winter", "swamp_label", "swamp_fall"],
                     ["suburbs_label", "suburbs_fall", "sunken_label", "sunken_summer"],
                     ["wow_label", "wow_summer", "coast_label", "season_coast"],
-                    ["plain_label", "plain_spring", "temple_label", "temple_winter"]		  
+                    ["plain_label", "plain_spring", "temple_label", "temple_winter"]      
                   ]
                 }
               },
-              // Portals
               {
                 "type": "group",
                 "header": "Portals",
@@ -481,30 +445,30 @@
               }
             ]
           },
-          // Right-side of Tracker
           {
             "type": "dock",
+            "name": "Right-side of Tracker",
             "v_alignment": "stretch",
             "h_alignment": "stretch",
             "margin": "0,0,0,0",
             "content": [
-              // Maps
               {
                 "type": "dock",
                 "dock": "top",
-                "max_height": 600,
+                "name": "Maps",
+                "max_height": 700,
                 "h_alignment": "stretch",
                 "v_alignment": "stretch",
                 "content": [
                   {
                     "type": "map",
+                    "orientation": "vertical",
                     "maps": [
                       "holodrum","subrosia"
                     ]
                   }
                 ]
               },
-              // Pinned Locations
               {
                 "type": "group",
                 "header": "Pinned Locations",
