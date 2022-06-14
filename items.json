@@ -1244,381 +1244,374 @@
       }
     ]
   },
-  
   {
     "name": "Snake's Remains Entrance",
     "type": "progressive",
-	"allow_disabled": false,
+		"allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/DX_unknown.png",
         "codes": "d2_ent",
-		"inherit_codes": false
+				"inherit_codes": false
       },
       {
         "img": "images/D1_entrance.png",
         "codes": "d2_d1",
-		"inherit_codes": false
+				"inherit_codes": false
       },
       {
         "img": "images/D2_entrance.png",
         "codes": "d2_d2",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D3_entrance.png",
         "codes": "d2_d3",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D4_entrance.png",
         "codes": "d2_d4",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D5_entrance.png",
         "codes": "d2_d5",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D6_entrance.png",
         "codes": "d2_d6",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D7_entrance.png",
         "codes": "d2_d7",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D8_entrance.png",
         "codes": "d2_d8",
-		"inherit_codes": false
+				"inherit_codes": false
       }
     ]
   },
-  
   {
     "name": "Poison Moth's Lair Entrance",
     "type": "progressive",
-	"allow_disabled": false,
+		"allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/DX_unknown.png",
         "codes": "d3_ent",
-		"inherit_codes": false
+				"inherit_codes": false
       },
       {
         "img": "images/D1_entrance.png",
         "codes": "d3_d1",
-		"inherit_codes": false
+				"inherit_codes": false
       },
       {
         "img": "images/D2_entrance.png",
         "codes": "d3_d2",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D3_entrance.png",
         "codes": "d3_d3",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D4_entrance.png",
         "codes": "d3_d4",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D5_entrance.png",
         "codes": "d3_d5",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D6_entrance.png",
         "codes": "d3_d6",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+			{
         "img": "images/D7_entrance.png",
         "codes": "d3_d7",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D8_entrance.png",
         "codes": "d3_d8",
-		"inherit_codes": false
+				"inherit_codes": false
       }
     ]
   },
-  
   {
     "name": "Dancing Dragon Dungeon Entrance",
     "type": "progressive",
-	"allow_disabled": false,
+		"allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/DX_unknown.png",
         "codes": "d4_ent",
-		"inherit_codes": false
+				"inherit_codes": false
       },
       {
         "img": "images/D1_entrance.png",
         "codes": "d4_d1",
-		"inherit_codes": false
+				"inherit_codes": false
       },
       {
         "img": "images/D2_entrance.png",
         "codes": "d4_d2",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D3_entrance.png",
         "codes": "d4_d3",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D4_entrance.png",
         "codes": "d4_d4",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D5_entrance.png",
         "codes": "d4_d5",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D6_entrance.png",
         "codes": "d4_d6",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+			{
         "img": "images/D7_entrance.png",
         "codes": "d4_d7",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D8_entrance.png",
         "codes": "d4_d8",
-		"inherit_codes": false
+				"inherit_codes": false
       }
     ]
   },
-  
   {
     "name": "Unicorn's Cave Entrance",
     "type": "progressive",
-	"allow_disabled": false,
+		"allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/DX_unknown.png",
         "codes": "d5_ent",
-		"inherit_codes": false
+				"inherit_codes": false
       },
       {
         "img": "images/D1_entrance.png",
         "codes": "d5_d1",
-		"inherit_codes": false
+				"inherit_codes": false
       },
       {
         "img": "images/D2_entrance.png",
         "codes": "d5_d2",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D3_entrance.png",
         "codes": "d5_d3",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D4_entrance.png",
         "codes": "d5_d4",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D5_entrance.png",
         "codes": "d5_d5",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D6_entrance.png",
         "codes": "d5_d6",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D7_entrance.png",
         "codes": "d5_d7",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D8_entrance.png",
         "codes": "d5_d8",
-		"inherit_codes": false
+				"inherit_codes": false
       }
     ]
   },
-  
   {
     "name": "Ancient Ruins Entrance",
     "type": "progressive",
-	"allow_disabled": false,
+		"allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/DX_unknown.png",
         "codes": "d6_ent",
-		"inherit_codes": false
+				"inherit_codes": false
       },
       {
         "img": "images/D1_entrance.png",
         "codes": "d6_d1",
-		"inherit_codes": false
+				"inherit_codes": false
       },
       {
         "img": "images/D2_entrance.png",
         "codes": "d6_d2",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D3_entrance.png",
         "codes": "d6_d3",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D4_entrance.png",
         "codes": "d6_d4",
-		"inherit_codes": false
+			"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D5_entrance.png",
         "codes": "d6_d5",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D6_entrance.png",
         "codes": "d6_d6",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D7_entrance.png",
         "codes": "d6_d7",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D8_entrance.png",
         "codes": "d6_d8",
-		"inherit_codes": false
+				"inherit_codes": false
       }
     ]
   },
-  
   {
     "name": "Explorer's Crypt Entrance",
     "type": "progressive",
-	"allow_disabled": false,
+		"allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/DX_unknown.png",
         "codes": "d7_ent",
-		"inherit_codes": false
+				"inherit_codes": false
       },
       {
         "img": "images/D1_entrance.png",
         "codes": "d7_d1",
-		"inherit_codes": false
+				"inherit_codes": false
       },
       {
         "img": "images/D2_entrance.png",
         "codes": "d7_d2",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D3_entrance.png",
         "codes": "d7_d3",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D4_entrance.png",
         "codes": "d7_d4",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D5_entrance.png",
         "codes": "d7_d5",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D6_entrance.png",
         "codes": "d7_d6",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D7_entrance.png",
         "codes": "d7_d7",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D8_entrance.png",
         "codes": "d7_d8",
-		"inherit_codes": false
+				"inherit_codes": false
       }
     ]
   },
-  
   {
     "name": "Sword and Shield Maze Entrance",
     "type": "progressive",
-	"allow_disabled": false,
+		"allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/DX_unknown.png",
         "codes": "d8_ent",
-		"inherit_codes": false
+				"inherit_codes": false
       },
       {
         "img": "images/D1_entrance.png",
         "codes": "d8_d1",
-		"inherit_codes": false
+				"inherit_codes": false
       },
       {
         "img": "images/D2_entrance.png",
         "codes": "d8_d2",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D3_entrance.png",
         "codes": "d8_d3",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D4_entrance.png",
         "codes": "d8_d4",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	 		{
         "img": "images/D5_entrance.png",
         "codes": "d8_d5",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D6_entrance.png",
         "codes": "d8_d6",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D7_entrance.png",
         "codes": "d8_d7",
-		"inherit_codes": false
+				"inherit_codes": false
       },
-	  {
+	  	{
         "img": "images/D8_entrance.png",
         "codes": "d8_d8",
-		"inherit_codes": false
+				"inherit_codes": false
       }
     ]
   },
@@ -1630,7 +1623,7 @@
   give ? entrance pair the Eyeglass Lake requirement logic when a ? entrance pair is found
   */
   {
-    "name": "Portal 1",
+    "name": "Portal 1 to Dance Hall Portal",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -1642,43 +1635,43 @@
       },
       {
         "img": "images/suburbs_label.png",
-        "codes": "portal_rosa",
+        "codes": "rosa_dance",
 		    "inherit_codes": false
       },
       {
         "img": "images/north_label.png",
-        "codes": "portal_eyeglass",
+        "codes": "eyeglass_dance",
 		    "inherit_codes": false
       },
       {
         "img": "images/swamp_label.png",
-        "codes": "portal_swamp",
+        "codes": "swamp_dance",
 		    "inherit_codes": false
       },
       {
         "img": "images/sunken_label.png",
-        "codes": "portal_cucco",
+        "codes": "cucco_dance",
 		    "inherit_codes": false
       },
       {
         "img": "images/gashaseed.png",
-        "codes": "portal_town",
+        "codes": "town_dance",
 		    "inherit_codes": false
       },
       {
         "img": "images/temple_label.png",
-        "codes": "portal_temple1",
+        "codes": "temple1_dance",
 		    "inherit_codes": false
       },
       {
         "img": "images/temple_label.png",
-        "codes": "portal_temple2",
+        "codes": "temple2_dance",
 		    "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Portal 2",
+    "name": "Portal 2 to Market",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -1690,43 +1683,43 @@
       },
       {
         "img": "images/suburbs_label.png",
-        "codes": "portal_rosa",
+        "codes": "rosa_market",
 		    "inherit_codes": false
       },
       {
         "img": "images/north_label.png",
-        "codes": "portal_eyeglass",
+        "codes": "eyeglass_market",
 		    "inherit_codes": false
       },
       {
         "img": "images/swamp_label.png",
-        "codes": "portal_swamp",
+        "codes": "swamp_market",
 		    "inherit_codes": false
       },
       {
         "img": "images/sunken_label.png",
-        "codes": "portal_cucco",
+        "codes": "cucco_market",
 		    "inherit_codes": false
       },
       {
         "img": "images/gashaseed.png",
-        "codes": "portal_town",
+        "codes": "town_market",
 		    "inherit_codes": false
       },
       {
         "img": "images/temple_label.png",
-        "codes": "portal_temple1",
+        "codes": "temple1_market",
 		    "inherit_codes": false
       },
       {
         "img": "images/temple_label.png",
-        "codes": "portal_temple2",
+        "codes": "temple2_market",
 		    "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Portal",
+    "name": "Portal 3 to Hide & Seek",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -1738,43 +1731,43 @@
       },
       {
         "img": "images/suburbs_label.png",
-        "codes": "portal_rosa",
+        "codes": "rosa_hns",
 		    "inherit_codes": false
       },
       {
         "img": "images/north_label.png",
-        "codes": "portal_eyeglass",
+        "codes": "eyeglass_hns",
 		    "inherit_codes": false
       },
       {
         "img": "images/swamp_label.png",
-        "codes": "portal_swamp",
+        "codes": "swamp_hns",
 		    "inherit_codes": false
       },
       {
         "img": "images/sunken_label.png",
-        "codes": "portal_cucco",
+        "codes": "cucco_hns",
 		    "inherit_codes": false
       },
       {
         "img": "images/gashaseed.png",
-        "codes": "portal_town",
+        "codes": "town_hns",
 		    "inherit_codes": false
       },
       {
         "img": "images/temple_label.png",
-        "codes": "portal_temple1",
+        "codes": "temple1_hns",
 		    "inherit_codes": false
       },
       {
         "img": "images/temple_label.png",
-        "codes": "portal_temple2",
+        "codes": "temple2_hns",
 		    "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Portal",
+    "name": "Portal 4 to Furnace",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -1786,43 +1779,43 @@
       },
       {
         "img": "images/suburbs_label.png",
-        "codes": "portal_rosa",
+        "codes": "rosa_furnace",
 		    "inherit_codes": false
       },
       {
         "img": "images/north_label.png",
-        "codes": "portal_eyeglass",
+        "codes": "eyeglass_furnace",
 		    "inherit_codes": false
       },
       {
         "img": "images/swamp_label.png",
-        "codes": "portal_swamp",
+        "codes": "swamp_furnace",
 		    "inherit_codes": false
       },
       {
         "img": "images/sunken_label.png",
-        "codes": "portal_cucco",
+        "codes": "cucco_furnace",
 		    "inherit_codes": false
       },
       {
         "img": "images/gashaseed.png",
-        "codes": "portal_town",
+        "codes": "town_furnace",
 		    "inherit_codes": false
       },
       {
         "img": "images/temple_label.png",
-        "codes": "portal_temple1",
+        "codes": "temple1_furnace",
 		    "inherit_codes": false
       },
       {
         "img": "images/temple_label.png",
-        "codes": "portal_temple2",
+        "codes": "temple2_furnace",
 		    "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Portal",
+    "name": "Portal 5 to Pirate",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -1834,43 +1827,43 @@
       },
       {
         "img": "images/suburbs_label.png",
-        "codes": "portal_rosa",
+        "codes": "rosa_pirate",
 		    "inherit_codes": false
       },
       {
         "img": "images/north_label.png",
-        "codes": "portal_eyeglass",
+        "codes": "eyeglass_pirate",
 		    "inherit_codes": false
       },
       {
         "img": "images/swamp_label.png",
-        "codes": "portal_swamp",
+        "codes": "swamp_pirate",
 		    "inherit_codes": false
       },
       {
         "img": "images/sunken_label.png",
-        "codes": "portal_cucco",
+        "codes": "cucco_pirate",
 		    "inherit_codes": false
       },
       {
         "img": "images/gashaseed.png",
-        "codes": "portal_town",
+        "codes": "town_pirate",
 		    "inherit_codes": false
       },
       {
         "img": "images/temple_label.png",
-        "codes": "portal_temple1",
+        "codes": "temple1_pirate",
 		    "inherit_codes": false
       },
       {
         "img": "images/temple_label.png",
-        "codes": "portal_temple2",
+        "codes": "temple2_pirate",
 		    "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Portal",
+    "name": "Portal 6 to Volcano",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -1882,43 +1875,43 @@
       },
       {
         "img": "images/suburbs_label.png",
-        "codes": "portal_rosa",
+        "codes": "rosa_volcano",
 		    "inherit_codes": false
       },
       {
         "img": "images/north_label.png",
-        "codes": "portal_eyeglass",
+        "codes": "eyeglass_volcano",
 		    "inherit_codes": false
       },
       {
         "img": "images/swamp_label.png",
-        "codes": "portal_swamp",
+        "codes": "swamp_volcano",
 		    "inherit_codes": false
       },
       {
         "img": "images/sunken_label.png",
-        "codes": "portal_cucco",
+        "codes": "cucco_volcano",
 		    "inherit_codes": false
       },
       {
         "img": "images/gashaseed.png",
-        "codes": "portal_town",
+        "codes": "town_volcano",
 		    "inherit_codes": false
       },
       {
         "img": "images/temple_label.png",
-        "codes": "portal_temple1",
+        "codes": "temple1_volcano",
 		    "inherit_codes": false
       },
       {
         "img": "images/temple_label.png",
-        "codes": "portal_temple2",
+        "codes": "temple2_volcano",
 		    "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Portal",
+    "name": "Portal 7 to Sword & Shield",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -1930,37 +1923,37 @@
       },
       {
         "img": "images/suburbs_label.png",
-        "codes": "portal_rosa",
+        "codes": "rosa_sns",
 		    "inherit_codes": false
       },
       {
         "img": "images/north_label.png",
-        "codes": "portal_eyeglass",
+        "codes": "eyeglass_sns",
 		    "inherit_codes": false
       },
       {
         "img": "images/swamp_label.png",
-        "codes": "portal_swamp",
+        "codes": "swamp_sns",
 		    "inherit_codes": false
       },
       {
         "img": "images/sunken_label.png",
-        "codes": "portal_cucco",
+        "codes": "cucco_sns",
 		    "inherit_codes": false
       },
       {
         "img": "images/gashaseed.png",
-        "codes": "portal_town",
+        "codes": "town_sns",
 		    "inherit_codes": false
       },
       {
         "img": "images/temple_label.png",
-        "codes": "portal_temple1",
+        "codes": "temple1_sns",
 		    "inherit_codes": false
       },
       {
         "img": "images/temple_label.png",
-        "codes": "portal_temple2",
+        "codes": "temple2_sns",
 		    "inherit_codes": false
       }
     ]
