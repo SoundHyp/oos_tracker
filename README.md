@@ -12,6 +12,8 @@ To-Do:
 - Logic for cross-items
 - Different UI options
 - Is hard\locations.json used for anything?
+- Add '* _shuffle' function to area logic: breakdown of rosa_furnace and rosa_market for example
+- Add '*_shuffle' to portal access logic
 
 Logic:
 - Mermaid Suit - Can go up waterfals
