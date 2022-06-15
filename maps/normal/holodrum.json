@@ -5,7 +5,6 @@
     "chest_opened_img": "images/chestopen.png",
     "color": "#00ff08",
     "children": [
-      // Horon Village
       {
         "name": "Horon Village",
         "children": [
@@ -114,7 +113,6 @@
           }
         ]
       },
-      // Western Coast
       {
         "name": "Western Coast",
         "children": [
@@ -265,7 +263,6 @@
           }
         ]
       },
-      // North Horon
       {
         "name": "North Horon",
         "children": [
@@ -343,7 +340,6 @@
           }
         ]
       },
-      // Eastern Suburbs
       {
         "name": "Eastern Suburbs",
         "access_rules": [
@@ -421,7 +417,6 @@
           }
         ]
       },
-      // Woods of Winter
       {
         "name": "Woods of Winter",
         "access_rules": [
@@ -527,7 +522,6 @@
           }
         ]
       },
-      // Holodrum Plain
       {
         "name": "Holodrum Plain",
         "access_rules": [
@@ -638,7 +632,6 @@
           }
         ]
       },
-      // Spool Swamp
       {
         "name": "Spool Swamp",
         "children": [
@@ -715,7 +708,6 @@
           }
         ]
       },
-      // Natzu
       {
         "name": "Natzu",
         "children": [
@@ -764,7 +756,6 @@
           }
         ]
       },
-      // Sunken City
       {
         "name": "Sunken City Area",
         "access_rules": [
@@ -867,31 +858,20 @@
           }
         ]
       },
-      // Mt. Cucco
       {
         "name": "Mount Cucco Area",
         "access_rules": [
-          // Rosa portal, including sequence breaks
           "$village_to_suburbs, $destroy_bush, $temple_to_hns, $max_jump:1",
           "$scent_tree, $cross_natzu, $natzu_to_suburbs, $suburbs_to_fountain, $temple_to_hns, $max_jump:1",
           "$mount_cucco, $cucco_to_sunken, $natzu_to_suburbs, $suburbs_to_fountain, $destroy_bush, $temple_to_hns, $max_jump:1",
-            
-          // Swamp portal
           "$south_swamp, swim1, power1, $temple_to_hns, $max_jump:1",
           "$south_swamp, $dimitri, power1, $temple_to_hns, $max_jump:1",
-          
-          // Mountain portal
           "$sunken_city, summer, swim1",
           "$sunken_city, sunken_summer, swim1",
           "$portal_mountain, $max_jump:1",
           "$portal_village, $max_jump:1",
-          
-          // Lake portal
           "$portal_lake, $furnace_to_beach, $temple_to_beach, $temple_to_hns, $max_jump:1",
-          
-          // Remains portal
           "$portal_remains, $remains_to_temple, $temple_to_hns, $max_jump:1",
-          
           "$mount_cucco"
         ],
         "children": [
@@ -901,7 +881,6 @@
               {
                 "name": "Banana",
                 "access_rules": [
-                  
                   "{spring, power1}",
                   "{sunken_spring, power1}",
                   "spring, power1, $max_jump:1, sword1",
@@ -918,7 +897,6 @@
                   "sunken_spring, power1, $max_jump:1, foolsore, banana",
                   "sunken_spring, power1, $max_jump:1, foolsore, [banana], satchel, galeseeds",
                   "sunken_spring, power1, $max_jump:1, foolsore, [banana], treewarp"
-                  
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -941,7 +919,6 @@
                   "spring, power1, $destroy_flower",
                   "[spring], power1, satchel, galeseeds",
                   "[spring], power1, treewarp",
-                  
                   "sunken_spring, power1, $destroy_flower",
                   "[sunken_spring], power1, satchel, galeseeds",
                   "[sunken_spring], power1, treewarp"
@@ -997,7 +974,6 @@
           }
         ]
       },
-      // Goron Mountain
       {
         "name": "Goron Mountain",
         "children": [
@@ -1045,7 +1021,6 @@
           }
         ]
       },
-      // Tarm Ruins
       {
         "name": "Tarm Ruins",
         "access_rules": [
@@ -1119,15 +1094,12 @@
           }
         ]
       },
-      // Samasa Desert
       {
         "name": "Samasa Desert",
         "access_rules": [
-          
           "$suburbs, $temple_to_hns",
           "$suburbs, $portal_mountain",
           "$suburbs, $portal_village",
-          
           "$scent_tree, $cross_natzu, $natzu_to_suburbs, $temple_to_hns",
           "$scent_tree, $cross_natzu, $natzu_to_suburbs, $portal_mountain",
           "$scent_tree, $cross_natzu, $natzu_to_suburbs, $portal_village",
@@ -1140,7 +1112,6 @@
           "$mount_cucco, swim1, $cucco_to_sunken, $natzu_to_suburbs, $temple_to_hns",
           "$mount_cucco, swim1, $cucco_to_sunken, $natzu_to_suburbs, $portal_mountain",
           "$mount_cucco, swim1, $cucco_to_sunken, $natzu_to_suburbs, $portal_village",
-          
           "$portal_swamp, $temple_to_beach, $destroy_bush, $temple_to_hns",
           "$portal_swamp, $temple_to_beach, $destroy_bush, $portal_mountain",
           "$portal_swamp, $temple_to_beach, $destroy_bush, $portal_village",

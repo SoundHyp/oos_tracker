@@ -201,7 +201,7 @@
                 "name": "D7 boss \nkey",
                 "hosted_item": "d7bk",
                 "item_count": 0
-              },
+              }
             ],
             "map_locations": [
               {
@@ -224,7 +224,7 @@
                 ],
                 "hosted_item": "emberseeds",
                 "item_count": 0
-              },
+              }
             ],
             "map_locations": [
               {
@@ -233,7 +233,7 @@
                 "y": 563
               }
             ]
-          },
+          }
         ]
       },  
       {
@@ -362,7 +362,7 @@
                 "name": "D1 boss \nkey",
                 "hosted_item": "d1bk",
                 "item_count": 0
-              },  
+              }
             ],
             "map_locations": [
               {
@@ -420,7 +420,7 @@
                 "name": "West gap \nchest",
                 "access_rules": [
                   "$max_jump:3",
-                  "magnet",
+                  "magnet"
                 ],
                 "item_count": 1
               },
@@ -511,7 +511,7 @@
                 "name": "D5 boss \nkey",
                 "hosted_item": "d5bk",
                 "item_count": 0
-              },
+              }
             ],
             "map_locations": [
               {
@@ -537,7 +537,7 @@
                 ],
                 "hosted_item": "emberseeds",
                 "item_count": 0
-              },
+              }
             ],
             "map_locations": [
               {
@@ -546,7 +546,7 @@
                 "y": 350
               }
             ]
-          },
+          }
         ]
       },
       {
@@ -588,7 +588,7 @@
                 "$d2_mushrooms"
                 ],
                 "item_count": 1
-              },
+              }
             ],
             "map_locations": [
               {
@@ -725,7 +725,7 @@
                 "name": "D2 boss \nkey",
                 "hosted_item": "d2bk",
                 "item_count": 0
-              },
+              }
             ],
             "map_locations": [
               {
@@ -750,7 +750,7 @@
                 ],
                 "hosted_item": "bombs",
                 "item_count": 0
-              },
+              }
             ],
             "map_locations": [
               {
@@ -759,7 +759,7 @@
                 "y": 350
               }
             ]
-          },
+          }
         ]
       },
       {
@@ -785,7 +785,7 @@
                 "access_rules": [
                   "$kill_beetle, $kill_moldorm",
                   "power1, shovel, $kill_moldorm",
-                  "power1, shield1, $kill_moldorm",
+                  "power1, shield1, $kill_moldorm"
                 ],
                 "item_count": 1
               },
@@ -794,7 +794,7 @@
                 "access_rules": [
                   "$kill_beetle, bombs",
                   "power1, shovel, bombs",
-                  "power1, shield1, bombs",
+                  "power1, shield1, bombs"
                 ],
                 "item_count": 1
               },
@@ -893,7 +893,7 @@
                 "name": "D3 boss \nkey",
                 "hosted_item": "d3bk",
                 "item_count": 0
-              },
+              }
             ],
             "map_locations": [
               {
@@ -902,7 +902,7 @@
                 "y": 279
               }
             ]
-          },
+          }
         ]
       },
       {
@@ -1060,7 +1060,7 @@
                 "name": "D4 boss \nkey",
                 "hosted_item": "d4bk",
                 "item_count": 0
-              },
+              }
             ],
             "map_locations": [
               {
@@ -1069,7 +1069,7 @@
                 "y": 68
               }
             ]
-          },
+          }
         ]
       },
       {
@@ -1192,7 +1192,7 @@
                 "name": "D6 boss \nkey",
                 "hosted_item": "d6bk",
                 "item_count": 0
-              },
+              }
             ],
             "map_locations": [
               {
@@ -1201,9 +1201,9 @@
                 "y": 25
               }
             ]
-          },
+          }
         ]
-      },
+      }
     ]
   },
   {
@@ -1366,7 +1366,7 @@
             "name": "D8 boss \nkey",
             "hosted_item": "d8bk",
             "item_count": 0
-          },
+          }
         ],
         "map_locations": [
           {
@@ -1409,7 +1409,7 @@
             "y": 40
           }
         ]
-      },
+      }
     ]
   }
 ]

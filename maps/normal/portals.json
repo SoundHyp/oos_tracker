@@ -38,7 +38,10 @@
                         "sections": [
                             {
                                 "name": "Portal",
-                                "item_count": 1
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$portal_hns"
+                                ]
                             }
                         ],
                         "map_locations": [
