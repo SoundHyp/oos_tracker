@@ -11,7 +11,7 @@ Features Added:
 To-Do:
 - Logic for cross-items
 - Different UI options
-- ?
+- Is hard\locations.json used for anything?
 
 Logic:
 - Mermaid Suit - Can go up waterfals
