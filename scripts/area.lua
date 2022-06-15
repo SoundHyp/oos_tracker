@@ -12,7 +12,7 @@ end
 
 function enter_d1()
 	return has("d1key") and north_stump()
-	--(south_swamp() and (has("flippers") or dimitri())) 
+	--(south_swamp() and (has("swim1") or dimitri())) 
 end
 
 
@@ -25,7 +25,7 @@ function d5_stump_d1()
 	return (north_stump() and
 	(max_jump() >= 1 or ricky() or moosh()) and
 	(has("winter") or has("north_winter") or
-	has("flippers") or (dimitri()) and has("bracelet")))
+	has("swim1") or (dimitri()) and has("power1")))
 end
 
 function d5_stump()
@@ -36,18 +36,18 @@ function enter_d5()
 	return d5_stump() and
 	(destroy_mushroom() or dimitri()) and
 	(has("fall") or 
-	(has("north_fall") and (has("flippers") or (dimitri() and has("bracelet")) or (has("winter") and dimitri())) or 
+	(has("north_fall") and (has("swim1") or (dimitri() and has("power1")) or (has("winter") and dimitri())) or 
 	(has("winter") and has("fall") and (max_jump() >= 1 or ricky() or moosh()))))
 end
 
 -- WESTERN COAST
 
 function pirate_ship()
-	return has("polishedbell")
+	return has("bell2")
 	and pirate_house()
 end
 function pirate_ship_hard()
-	return has("polishedbell")
+	return has("bell2")
 	and pirate_house_hard()
 end
 
@@ -105,14 +105,14 @@ function fountain_to_D2()
 	return max_jump() >= 1 or
 	has("shovel") or any_flute() or
 	has("spring") or has("summer") or has("fall") or
-	(has("flippers") and (has("suburbs_spring") or has("suburbs_summer") or has("suburbs_fall")))
+	(has("swim1") and (has("suburbs_spring") or has("suburbs_summer") or has("suburbs_fall")))
 end
 
 function d2_A()
 	return destroy_bush_flute()
 end
 function d2_B()
-	return has("bracelet") and
+	return has("power1") and
 	(has("wow_summer") or ricky())
 end
 
@@ -133,7 +133,6 @@ function suburbs()
 	suburbs_lake() or
 	suburbs_temple() or
 	suburbs_hns() or
-	--suburbs_sunken() or NOT BLOCKED BY SPRING ANYMORE
 	suburbs_natzu()
 end
 function suburbs_hard()
@@ -142,15 +141,12 @@ function suburbs_hard()
 	suburbs_lake() or
 	suburbs_temple_hard() or
 	suburbs_hns_hard() or
-	--suburbs_sunken() or NOT BLOCKED BY SPRING ANYMORE
 	suburbs_natzu()
 end
 
-
-
 function suburbs_swamp()
 --portal_swamp() doesn't work? TODO
-	return has("bracelet") and --bracelet is needed no matter what
+	return has("power1") and --power1 is needed no matter what
 	--getting to the swamp portal 
 	(((ricky() or moosh() or --having either of these animals leads to the pegasus tree
 	((max_jump() >= 1 or has("plain_winter"))) and  --get to the plain stump
@@ -159,7 +155,7 @@ function suburbs_swamp()
 	((use_seeds() and has("pegasusseeds")) or max_jump() >= 3) and --cross to floodgate keyhole
 	has("d3key") and --drain the swamp
 	(any_flute() or max_jump() >= 2)) or --get to the portal
-	has("flippers") or dimitri()) and --no matter what, swimming makes the portal accessible
+	has("swim1") or dimitri()) and --no matter what, swimming makes the portal accessible
 	--getting to the portal from subrosia
 	(max_jump() >= 1 or has("ribbon"))--cross from beach to temple
 end
@@ -167,16 +163,16 @@ end
 function suburbs_lake()
 	return portal_lake() and
 	--getting to the portal from subrosia
-	(max_jump() >= 3 or (max_jump() >= 1 and (has("magnet") or has("bracelet")))) --jump past furnace
+	(max_jump() >= 3 or (max_jump() >= 1 and (has("magnet") or has("power1")))) --jump past furnace
 end
 
 function suburbs_temple()
-	return has("bracelet") and
+	return has("power1") and
 	max_jump() >= 3 and --need a long jump no matter what
 	portal_remains()
 end
 function suburbs_temple_hard()
-	return has("bracelet") and
+	return has("power1") and
 	max_jump() >= 3 and --need a long jump no matter what
 	portal_remains_hard()
 end
@@ -184,21 +180,21 @@ end
 function suburbs_hns()
 	return (portal_village() or --can go through pirates with this
 	(destroy_bush_flute() and 
-	has("bracelet") and has("shovel") and --otherwise, through mountain portal
-	(has("flippers") or dimitri() or max_jump() >= 4))) and
+	has("power1") and has("shovel") and --otherwise, through mountain portal
+	(has("swim1") or dimitri() or max_jump() >= 4))) and
 	max_jump() >= 1 and hns_to_beach()
 end
 function suburbs_hns_hard()
 	return (portal_village_hard() or --can go through pirates with this
 	(destroy_bush_flute() and 
-	has("bracelet") and has("shovel") and --otherwise, through mountain portal
-	(has("flippers") or dimitri() or max_jump() >= 4))) and
+	has("power1") and has("shovel") and --otherwise, through mountain portal
+	(has("swim1") or dimitri() or max_jump() >= 4))) and
 	max_jump() >= 1 and hns_to_beach_hard()
 end
 
 function suburbs_natzu()
 	return fairy_fountain_natzu() and
-	(max_jump() >= 1 or has("flippers") 
+	(max_jump() >= 1 or has("swim1") 
 	or has("winter") or has("suburbs_winter") 
 	or dimitri() or ricky())--cross the water to the south
 end
@@ -213,25 +209,25 @@ function fairy_fountain_hard()
 end
 
 function fairy_fountain_natzu()
-	return north_stump() and has("bracelet") and
+	return north_stump() and has("power1") and
 	--cross natzu
-	((has("natzu_dimitri") and (dimitri() or has("flippers")) and max_jump() >= 1) or --cross dimitri's natzu
+	((has("natzu_dimitri") and (dimitri() or has("swim1")) and max_jump() >= 1) or --cross dimitri's natzu
 	(has("natzu_moosh") and (moosh() or (destroy_bush_flute() and max_jump() >= 3))) or --crosh Moosh's natzu
 	(has("natzu_ricky") and ricky()))--cross ricky's natzu
 end
 function fairy_fountain_natzu_hard()
-	return north_stump() and has("bracelet") and
+	return north_stump() and has("power1") and
 	--cross natzu
-	((has("natzu_dimitri") and (dimitri() or has("flippers")) and max_jump() >= 1) or --cross dimitri's natzu
+	((has("natzu_dimitri") and (dimitri() or has("swim1")) and max_jump() >= 1) or --cross dimitri's natzu
 	(has("natzu_moosh") and (moosh() or 
-	((has("magicboomerang") or destroy_bush_flute()) and 
+	((has("boomerang2") or destroy_bush_flute()) and 
 	max_jump() >= 2))) or --cross Moosh's natzu
 	(has("natzu_ricky") and ricky()))--cross ricky's natzu
 end
 
 function mystery_tree()
 	return (fairy_fountain() or (fairy_fountain_natzu() and has("satchel") and has("galeseeds"))) and
-	(max_jump() >= 1 or (cross_water() or ricky() or dimitri()) or--feather gives access no matter the season
+	(max_jump() >= 1 or (cross_water() or ricky() or dimitri()) or--roc1 gives access no matter the season
 	((has("suburbs_winter") or has("winter")) and
 	(has("shovel") or any_flute())) or
 	(has("suburbs_spring") or has("spring")) or
@@ -240,7 +236,7 @@ function mystery_tree()
 end
 function mystery_tree_hard()
 	return (fairy_fountain_hard() or (fairy_fountain_natzu_hard() and has("satchel") and has("galeseeds"))) and
-	(max_jump() >= 1 or (cross_water() or ricky() or dimitri()) or--feather gives access no matter the season
+	(max_jump() >= 1 or (cross_water() or ricky() or dimitri()) or--roc1 gives access no matter the season
 	((has("suburbs_winter") or has("winter")) and
 	(has("shovel") or any_flute())) or
 	(has("suburbs_spring") or has("spring")) or
@@ -250,7 +246,7 @@ end
 
 function mystery_tree_natzu()
 	return fairy_fountain_natzu() and
-	(max_jump() >= 1 or --feather gives access no matter the season
+	(max_jump() >= 1 or --roc1 gives access no matter the season
 	((has("suburbs_winter") or has("winter")) and
 	(has("shovel") or any_flute())) or
 	(has("suburbs_spring") or has("spring")) or
@@ -259,7 +255,7 @@ function mystery_tree_natzu()
 end
 function mystery_tree_natzu_hard()
 	return fairy_fountain_natzu_hard() and
-	(max_jump() >= 1 or --feather gives access no matter the season
+	(max_jump() >= 1 or --roc1 gives access no matter the season
 	((has("suburbs_winter") or has("winter")) and
 	(has("shovel") or any_flute())) or
 	(has("suburbs_spring") or has("spring")) or
@@ -279,15 +275,15 @@ end
 function d2_mushrooms()
 	return destroy_mushroom() and
 	(has("wow_fall") or 
-	((d2_B() or (d2_A() and use_seeds() and has("emberseeds") and has("bracelet")) 
+	((d2_B() or (d2_A() and use_seeds() and has("emberseeds") and has("power1")) 
 	or ricky() or has("wow_summer")) and has("fall"))) and
-	(max_jump() >= 3 or has("glove"))
+	(max_jump() >= 3 or has("magnet"))
 end
 function d2_mushrooms_hard()
 	return destroy_mushroom() and
 	(has("wow_fall") or 
 	(d2_B_hard() or ricky() or has("wow_summer")) and has("fall")) and
-	((max_jump() >= 2 and has("bombs")) or has("glove"))
+	((max_jump() >= 2 and has("bombs")) or has("magnet"))
 end
 
 
@@ -308,7 +304,7 @@ end
 
 function scent_normal()
 	return north_stump() and
-	(has("bracelet") or has("flippers") or dimitri())
+	(has("power1") or has("swim1") or dimitri())
 end
 
 function scent_suburbs()
@@ -338,17 +334,17 @@ end
 function plain_stump_scent()
 	return scent_tree() and
 	((max_jump() >= 1 or has("plain_winter") or ricky() or moosh()) or--get over holes
-	((has("flippers") or dimitri()) and destroy_bush_flute())) --swim around
+	((has("swim1") or dimitri()) and destroy_bush_flute())) --swim around
 end
 function plain_stump_scent_hard()
 	return scent_tree_hard() and
 	((max_jump() >= 1 or has("plain_winter") or ricky() or moosh()) or--get over holes
-	((has("flippers") or dimitri()) and destroy_bush_flute())) --swim around
+	((has("swim1") or dimitri()) and destroy_bush_flute())) --swim around
 end
 
 function plain_stump_north()
 	return north_stump() and
-	(has("flippers") or dimitri()) and destroy_bush_flute() --swim around
+	(has("swim1") or dimitri()) and destroy_bush_flute() --swim around
 end
 
 
@@ -357,26 +353,26 @@ end
 
 function pegasus_tree()
 	return plain_stump() and
-	(has("plain_summer") or has("summer") or has("cape") or ricky() or moosh())
+	(has("plain_summer") or has("summer") or has("roc2") or ricky() or moosh())
 end
 function pegasus_tree_hard()
 	return plain_stump_hard() and
-	(has("plain_summer") or has("summer") or has("cape") or ricky() or moosh())
+	(has("plain_summer") or has("summer") or has("roc2") or ricky() or moosh())
 end
 
 function swamp_stump()
 	return pegasus_tree() and
-	(has("bracelet") or hit_lever()) and
-	((has("satchel") and has("pegasusseeds")) or has("flippers") or has("cape") or
+	(has("power1") or hit_lever()) and
+	((has("satchel") and has("pegasusseeds")) or has("swim1") or has("roc2") or
 	(has("bombs") and max_jump() >= 2)) and
-	has("bracelet") and has("d3key")
+	has("power1") and has("d3key")
 end
 function swamp_stump_hard()
 	return pegasus_tree_hard() and
-	(has("bracelet") or hit_lever()) and
-	((has("satchel") and has("pegasusseeds")) or has("flippers") or has("cape") or
+	(has("power1") or hit_lever()) and
+	((has("satchel") and has("pegasusseeds")) or has("swim1") or has("roc2") or
 	(has("bombs") and max_jump() >= 2)) and
-	has("bracelet") and has("d3key")
+	has("power1") and has("d3key")
 end
 
 function dry_swamp()
@@ -403,42 +399,42 @@ end
 
 function south_swamp_stump()
 	return swamp_stump() and
-	(has("flippers") or dimitri() or --go through the water
+	(has("swim1") or dimitri() or --go through the water
 	(dry_swamp() and (max_jump() >= 2 or any_flute()))) --go through other flute spots
 end
 function south_swamp_stump_hard()
 	return swamp_stump_hard() and
-	(has("flippers") or dimitri() or --go through the water
+	(has("swim1") or dimitri() or --go through the water
 	(dry_swamp_hard() and (max_jump() >= 2 or any_flute()))) --go through other flute spots
 end
 
 function south_swamp_scent()
 	return plain_stump() and
-	(has("flippers") or dimitri())
+	(has("swim1") or dimitri())
 end
 function south_swamp_scent_hard()
 	return plain_stump_hard() and
-	(has("flippers") or dimitri())
+	(has("swim1") or dimitri())
 end
 
 function south_swamp_suburbs()
 	return village_to_suburbs() and destroy_bush_flute() and --get to rosa portal
-	max_jump() >= 1 and has("bracelet") --get to the beach portal and lift rock
+	max_jump() >= 1 and has("power1") --get to the beach portal and lift rock
 end
 function south_swamp_suburbs_hard()
 	return village_to_suburbs() and destroy_bush_flute() and --get to rosa portal
-	max_jump() >= 1 and has("bracelet") --get to the beach portal and lift rock
+	max_jump() >= 1 and has("power1") --get to the beach portal and lift rock
 end
 
 function south_swamp_pirates()
-	return has("bracelet") and has("magicboomerang") and --get to pirate portal
+	return has("power1") and has("boomerang2") and --get to pirate portal
 	max_jump() >= 1 and --jump to hns area
 	--get to beach area
 	(max_jump() >= 4 or--from bridge
 	(max_jump() >= 2 or (max_jump() >= 1 and has("magnet"))))--through shortcut
 end
 function south_swamp_pirates_hard()
-	return has("bracelet") and (has("magicboomerang") or max_jump() >= 4) and --get to pirate portal
+	return has("power1") and (has("boomerang2") or max_jump() >= 4) and --get to pirate portal
 	max_jump() >= 1 and --jump to hns area
 	--get to beach area
 	(max_jump() >= 4 or--from bridge
@@ -456,20 +452,20 @@ end
 
 function cross_natzu()
 	return ricky() or
-	(has("natzu_dimitri") and (dimitri() or has("flippers")) and max_jump() >= 1 ) or
+	(has("natzu_dimitri") and (dimitri() or has("swim1")) and max_jump() >= 1 ) or
 	(has("natzu_moosh") and (moosh() or (destroy_bush() and max_jump() >= 2)))
 end
 function cross_natzu_hard()
 	return ricky() or
-	(has("natzu_dimitri") and (dimitri() or has("flippers")) and max_jump() >= 1 ) or
+	(has("natzu_dimitri") and (dimitri() or has("swim1")) and max_jump() >= 1 ) or
 	(has("natzu_moosh") and (moosh() or (destroy_bush() and (max_jump() >= 2 or (max_jump() >= 1 and has("bombs"))))))
 end
 
 function natzu_to_moblin()
 	if ricky() or
-	(has("natzu_dimitri") and (dimitri() or (has("flippers") and has("ring_swimmer")))) or
+	(has("natzu_dimitri") and (dimitri() or (has("swim1") and has("ring_swimmer")))) or
 	(has("natzu_moosh") and (moosh() or max_jump() >= 2)) then
-		if has("flippers") or max_jump() >= 4 then
+		if has("swim1") or max_jump() >= 4 then
 			return true, AccessibilityLevel.Normal
 		elseif (max_jump() >= 3 and has("bombs")) then
 			return true, AccessibilityLevel.SequenceBreak
@@ -482,16 +478,16 @@ function natzu_to_moblin()
 end
 function natzu_to_moblin_hard()
 	return (ricky() or
-	(has("natzu_dimitri") and (dimitri() or (has("flippers") and has("ring_swimmer")))) or
+	(has("natzu_dimitri") and (dimitri() or (has("swim1") and has("ring_swimmer")))) or
 	(has("natzu_moosh") and (moosh() or max_jump() >= 1))) and 
-	(has("flippers") or max_jump() >= 4 or (max_jump() >= 3 and has("bombs")))
+	(has("swim1") or max_jump() >= 4 or (max_jump() >= 3 and has("bombs")))
 end
 
 function sunken_to_moblin()
 	if has("natzu_ricky") or
-	(has("natzu_dimitri") and (dimitri() or (has("flippers") and has("ring_swimmer")))) or
+	(has("natzu_dimitri") and (dimitri() or (has("swim1") and has("ring_swimmer")))) or
 	(has("natzu_moosh") and (moosh() or max_jump() >= 2)) then
-		if has("flippers") or max_jump() >= 4 then
+		if has("swim1") or max_jump() >= 4 then
 			return true, AccessibilityLevel.Normal
 		elseif (max_jump() >= 3 and has("bombs")) then
 			return true, AccessibilityLevel.SequenceBreak
@@ -504,9 +500,9 @@ function sunken_to_moblin()
 end
 function sunken_to_moblin_hard()
 	return (has("natzu_ricky") or
-	(has("natzu_dimitri") and (dimitri() or (has("flippers") and has("ring_swimmer")))) or
+	(has("natzu_dimitri") and (dimitri() or (has("swim1") and has("ring_swimmer")))) or
 	(has("natzu_moosh") and (moosh() or max_jump() >= 1))) and 
-	(has("flippers") or max_jump() >= 4 or (max_jump() >= 3 and has("bombs")))
+	(has("swim1") or max_jump() >= 4 or (max_jump() >= 3 and has("bombs")))
 end
 
 function moblin_keep_to_sunken()
@@ -574,44 +570,44 @@ end
 
 function sunken_mountain()
 	return scent_tree() and
-	(has("flippers") or max_jump() >= 4) and --get to goron cave
-	has("bracelet") and has("shovel") and --get to cucco mountain
+	(has("swim1") or max_jump() >= 4) and --get to goron cave
+	has("power1") and has("shovel") and --get to cucco mountain
 	(has("summer") or has("sunken_summer")) and --summer requirement of rando
-	has("flippers")--go through tunnel
+	has("swim1")--go through tunnel
 end
 function sunken_mountain_hard()
 	return scent_tree_hard() and
-	(has("flippers") or max_jump() >= 4) and --get to goron cave
-	has("bracelet") and has("shovel") and --get to cucco mountain
+	(has("swim1") or max_jump() >= 4) and --get to goron cave
+	has("power1") and has("shovel") and --get to cucco mountain
 	(has("summer") or has("sunken_summer")) and --summer requirement of rando
-	has("flippers")--go through tunnel
+	has("swim1")--go through tunnel
 end
 
 function sunken_pirates()
-	return (has("magicboomerang") or max_jump() >= 4) and --get to pirate portal
+	return (has("boomerang2") or max_jump() >= 4) and --get to pirate portal
 	max_jump() >= 1 and--get to hns area
 	(has("summer") or has("sunken_summer")) and --summer requirement of rando
-	has("flippers")--go through tunnel
+	has("swim1")--go through tunnel
 end
 
 function sunken_rosa()
 	return suburbs() and destroy_bush_flute() and --get to rosa portal
 	max_jump() >= 4 and --get to hns area
 	(has("summer") or has("sunken_summer")) and --summer requirement of rando
-	has("flippers")--go through tunnel
+	has("swim1")--go through tunnel
 end
 
 function sunken_lake()
 	return north_stump() and max_jump() >= 4 and (has("winter") or has("north_winter")) and --get to lake portal without any flute
 	(has("summer") or has("sunken_summer")) and --summer requirement of rando
-	has("flippers") --go through tunnel
+	has("swim1") --go through tunnel
 end
 
 function sunken_swamp()
-	return south_swamp() and has("bracelet") and --get to swamp portal
+	return south_swamp() and has("power1") and --get to swamp portal
 	max_jump() >= 4 and --get to hns area
 	(has("summer") or has("sunken_summer")) and --summer requirement of rando
-	has("flippers") --go through tunnel
+	has("swim1") --go through tunnel
 end
 
 function sunken_temple()
@@ -624,7 +620,7 @@ function sunken_temple()
 	(has("temple_fall") and has("winter"))) and --what to do in autumn
 	
 	(has("summer") or has("sunken_summer")) and --summer requirement of rando
-	has("flippers") --go through tunnel
+	has("swim1") --go through tunnel
 end
 function sunken_temple_hard()
 	return scent_tree_hard() and max_jump() >= 4 and --get to temple remains
@@ -636,12 +632,12 @@ function sunken_temple_hard()
 	(has("temple_fall") and has("winter"))) and --what to do in autumn
 	
 	(has("summer") or has("sunken_summer")) and --summer requirement of rando
-	has("flippers") --go through tunnel
+	has("swim1") --go through tunnel
 end
 
 function gale_tree()
 	return sunken_city() and
-	(has("flippers") or max_jump() >= 1 or has("sunken_winter"))
+	(has("swim1") or max_jump() >= 1 or has("sunken_winter"))
 end
 
 function dimitri_rescue()
@@ -653,7 +649,7 @@ end
 
 function sunken_to_cucco()
 	return (has("summer") or has("sunken_summer")) and
-	has("flippers")
+	has("swim1")
 end
 
 function sunken_to_wow()
@@ -701,23 +697,23 @@ function cucco_to_sunken()
 end
 
 function cucco_summer()
-	return sunken_city() and has("flippers") and (has("sunken_summer") or has("summer"))
+	return sunken_city() and has("swim1") and (has("sunken_summer") or has("summer"))
 end
 
 function cucco_goron()
 	return scent_tree() and
-	(has("flippers") or max_jump() >= 4) and --get to goron cave
-	has("bracelet") and has("shovel")
+	(has("swim1") or max_jump() >= 4) and --get to goron cave
+	has("power1") and has("shovel")
 end
 function cucco_goron_hard()
 	return scent_tree_hard() and
-	(has("flippers") or max_jump() >= 4) and --get to goron cave
-	has("bracelet") and has("shovel")
+	(has("swim1") or max_jump() >= 4) and --get to goron cave
+	has("power1") and has("shovel")
 end
 
 
 function cucco_pirates()
-	return (has("magicboomerang") or max_jump() >= 4) and --get to pirate portal
+	return (has("boomerang2") or max_jump() >= 4) and --get to pirate portal
 	max_jump() >= 1
 end
 
@@ -736,26 +732,26 @@ end
 
 function enter_d4()
 	return talon_cave() and has("winter") and
-	max_jump() >= 1 and has("bracelet") and
+	max_jump() >= 1 and has("power1") and
 	has("d4key") and has("summer")
 end
 function enter_d4_hard()
 	return talon_cave_hard() and has("winter") and
-	max_jump() >= 1 and has("bracelet") and
+	max_jump() >= 1 and has("power1") and
 	has("d4key") and has("summer")
 end
 
 -- GORON MOUNTAIN
 
 function goron_mountain()
-	return (mount_cucco() and (has("shovel") or has("banana")) and has("bracelet")) or
-	(scent_tree() and has("flippers")) or
-	(temple_remains() and max_jump() >= 2 and (has("flippers") or max_jump() >= 4))
+	return (mount_cucco() and (has("shovel") or has("banana")) and has("power1")) or
+	(scent_tree() and has("swim1")) or
+	(temple_remains() and max_jump() >= 2 and (has("swim1") or max_jump() >= 4))
 end
 function goron_mountain_hard()
-	return --(mount_cucco_hard() and (has("shovel") or has("banana")) and has("bracelet")) or
-	--(scent_tree_hard() and has("flippers")) or
-	(temple_remains() and max_jump() >= 2 and (has("flippers") or 
+	return --(mount_cucco_hard() and (has("shovel") or has("banana")) and has("power1")) or
+	--(scent_tree_hard() and has("swim1")) or
+	(temple_remains() and max_jump() >= 2 and (has("swim1") or 
 	(max_jump() >= 4 or (max_jump() >= 3 and has("bombs")))))
 end
 
@@ -801,11 +797,11 @@ end
 
 function temple_remains()
 	return scent_tree() and max_jump() >= 2 
-	--goron mountain way requires bracelet and jump so this is essentially the same as counting for both
+	--goron mountain way requires power1 and jump so this is essentially the same as counting for both
 end
 function temple_remains_hard()
 	return scent_tree_hard() and max_jump() >= 2 
-	--goron mountain way requires bracelet and jump so this is essentially the same as counting for both
+	--goron mountain way requires power1 and jump so this is essentially the same as counting for both
 end
 
 function enter_remains()
@@ -845,11 +841,11 @@ function beach()
 	return portal_swamp() or
 	(portal_rosa() and temple_to_beach()) --through temple
 	
-	-- or (hns() and max_jump() >= 2 and has("bracelet")) or 
-	-- or (hns() and max_jump() >= 1 and has("bracelet") and has("glove")) or 
-	-- or (furnace() and max_jump() >= 1 and has("bracelet")) or 
+	-- or (hns() and max_jump() >= 2 and has("power1")) or 
+	-- or (hns() and max_jump() >= 1 and has("power1") and has("magnet")) or 
+	-- or (furnace() and max_jump() >= 1 and has("power1")) or 
 	-- or (furnace() and max_jump() >= 3) or 
-	-- or (furnace() and max_jump() >= 1 and has("glove")) or 
+	-- or (furnace() and max_jump() >= 1 and has("magnet")) or 
 end
 
 --redundant?
@@ -857,7 +853,7 @@ function beach_hard()
 	return portal_swamp() or
 	(temple() and max_jump() >= 1) or
 	((portal_mountain() or portal_village()) and
-	max_jump() >= 1 and has("bracelet") and 
+	max_jump() >= 1 and has("power1") and 
 	(max_jump() >= 2 or has("magnet") or has("bombs")))
 end
 
@@ -955,10 +951,10 @@ function hns_to_pirates()
 end
 
 function hns_to_beach()
-	if has("bracelet") and max_jump() >= 1 and
+	if has("power1") and max_jump() >= 1 and
 		(max_jump() >= 2 or has("magnet")) then
 		return true, AccessibilityLevel.Normal
-	elseif has("bracelet") and max_jump() >= 1 and
+	elseif has("power1") and max_jump() >= 1 and
 		(max_jump() >= 2 or has("magnet") or has("bombs")) then
 		return true, AccessibilityLevel.SequenceBreak
 	else
@@ -966,14 +962,14 @@ function hns_to_beach()
 	end
 end
 function hns_to_beach_hard()
-	return has("bracelet") and max_jump() >= 1 and
+	return has("power1") and max_jump() >= 1 and
 	(max_jump() >= 2 or has("magnet") or has("bombs"))
 end
 
 
 function furnace_to_beach()
 	if max_jump() >= 3 or
-		((has("magnet") or has("bracelet")) 
+		((has("magnet") or has("power1")) 
 			and max_jump() >= 1) then
 		return true, AccessibilityLevel.Normal
 	elseif max_jump() >= 2 then
@@ -984,13 +980,13 @@ function furnace_to_beach()
 end
 function furnace_to_beach_hard()
 	return max_jump() >= 2 or
-	((has("magnet") or has("bracelet")) and max_jump() >= 1)
+	((has("magnet") or has("power1")) and max_jump() >= 1)
 end
 
 function remains_to_temple()
-	if has("bracelet") and max_jump() >= 3 then
+	if has("power1") and max_jump() >= 3 then
 		return true, AccessibilityLevel.Normal
-	elseif has("bracelet") and
+	elseif has("power1") and
 		max_jump() >= 2 and has("bombs") then
 		return true, AccessibilityLevel.SequenceBreak
 	else
@@ -998,38 +994,38 @@ function remains_to_temple()
 	end
 end
 function remains_to_temple_hard()
-	return has("bracelet") and
+	return has("power1") and
 	max_jump() >= 2 and has("bombs")
 end
 
 -- PORTALS
-
+-- Portal Rosa?
 function portal_rosa()
 	return (suburbs() and (destroy_bush() or any_flute()))
 	-- or temple() 
 end
-
+-- Portal Lost?
 function portal_swamp()
-	return south_swamp() and has("bracelet") and
+	return south_swamp() and has("power1") and
 	(any_flute() or has("swamp_summer") or has("swamp_fall") or
 	(swamp_stump() and (has("summer") or has("fall"))) or
 	(has("shovel") and (has("swamp_winter") or (swamp_stump() and has("winter")))) or
 	(destroy_flower() and (has("swamp_spring") or (swamp_stump() and has("spring")))))
 	-- or beach() 
 end
-
+-- Portal Furnace?
 function portal_mountain()
 	return max_jump() >= 1 and mount_cucco()
 end
-
+-- Portal Market?
 function portal_lake()
 	if north_stump() and
-		((wet_lake() and (max_jump() >= 1 or ricky() or moosh()) and (has("flippers") or (dimitri() and has("bracelet")))) or
+		((wet_lake() and (max_jump() >= 1 or ricky() or moosh()) and (has("swim1") or (dimitri() and has("power1")))) or
 		(max_jump() >= 4 and (has("north_winter") or has("winter")))) then
 		return true, AccessibilityLevel.Normal
 	elseif north_stump() and
 		((wet_lake() and (max_jump() >= 1 or ricky() or moosh()) and
-		(has("flippers") or (dimitri() and has("bracelet")))) or
+		(has("swim1") or (dimitri() and has("power1")))) or
 		(max_jump() >= 3 and has("bombs") and (has("north_winter") or has("winter")))) then
 		return true, AccessibilityLevel.SequenceBreak
 	else
@@ -1039,13 +1035,13 @@ end
 function portal_lake_hard()
 	return north_stump() and
 	((wet_lake() and (max_jump() >= 1 or ricky() or moosh()) and
-	(has("flippers") or (dimitri() and has("bracelet")))) or
+	(has("swim1") or (dimitri() and has("power1")))) or
 	((max_jump() >= 4 or (max_jump() >= 3 and has("bombs"))) and 
 	(has("north_winter") or has("winter"))))
 end
-	
+-- Portal Pirate?
 function portal_village()
-	if has("magicboomerang") then
+	if has("boomerang2") then
 		return true, AccessibilityLevel.Normal
 	elseif max_jump() >= 4 then
 		return true, AccessibilityLevel.SequenceBreak
@@ -1054,11 +1050,11 @@ function portal_village()
 	end	
 end
 function portal_village_hard()
-	return has("magicboomerang") or
+	return has("boomerang2") or
 	max_jump() >= 4
 	-- or (pirate_house() and hit_lever()) 
 end
-
+-- Portal Volcano?
 function portal_remains()
 	if destroy_bush() and
 		max_jump() >= 1 and has("winter") and
@@ -1081,11 +1077,11 @@ function portal_remains_hard()
 	((has("temple_summer") or has("summer")) and destroy_bush() and max_jump() >= 4 and has("winter")) or --what to do in summer
 	((has("temple_fall") or has("fall")) and destroy_bush() and max_jump() >= 1 and has("winter"))) --what to do in autumn
 end
-
+-- Portal SNS?
 function portal_d8()
 	if has("temple_summer") or has("summer") then
 		if max_jump() >= 4 or 
-			(max_jump() >= 2 and has("glove")) then
+			(max_jump() >= 2 and has("magnet")) then
 			return true, AccessibilityLevel.Normal
 		elseif max_jump() >= 1 and has("bombs") then
 			return true, AccessibilityLevel.SequenceBreak
@@ -1098,7 +1094,7 @@ function portal_d8()
 end
 function portal_d8_hard()
 	return (has("temple_summer") or has("summer")) and
-	(((max_jump() >= 2 or (max_jump() >= 1 and has("bombs"))) and has("glove")) or max_jump() >= 4)
+	(((max_jump() >= 2 or (max_jump() >= 1 and has("bombs"))) and has("magnet")) or max_jump() >= 4)
 end
 
 
@@ -1117,32 +1113,32 @@ end
 
 function d2clear()
 	return use_seeds() and has("emberseeds") and 
-	has("bracelet") and has("bombs")
+	has("power1") and has("bombs")
 end
 function d2clear_hard()
 	return use_seeds() and (has("emberseeds") or has("mysteryseeds")) and 
-	has("bracelet") and has("bombs")
+	has("power1") and has("bombs")
 end
 
 function d3clear()
 	return kill_beetle() and max_jump() >= 1 and 
-	has("bombs") and has("bracelet") and 
+	has("bombs") and has("power1") and 
 	kill_omuai() and kill_mothula()
 end
 function d3clear_hard()
 	return kill_beetle_hard() and max_jump() >= 1 and 
-	has("bombs") and has("bracelet") and 
+	has("bombs") and has("power1") and 
 	kill_omuai_hard() and kill_mothula_hard()
 end
 
 function d4clear()
-	return has("flippers") and destroy_pot() and 
+	return has("swim1") and destroy_pot() and 
 	has("bombs") and max_jump() >= 1 and 
 	shoot_seeds() and has("emberseeds") and 
 	kill_agunima() and kill_gohma()
 end
 function d4clear_hard()
-	return has("flippers") and destroy_pot() and 
+	return has("swim1") and destroy_pot() and 
 	has("bombs") and max_jump() >= 1 and 
 	shoot_seeds() and has("emberseeds") and 
 	kill_agunima_hard() and kill_gohma()
@@ -1150,52 +1146,52 @@ end
 
 function d5clear()
 	return has("magnet") and kill_syger() and 
-	max_jump() >= 1 and (max_jump() >= 4 or has("flippers"))
+	max_jump() >= 1 and (max_jump() >= 4 or has("swim1"))
 end
 function d5clear_hard()
 	return has("magnet") and kill_syger_hard() and 
 	max_jump() >= 1 and
-	(max_jump() >= 3 or has("flippers"))
+	(max_jump() >= 3 or has("swim1"))
 end
 
 function d6clear()
 	return has("magnet") and max_jump() >= 1 and
-	has("bombs") and has("magicboomerang") and
+	has("bombs") and has("boomerang2") and
 	shoot_seeds() and has("emberseeds") and destroy_crystal() and
 	kill_vire() and kill_manhandla()
 end
 function d6clear_hard()
 	return has("magnet") and max_jump() >= 1 and
-	has("bombs") and has("magicboomerang") and
+	has("bombs") and has("boomerang2") and
 	shoot_seeds() and has("emberseeds") and destroy_crystal() and
 	kill_vire_hard() and kill_manhandla_hard()
 end
 
 function d7clear()
-	return max_jump() >= 3 and has("bombs") and has("bracelet") and
+	return max_jump() >= 3 and has("bombs") and has("power1") and
 	has("satchel") and has("pegasusseeds") and
 	shoot_seeds() and has("emberseeds") and has("magnet") and
-	has("flippers") and kill_magunesu() and
+	has("swim1") and kill_magunesu() and
 	kill_poe() and kill_gleeok()
 end
 function d7clear_hard()
-	return max_jump() >= 2 and has("bombs") and has("bracelet") and
+	return max_jump() >= 2 and has("bombs") and has("power1") and
 	use_seeds() and has("emberseeds") and has("magnet") and
-	has("flippers") and kill_magunesu() and
+	has("swim1") and kill_magunesu() and
 	kill_poe_hard() and kill_gleeok_hard()
 end
 
 function d8clear()
 	return has("slingshot2") and max_jump() >= 3 and
 	has("magnet") and has("bombs") and
-	has("emberseeds") and has("bracelet") and kill_magunesu() and
-	(has("magicboomerang") or max_jump() >= 4) and kill_polsvoice_pit() and 
+	has("emberseeds") and has("power1") and kill_magunesu() and
+	(has("boomerang2") or max_jump() >= 4) and kill_polsvoice_pit() and 
 	kill_frypolar() and kill_medusahead() 
 end
 function d8clear_hard()
 	return has("slingshot2") and max_jump() >= 2 and 
 	has("magnet") and has("bombs") and
-	has("emberseeds") and has("bracelet") and
+	has("emberseeds") and has("power1") and
 	kill_polsvoice_pit() and kill_magunesu() and
 	kill_frypolar_hard() and kill_medusahead() 
 end
