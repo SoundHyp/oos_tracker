@@ -2,53 +2,16 @@
   /* 
   Progress:
   Finish portals
+  Relate them to existing portal logic names or change existing portal logic names to match
+  Existing:
+  Rosa - Rosa*
+  Swamp - Swamp*
+  Mountain* - Cucco
+  Village* - Town
+  Lake* - Eyeglass
+  Remains - Temple1*
+  D8 - Temple2*
   
-  Removed:
-  glove
-  noblesword
-  herosword
-  shield
-  ironshield
-  bracelet
-  powerglove
-  strength
-  feather
-  rocfeather
-  cape
-  roccape
-  seedslingshot
-  hyperslingshot
-  boomerang
-  magicboomerang
-  flute_generic
-  ore
-  bestweapon
-  seedsatchel
-  seasonsrod
-  gnarledkey
-  floodkey
-  star
-  dragonkey
-  rustybell
-  polishedbell
-  flippers
-  mermaidsuit
-  plaque
-  shooter
-  card
-  gnarledtree
-  snakeremains
-  poisonmoth
-  dancingdragon
-  unicorncave
-  ancientruins
-  explorercrypt
-  swordandshield
-  
-  Changed:
-  strength>power
-  feather>roc
-  flippers>swim
   */
   {
     "name": "Sword",
