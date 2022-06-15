@@ -12,6 +12,7 @@ To-Do:
 - Logic for cross-items
 - Different UI options
 - Is hard\locations.json used for anything?
+- Identify existing portal logic: Rosa, swamp, lake, remains, d8, etc and correlate new shuffle portals to match
 - Add '*_shuffle' function to area logic: all the different combos for each holodrum portal: rosa_hns, rosa_dance, rosa_market, etc...
 - Add '*_shuffle' to portal access logic
 
