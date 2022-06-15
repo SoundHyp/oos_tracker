@@ -315,10 +315,6 @@ function kill_beetle_hard()
 	(has("satchel") and has("scentseeds")) or
 	has("bombs") or has("hook1")))
 end
--- Referenced?
-function kill_mimic()
-	return kill_normal()
-end
 
 function kill_omuai()
 	return has("power1") and
