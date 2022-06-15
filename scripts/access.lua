@@ -10,8 +10,8 @@ end
 function ore_chunks()
 	return has("shovel") or 
 	has("sword1") or 
-	has("bracelet") or
-	has("magicboomerang")
+	has("power1") or
+	has("boomerang2")
 end
 
 -- Saves time on having to check for specific flutes in spots that simply need the flute
@@ -66,10 +66,10 @@ end
 
 function destroy_bush()
 	return has("sword1") or
-	has("magicboomerang") or
+	has("boomerang2") or
 	(use_seeds() and has("emberseeds")) or
 	(shoot_seeds() and has("galeseeds")) or
-	has("bracelet") or
+	has("power1") or
 	has("bombs") or
 	has("hook1") or
 	has("cane")
@@ -85,24 +85,24 @@ end
 
 function destroy_pot()
 	return has("sword2") or 
-	has("bracelet") or
+	has("power1") or
 	has("hook1")
 end 
 
 function destroy_mushroom()
-	return has("magicboomerang") or 
-	has("bracelet") or
+	return has("boomerang2") or 
+	has("power1") or
 	dimitri()
 end 
 
 function destroy_flower()
 	return has("sword1") or 
-	has("magicboomerang")
+	has("boomerang2")
 end 
 
 function destroy_crystal()
 	return has("sword1") or 
-	has("bracelet") or
+	has("power1") or
 	has("ring_expert")
 end 
 
@@ -117,8 +117,8 @@ function hit_lever()
 	has_rod() or
 	has("shovel") or
 	has("foolsore") or
-	has("boomerang") or
-	has("magicboomerang") or
+	has("boomerang1") or
+	has("boomerang2") or
 	has("slingshot1") or
 	(has("emberseeds") and use_seeds()) or
 	(has("scentseeds") and use_seeds()) or
@@ -127,12 +127,12 @@ end
 
 function hit_far_lever()
 	return shoot_seeds() or
-	has("magicboomerang")
+	has("boomerang2")
 end 
 
 function hit_far_lever_hard()
 	return shoot_seeds() or
-	has("boomerang") or 
+	has("boomerang1") or 
 	(max_jump() >= 1 and
 	(has("sword1") or any_rod() or has("foolsore")))
 end
@@ -141,14 +141,14 @@ function hit_switch()
 	return has("sword1") or 
 	has_rod() or
 	has("foolsore") or
-	has("boomerang") or
+	has("boomerang1") or
 	use_seeds() or
 	has("bombs") or
 	has("shovel")
 end
 
 function hit_far_switch()
-	return has("boomerang") or
+	return has("boomerang1") or
 	has("bombs") or
 	shoot_seeds() or
 	(has("sword1") and has("ring_energy"))
@@ -157,13 +157,13 @@ end
 function max_jump()
 	local j = 0
 	
-	if (has("cape") and has("satchel") and has("pegasusseeds")) then
+	if (has("roc2") and has("satchel") and has("pegasusseeds")) then
 		j = 4
-	elseif has("cape") then
+	elseif has("roc2") then
 		j = 3
-	elseif (has("feather") and has("satchel") and has("pegasusseeds")) then
+	elseif (has("roc1") and has("satchel") and has("pegasusseeds")) then
 		j = 2
-	elseif has ("feather") then
+	elseif has ("roc1") then
 		j = 1
 	end
 	
@@ -171,7 +171,7 @@ function max_jump()
 end 
 
 function cross_water()
-	return has("flippers") or
+	return has("swim1") or
 	max_jump() >= 1
 end
 
@@ -202,7 +202,7 @@ function kill_hard()
 		return false, AccessibilityLevel.None
 	end
 end
-
+-- Are these referenced ever?
 function kill_stalfos()
 	return kill_normal() or 
 	has_rod()
@@ -229,7 +229,7 @@ function kill_goriyabros_hard()
 		return false, AccessibilityLevel.None
 	end
 end
-
+-- Referenced?
 function kill_goriya()
 	return kill_normal()
 end
@@ -249,14 +249,14 @@ function kill_aquamentus_hard()
 		return false, AccessibilityLevel.None
 	end
 end
-
+-- Referenced?
 function kill_rope()
 	return kill_normal()
 end
 
 function kill_hardhat_pit()
 	return has("sword1") or 
-	has("boomerang") or
+	has("boomerang1") or
 	has("shield") or
 	has_rod() or
 	(shoot_seeds() and (has("galeseeds") or has("scentseeds"))) or
@@ -315,23 +315,23 @@ function kill_beetle_hard()
 	(has("satchel") and has("scentseeds")) or
 	has("bombs") or has("hook1")))
 end
-
+-- Referenced?
 function kill_mimic()
 	return kill_normal()
 end
 
 function kill_omuai()
-	return has("bracelet") and
+	return has("power1") and
 	(has("sword1") or 
 	(shoot_seeds() and has("scentseeds")) or
 	has("foolsore"))
 end
 function kill_omuai_hard()
 	if kill_omuai() or
-		(has("bracelet") and
+		(has("power1") and
 		has("satchel") and has("scentseeds")) then
 		return true, AccessibilityLevel.Normal
-	elseif has("bracelet") and has("bombs") then
+	elseif has("power1") and has("bombs") then
 		return true, AccessibilityLevel.SequenceBreak
 	else
 		return false, AccessibilityLevel.None
@@ -353,18 +353,19 @@ function kill_mothula_hard()
 		return false, AccessibilityLevel.None
 	end
 end
-
+-- Referenced?
 function kill_shroudedstalfos()
 	return kill_stalfos()
 end
 
--- redundant?
+-- Referenced?
 function kill_likelike()
 	return kill_normal() or
-	has("bracelet") or
+	has("power1") or
 	has_rod()
 end
 
+-- Referenced?
 function kill_watertektite()
 	return kill_normal()
 end
@@ -393,9 +394,8 @@ end
 function kill_wizzrobe_cart()
 	return kill_normal() or 
 	has("shield1") or
-	has("shield2") or
 	has_rod() or
-	has("bracelet")
+	has("power1")
 end
 
 function kill_gohma()
@@ -421,10 +421,8 @@ function kill_moldorm_hard()
 	end
 end
 
---kill_normal
 function kill_ironmask()
 	return has("sword1") or
-	has("sword2") or
 	(use_seeds() and has("emberseeds")) or
 	(use_seeds() and has("scentseeds")) or
 	has("foolsore")
@@ -441,7 +439,7 @@ end
 
 function kill_armos()
 	return has("sword1") or
-	has("magicboomerang") or
+	has("boomerang2") or
 	(shoot_seeds() and has("scentseeds")) or
 	has("foolsore")
 end
@@ -458,7 +456,7 @@ end
 
 function kill_gibdo()
 	return kill_normal() or
-	has("magicboomerang") or
+	has("boomerang2") or
 	has_rod()
 end
 function kill_gibdo_hard()
@@ -509,15 +507,15 @@ end
 
 --redundant-ish
 function kill_digdogger()
-	return has("glove")
+	return has("magnet")
 end
 
 function kill_hardhat_magnet()
-	return has("glove") or
+	return has("magnet") or
 	(shoot_seeds() and has("galeseeds"))
 end
 function kill_hardhat_magnet_hard()
-	return has("glove") or
+	return has("magnet") or
 	(use_seeds() and has("galeseeds"))
 end
 
@@ -537,7 +535,7 @@ function kill_vire_hard()
 end
 
 function kill_manhandla()
-	return has("magicboomerang") and
+	return has("boomerang2") and
 	(has("sword1") or
 	shoot_seeds() or
 	has("foolsore"))
@@ -545,20 +543,20 @@ end
 function kill_manhandla_hard()
 	if kill_manhandla() then
 		return true, AccessibilityLevel.Normal
-	elseif has("magicboomerang") and has("bombs") then
+	elseif has("boomerang2") and has("bombs") then
 		return true, AccessibilityLevel.SequenceBreak
 	else
 		return false, AccessibilityLevel.None
 	end
 end
-
+-- Referenced?
 function kill_wizzrobe()
 	return kill_normal()
 end
 
 function kill_keese()
 	return kill_normal() or
-	has("boomerang")
+	has("boomerang1")
 end
 
 function kill_magunesu()
@@ -588,33 +586,31 @@ function kill_darknut_across()
 	return (shoot_seeds() and has("scentseeds")) or
 	has("magnet") or
 	(has("sword1") and has("ring_energy")) or
-	(has("cape") and
+	(has("roc2") and
 	kill_darknut_pit())
 end
 function kill_darknut_across_hard()
 	return (shoot_seeds() and has("scentseeds") or
 	has("magnet")) or
-	(has("cape") and
+	(has("roc2") and
 	kill_darknut_pit_hard())
 end
 
 --redundant
+-- Referenced?
 function kill_wizzrobe_pit()
 	return has("sword1") or
-	(has("sword1") and has("ring_energy")) or 
 	has("shield1") or
-	has("shield2") or
 	(use_seeds() and has("scentseeds")) or
 	has_rod() or
 	has("bombs") or
 	has("foolsore")
 end
 
---redundant
+-- Referenced?
 function kill_stalfos_pit()
 	return kill_normal() or 
 	has("shield1") or
-	has("shield2") or
 	(use_seeds() and has("scentseeds")) or
 	has_rod() or
 	has("bombs") or
@@ -639,39 +635,35 @@ end
 
 function kill_frypolar()
 	return (shoot_seeds() and has("mysteryseeds") and
-	has("bracelet")) or
+	has("power1")) or
 	(shoot_seeds() and has("emberseeds"))
 end
 function kill_frypolar_hard()
 	return kill_frypolar() or
 	((has("satchel") and has("mysteryseeds") and
-	has("bracelet")) or
+	has("power1")) or
 	(has("satchel") and has("emberseeds")))
 end
 
 --redundant
+-- Referenced?
 function kill_polsvoice_pit()
 	return has("sword1") or
-	has("sword2") or
-	has("boomerang") or
-	has("magicboomerang") or
+	has("boomerang1") or
 	has_rod() or
 	(use_seeds() and has("scentseeds")) or
 	(use_seeds() and has("galeseeds")) or
 	has("bombs") or
 	has("shield1") or
-	has("shield2") or
 	has("foolsore") or
-	has("mooshflute") or
-	has("rickyflute") or
-	has("dimitriflute") 
+	has("flute")
 end
 
 function kill_medusahead()
 	return has("sword1") or
 	has("foolsore")
 end
-
+-- Referenced?
 function kill_floormaster()
 	return kill_normal()
 end
