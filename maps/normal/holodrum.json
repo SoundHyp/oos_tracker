@@ -175,7 +175,6 @@
             "name": "Ship area",
             "access_rules": [
               "bell2, $village_to_suburbs, $destroy_bush, $temple_to_hns",
-              
               "bell2, $scent_tree, $cross_natzu, $natzu_to_suburbs, $temple_to_hns",
               "bell2, $scent_tree, $cross_natzu, $natzu_to_suburbs, $portal_mountain",
               "bell2, $scent_tree, $cross_natzu, $natzu_to_suburbs, $portal_village",
@@ -188,7 +187,6 @@
               "bell2, $mount_cucco, swim1, $cucco_to_sunken, $natzu_to_suburbs, $temple_to_hns",
               "bell2, $mount_cucco, swim1, $cucco_to_sunken, $natzu_to_suburbs, $portal_mountain",
               "bell2, $mount_cucco, swim1, $cucco_to_sunken, $natzu_to_suburbs, $portal_village",
-              
               "bell2, $portal_swamp, $temple_to_beach, $destroy_bush, $temple_to_hns",
               "bell2, $portal_swamp, $temple_to_beach, $destroy_bush, $portal_mountain",
               "bell2, $portal_swamp, $temple_to_beach, $destroy_bush, $portal_village",
@@ -233,7 +231,6 @@
               "bell2, $mount_cucco, swim1, $cucco_to_sunken, $natzu_to_suburbs, $temple_to_hns",
               "bell2, $mount_cucco, swim1, $cucco_to_sunken, $natzu_to_suburbs, $portal_mountain",
               "bell2, $mount_cucco, swim1, $cucco_to_sunken, $natzu_to_suburbs, $portal_village",
-              
               "bell2, $portal_swamp, $temple_to_beach, $destroy_bush, $temple_to_hns",
               "bell2, $portal_swamp, $temple_to_beach, $destroy_bush, $portal_mountain",
               "bell2, $portal_swamp, $temple_to_beach, $destroy_bush, $portal_village",
@@ -344,12 +341,10 @@
         "name": "Eastern Suburbs",
         "access_rules": [
           "$village_to_suburbs",
-            
           "$scent_tree, $cross_natzu, $natzu_to_suburbs",
           "$sunken_city, $natzu_to_suburbs",
           "$scent_tree, $natzu_to_moblin, $moblin_keep_to_sunken, $natzu_to_suburbs",
           "$mount_cucco, swim1, $cucco_to_sunken, $natzu_to_suburbs",
-          
           "$portal_swamp, $temple_to_beach, $destroy_bush",
           "$portal_mountain, $temple_to_hns, $destroy_bush",
           "$portal_lake, $furnace_to_beach, $temple_to_beach, $destroy_bush",
@@ -421,17 +416,14 @@
         "name": "Woods of Winter",
         "access_rules": [
           "$village_to_suburbs, $suburbs_to_fountain, $fountain_to_WoW",
-        
           "$sunken_city, $natzu_to_suburbs, $fountain_to_WoW",
           "$scent_tree, $natzu_to_moblin, $moblin_keep_to_sunken, $natzu_to_suburbs, $fountain_to_WoW",
           "$mount_cucco, swim1, $cucco_to_sunken, $natzu_to_suburbs, $fountain_to_WoW",
-          
           "$portal_swamp, $temple_to_beach, $destroy_bush, $suburbs_to_fountain, $fountain_to_WoW",
           "$portal_mountain, $temple_to_hns, $destroy_bush, $suburbs_to_fountain, $fountain_to_WoW",
           "$portal_lake, $furnace_to_beach, $temple_to_beach, $destroy_bush, $suburbs_to_fountain, $fountain_to_WoW",
           "$portal_village, $temple_to_hns, $destroy_bush, $suburbs_to_fountain, $fountain_to_WoW",
           "$portal_remains, $remains_to_temple, $destroy_bush, $suburbs_to_fountain, $fountain_to_WoW",
-          
           "$sunken_city, $sunken_to_wow, swim1"
         ],
         "children": [
@@ -453,7 +445,6 @@
                   "bombs, $destroy_bush, [summer], $sunken_city, $sunken_to_wow, swim1",
                   "bombs, $destroy_bush, fall",
                   "bombs, $destroy_bush, [fall], $sunken_city, $sunken_to_wow, swim1",
-                  
                   "$ricky, $destroy_bush, wow_spring",
                   "$ricky, $destroy_bush, [wow_spring], $sunken_city, $sunken_to_wow, swim1",
                   "$ricky, $destroy_bush, wow_summer",
@@ -576,7 +567,6 @@
                 "access_rules": [
                   "swim1, $destroy_mushroom, plain_fall",
                   "swim1, $dimitri, plain_fall",
-                  
                   "swim1, $destroy_mushroom, $plain_stump, fall",
                   "swim1, $dimitri, $plain_stump, fall"
                 ],
@@ -690,7 +680,6 @@
                   "$south_swamp, swamp_winter, shovel, bombs",
                   "$south_swamp, swamp_winter, $any_flute, bombs",
                   "$south_swamp, swamp_winter, $ricky",
-                  
                   "$south_swamp, $swamp_stump, winter, shovel, bombs",
                   "$south_swamp, $swamp_stump, winter, $any_flute, bombs",
                   "$south_swamp, $swamp_stump, winter, $ricky"

@@ -6,12 +6,11 @@
   Existing:
   Rosa - Rosa*
   Swamp - Swamp*
-  Mountain* - Cucco
+  Mountain - Cucco*
   Village* - Town
   Lake* - Eyeglass
   Remains - Temple1*
   D8 - Temple2*
-  
   */
   {
     "name": "Sword",
@@ -1586,37 +1585,37 @@
         "inherit_codes": false
       },
       {
-        "img": "images/suburbs_label.png",
+        "img": "images/portal_rosa.png",
         "codes": "rosa_dance",
         "inherit_codes": false
       },
       {
-        "img": "images/north_label.png",
-        "codes": "eyeglass_dance",
+        "img": "images/portal_lake.png",
+        "codes": "lake_dance",
         "inherit_codes": false
       },
       {
-        "img": "images/swamp_label.png",
+        "img": "images/portal_swamp.png",
         "codes": "swamp_dance",
         "inherit_codes": false
       },
       {
-        "img": "images/sunken_label.png",
+        "img": "images/portal_cucco.png",
         "codes": "cucco_dance",
         "inherit_codes": false
       },
       {
-        "img": "images/gashaseed.png",
-        "codes": "town_dance",
+        "img": "images/portal_village.png",
+        "codes": "village_dance",
         "inherit_codes": false
       },
       {
-        "img": "images/temple_label.png",
+        "img": "images/portal_temple1.png",
         "codes": "temple1_dance",
         "inherit_codes": false
       },
       {
-        "img": "images/temple_label.png",
+        "img": "images/portal_temple2.png",
         "codes": "temple2_dance",
         "inherit_codes": false
       }
@@ -1634,37 +1633,37 @@
         "inherit_codes": false
       },
       {
-        "img": "images/suburbs_label.png",
+        "img": "images/portal_rosa.png",
         "codes": "rosa_market",
         "inherit_codes": false
       },
       {
-        "img": "images/north_label.png",
-        "codes": "eyeglass_market",
+        "img": "images/portal_lake.png",
+        "codes": "lake_market",
         "inherit_codes": false
       },
       {
-        "img": "images/swamp_label.png",
+        "img": "images/portal_swamp.png",
         "codes": "swamp_market",
         "inherit_codes": false
       },
       {
-        "img": "images/sunken_label.png",
+        "img": "images/portal_cucco.png",
         "codes": "cucco_market",
         "inherit_codes": false
       },
       {
-        "img": "images/gashaseed.png",
-        "codes": "town_market",
+        "img": "images/portal_village.png",
+        "codes": "village_market",
         "inherit_codes": false
       },
       {
-        "img": "images/temple_label.png",
+        "img": "images/portal_temple1.png",
         "codes": "temple1_market",
         "inherit_codes": false
       },
       {
-        "img": "images/temple_label.png",
+        "img": "images/portal_temple2.png",
         "codes": "temple2_market",
         "inherit_codes": false
       }
@@ -1682,37 +1681,37 @@
         "inherit_codes": false
       },
       {
-        "img": "images/suburbs_label.png",
+        "img": "images/portal_rosa.png",
         "codes": "rosa_hns",
         "inherit_codes": false
       },
       {
-        "img": "images/north_label.png",
-        "codes": "eyeglass_hns",
+        "img": "images/portal_lake.png",
+        "codes": "lake_hns",
         "inherit_codes": false
       },
       {
-        "img": "images/swamp_label.png",
+        "img": "images/portal_swamp.png",
         "codes": "swamp_hns",
         "inherit_codes": false
       },
       {
-        "img": "images/sunken_label.png",
+        "img": "images/portal_cucco.png",
         "codes": "cucco_hns",
         "inherit_codes": false
       },
       {
-        "img": "images/gashaseed.png",
-        "codes": "town_hns",
+        "img": "images/portal_village.png",
+        "codes": "village_hns",
         "inherit_codes": false
       },
       {
-        "img": "images/temple_label.png",
+        "img": "images/portal_temple1.png",
         "codes": "temple1_hns",
         "inherit_codes": false
       },
       {
-        "img": "images/temple_label.png",
+        "img": "images/portal_temple2.png",
         "codes": "temple2_hns",
         "inherit_codes": false
       }
@@ -1730,37 +1729,37 @@
         "inherit_codes": false
       },
       {
-        "img": "images/suburbs_label.png",
+        "img": "images/portal_rosa.png",
         "codes": "rosa_furnace",
         "inherit_codes": false
       },
       {
-        "img": "images/north_label.png",
-        "codes": "eyeglass_furnace",
+        "img": "images/portal_lake.png",
+        "codes": "lake_furnace",
         "inherit_codes": false
       },
       {
-        "img": "images/swamp_label.png",
+        "img": "images/portal_swamp.png",
         "codes": "swamp_furnace",
         "inherit_codes": false
       },
       {
-        "img": "images/sunken_label.png",
+        "img": "images/portal_cucco.png",
         "codes": "cucco_furnace",
         "inherit_codes": false
       },
       {
-        "img": "images/gashaseed.png",
-        "codes": "town_furnace",
+        "img": "images/portal_village.png",
+        "codes": "village_furnace",
         "inherit_codes": false
       },
       {
-        "img": "images/temple_label.png",
+        "img": "images/portal_temple1.png",
         "codes": "temple1_furnace",
         "inherit_codes": false
       },
       {
-        "img": "images/temple_label.png",
+        "img": "images/portal_temple2.png",
         "codes": "temple2_furnace",
         "inherit_codes": false
       }
@@ -1778,37 +1777,37 @@
         "inherit_codes": false
       },
       {
-        "img": "images/suburbs_label.png",
+        "img": "images/portal_rosa.png",
         "codes": "rosa_pirate",
         "inherit_codes": false
       },
       {
-        "img": "images/north_label.png",
-        "codes": "eyeglass_pirate",
+        "img": "images/portal_lake.png",
+        "codes": "lake_pirate",
         "inherit_codes": false
       },
       {
-        "img": "images/swamp_label.png",
+        "img": "images/portal_swamp.png",
         "codes": "swamp_pirate",
         "inherit_codes": false
       },
       {
-        "img": "images/sunken_label.png",
+        "img": "images/portal_cucco.png",
         "codes": "cucco_pirate",
         "inherit_codes": false
       },
       {
-        "img": "images/gashaseed.png",
-        "codes": "town_pirate",
+        "img": "images/portal_village.png",
+        "codes": "village_pirate",
         "inherit_codes": false
       },
       {
-        "img": "images/temple_label.png",
+        "img": "images/portal_temple1.png",
         "codes": "temple1_pirate",
         "inherit_codes": false
       },
       {
-        "img": "images/temple_label.png",
+        "img": "images/portal_temple2.png",
         "codes": "temple2_pirate",
         "inherit_codes": false
       }
@@ -1826,37 +1825,37 @@
         "inherit_codes": false
       },
       {
-        "img": "images/suburbs_label.png",
+        "img": "images/portal_rosa.png",
         "codes": "rosa_volcano",
         "inherit_codes": false
       },
       {
-        "img": "images/north_label.png",
-        "codes": "eyeglass_volcano",
+        "img": "images/portal_lake.png",
+        "codes": "lake_volcano",
         "inherit_codes": false
       },
       {
-        "img": "images/swamp_label.png",
+        "img": "images/portal_swamp.png",
         "codes": "swamp_volcano",
         "inherit_codes": false
       },
       {
-        "img": "images/sunken_label.png",
+        "img": "images/portal_cucco.png",
         "codes": "cucco_volcano",
         "inherit_codes": false
       },
       {
-        "img": "images/gashaseed.png",
-        "codes": "town_volcano",
+        "img": "images/portal_village.png",
+        "codes": "village_volcano",
         "inherit_codes": false
       },
       {
-        "img": "images/temple_label.png",
+        "img": "images/portal_temple1.png",
         "codes": "temple1_volcano",
         "inherit_codes": false
       },
       {
-        "img": "images/temple_label.png",
+        "img": "images/portal_temple2.png",
         "codes": "temple2_volcano",
         "inherit_codes": false
       }
@@ -1874,37 +1873,37 @@
         "inherit_codes": false
       },
       {
-        "img": "images/suburbs_label.png",
+        "img": "images/portal_rosa.png",
         "codes": "rosa_sns",
         "inherit_codes": false
       },
       {
-        "img": "images/north_label.png",
-        "codes": "eyeglass_sns",
+        "img": "images/portal_lake.png",
+        "codes": "lake_sns",
         "inherit_codes": false
       },
       {
-        "img": "images/swamp_label.png",
+        "img": "images/portal_swamp.png",
         "codes": "swamp_sns",
         "inherit_codes": false
       },
       {
-        "img": "images/sunken_label.png",
+        "img": "images/portal_cucco.png",
         "codes": "cucco_sns",
         "inherit_codes": false
       },
       {
-        "img": "images/gashaseed.png",
-        "codes": "town_sns",
+        "img": "images/portal_village.png",
+        "codes": "village_sns",
         "inherit_codes": false
       },
       {
-        "img": "images/temple_label.png",
+        "img": "images/portal_temple1.png",
         "codes": "temple1_sns",
         "inherit_codes": false
       },
       {
-        "img": "images/temple_label.png",
+        "img": "images/portal_temple2.png",
         "codes": "temple2_sns",
         "inherit_codes": false
       }

@@ -432,9 +432,9 @@
                 "header": "Portals",
                 "content": {
                   "type": "itemgrid",
-                  "item_size": 40,
+                  "item_size": 48,
                   "margin": "0, 5, 0, 0",
-                  "item_margin": "0,0,3,5",
+                  "item_margin": "2,2,4,4",
                   "rows": [
                     ["portal_1","portal_dance","","portal_2","portal_market"],
                     ["portal_3","portal_hns","","portal_4","portal_furnace"],

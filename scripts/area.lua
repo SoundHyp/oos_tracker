@@ -997,27 +997,22 @@ function remains_to_temple_hard()
 	return has("power1") and
 	max_jump() >= 2 and has("bombs")
 end
-
--- PORTALS
--- Portal Rosa?
 function portal_rosa()
-	return (suburbs() and (destroy_bush() or any_flute()))
+	return (suburbs() and (destroy_bush() or any_flute())) or
+	(has("rosa_dance") or has("rosa_market") or has("rosa_hns") or has("rosa_pirate") or has("rosa_furnace") or has("rosa_volcano") or has("rosa_sns"))
 	-- or temple() 
 end
--- Portal Lost?
 function portal_swamp()
 	return south_swamp() and has("power1") and
 	(any_flute() or has("swamp_summer") or has("swamp_fall") or
 	(swamp_stump() and (has("summer") or has("fall"))) or
 	(has("shovel") and (has("swamp_winter") or (swamp_stump() and has("winter")))) or
-	(destroy_flower() and (has("swamp_spring") or (swamp_stump() and has("spring")))))
-	-- or beach() 
+	(destroy_flower() and (has("swamp_spring") or (swamp_stump() and has("spring")))) or
+	(has("swamp_dance") or has("swamp_market") or has("swamp_hns") or has("swamp_pirate") or has("swamp_furnace") or has("swamp_volcano") or has("swamp_sns")))
 end
--- Portal Furnace?
 function portal_mountain()
 	return max_jump() >= 1 and mount_cucco()
 end
--- Portal Market?
 function portal_lake()
 	if north_stump() and
 		((wet_lake() and (max_jump() >= 1 or ricky() or moosh()) and (has("swim1") or (dimitri() and has("power1")))) or
