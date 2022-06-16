@@ -151,7 +151,7 @@ function hit_far_switch()
 	return has("boomerang1") or
 	has("bombs") or
 	shoot_seeds() or
-	(has("sword1") and has("ring_energy"))
+	(has("sword1") and (has("ring_energy") or has("roc1")))
 end 
 
 function max_jump()

@@ -1,0 +1,409 @@
+[
+  {
+    "name": "Subrosia",
+    "chest_unopened_img": "images/chest.png",
+    "chest_opened_img": "images/chestopen.png",
+    "children": [
+      {
+        "name": "Temple of Seasons",
+        "color": "#ff3c00",
+        "access_rules": [
+          "shuffle_hns, $hns_to_beach, $temple_to_beach",
+          "shuffle_pirate, $hns_to_beach, $temple_to_beach",
+          "shuffle_hns, $temple_to_hns",
+          "shuffle_pirate, $temple_to_hns",
+          "shuffle_furnace, $furnace_to_beach",
+          "shuffle_volcano, $remains_to_temple",
+          "shuffle_dance",
+          "shuffle_market, $temple_to_beach"
+        ],
+        "children": [
+          {
+            "name": "Main chamber",
+            "sections": [
+              {
+                "name": "Rod of Seasons item",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "subrosia",
+                "x": 408,
+                "y": 24
+              }
+            ]
+          },
+          {
+            "name": "Summer tower",
+            "sections": [
+              {
+                "name": "Summer spirit item",
+                "access_rules": [
+                  "$beach, ribbon, power1"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "subrosia",
+                "x": 364,
+                "y": 24
+              }
+            ]
+          },
+          {
+            "name": "Fall tower",
+            "sections": [
+              {
+                "name": "Fall spirit item",
+                "access_rules": [
+                  "shuffle_dance, $temple_to_beach, $beach_to_furnace, power1, $max_jump:1",
+                  "shuffle_hns, $hns_to_beach, $beach_to_furnace, power1, $max_jump:1",
+                  "shuffle_pirate, $hns_to_beach, $beach_to_furnace, power1, $max_jump:1",
+                  "shuffle_hns, $temple_to_hns, $beach_to_furnace, power1, $max_jump:1",
+                  "shuffle_pirate, $temple_to_hns, $beach_to_furnace, power1, $max_jump:1",
+                  "shuffle_furnace, $max_jump:1, power1",
+                  "shuffle_volcano, $remains_to_temple, $beach_to_furnace, power1, $max_jump:1",
+                  "shuffle_market, $temple_to_beach, $beach_to_furnace, power1, $max_jump:1"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "subrosia",
+                "x": 450,
+                "y": 24
+              }
+            ]
+          },
+          {
+            "name": "Winter tower",
+            "sections": [
+              {
+                "name": "Winter spirit item",
+                "access_rules": [
+                  "$hit_far_switch"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "subrosia",
+                "x": 450,
+                "y": 108
+              }
+            ]
+          },
+          {
+            "name": "Subrosian Smithy",
+            "sections": [
+              {
+                "name": "Deliver the Hard Ore",
+                "access_rules": [
+                  "hardore"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Polish the Rusty Bell",
+                "access_rules": [
+                  "bell1"
+                ],
+                "hosted_item": "bell2",
+                "item_count": 0
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "subrosia",
+                "x": 150,
+                "y": 150
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Northern region",
+        "color": "#ff3c00",
+        "access_rules": [
+          "shuffle_market, $max_jump:1",
+          "shuffle_hns, $hns_to_beach, $temple_to_beach",
+          "shuffle_pirate, $hns_to_beach, $temple_to_beach",
+          "shuffle_hns, $temple_to_hns",
+          "shuffle_pirate, $temple_to_hns",
+          "shuffle_furnace, $furnace_to_beach",
+          "shuffle_volcano, $remains_to_temple",
+          "shuffle_dance"
+        ],
+        "children": [
+          {
+            "name": "Subrosian dancing",
+            "sections": [
+              {
+                "name": "┏(-_-)┓┏(-_-)┛\n┗(-_- )┓┗(-_-)┛",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "subrosia",
+                "x": 194,
+                "y": 108
+              }
+            ]
+          },
+          {
+            "name": "Cave in the mountain",
+            "sections": [
+              {
+                "name": "Chest",
+                "access_rules": [
+                  "$temple_to_bridge"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "subrosia",
+                "x": 66,
+                "y": 66
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Southern region",
+        "color": "#ff3c00",
+        "access_rules": [
+          "shuffle_dance, $max_jump:1",
+          "shuffle_market",
+          "shuffle_hns, $hns_to_beach",
+          "shuffle_pirate, $hns_to_beach",
+          "shuffle_hns, $temple_to_hns",
+          "shuffle_pirate, $temple_to_hns",
+          "shuffle_furnace, $furnace_to_beach",
+          "shuffle_volcano, $remains_to_temple"
+        ],
+        "children": [
+          {
+            "name": "Subrosian seaside",
+            "sections": [
+              {
+                "name": "Star Ore item",
+                "access_rules": [
+                  "shovel"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "subrosia",
+                "x": 260,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "name": "Subrosian market",
+            "sections": [
+              {
+                "name": "Exchange \nStar Ore",
+                "access_rules": [
+                  "{}", "starore"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Second item \n(20 + 10 ember seeds)",
+                "access_rules": [
+                  "{}", 
+                  "emberseeds, $ore_chunks",
+                  "emberseeds, $temple_to_beach"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Fifth item \n(5)",
+                "access_rules": [
+                  "{}", 
+                  "$ore_chunks",
+                  "$temple_to_beach"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "subrosia",
+                "x": 238,
+                "y": 194
+              }
+            ]
+          },
+          {
+            "name": "Get pegasus seeds \nin the Subrosian Market",
+            "sections": [
+              {
+                "name": "25 ore chunks",
+                "access_rules": [
+                  "[pegasusseeds], shield1"
+                ],
+                "hosted_item": "pegasusseeds",
+                "item_count": 0
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "subrosia",
+                "x": 224,
+                "y": 180
+              }
+            ]
+          },
+          {
+            "name": "Rosa's world tour",
+            "sections": [
+              {
+                "name": "Open the cave",
+                "access_rules": [
+                  "$max_jump:1, ribbon"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "subrosia",
+                "x": 108,
+                "y": 66
+              }
+            ]
+          },
+          {
+            "name": "Furnace area",
+            "access_rules": [
+              "shuffle_dance, $temple_to_beach, $beach_to_furnace",
+              "shuffle_hns, $hns_to_beach, $beach_to_furnace",
+              "shuffle_pirate, $hns_to_beach, $beach_to_furnace",
+              "shuffle_hns, $temple_to_hns, $beach_to_furnace",
+              "shuffle_pirate, $temple_to_hns, $beach_to_furnace",
+              "shuffle_furnace, $max_jump:1",
+              "shuffle_volcano, $remains_to_temple, $beach_to_furnace",
+              "shuffle_market, $beach_to_furnace"
+            ],
+            "sections": [
+              {
+                "name": "Isolated chest",
+                "access_rules": [
+                  "roc2",
+                  "magnet"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "subrosia",
+                "x": 364,
+                "y": 236
+              }
+            ]
+          },
+          {
+            "name": "Great Furnace",
+            "access_rules": [
+              "shuffle_dance, $temple_to_beach, $beach_to_furnace",
+              "shuffle_hns, $hns_to_beach, $beach_to_furnace",
+              "shuffle_pirate, $hns_to_beach, $beach_to_furnace",
+              "shuffle_hns, $temple_to_hns, $beach_to_furnace",
+              "shuffle_pirate, $temple_to_hns, $beach_to_furnace",
+              "shuffle_furnace, $max_jump:1",
+              "shuffle_volcano, $remains_to_temple, $beach_to_furnace",
+              "shuffle_market, $beach_to_furnace"
+            ],
+            "sections": [
+              {
+                "name": "Fuse the ores",
+                "access_rules": [
+                  "$max_jump:1, power1, blueore, redore"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "subrosia",
+                "x": 408,
+                "y": 194
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Western region",
+        "color": "#ff3c00",
+        "access_rules": [
+          "shuffle_dance, $temple_to_hns",
+          "shuffle_market, $temple_to_hns",
+          "shuffle_hns, $max_jump:1",
+          "shuffle_pirate, $max_jump:1",
+          "shuffle_furnace, $furnace_to_beach, $temple_to_hns",
+          "shuffle_volcano, $remains_to_temple, $temple_to_hns"
+        ],
+        "children": [
+          {
+            "name": "Subrosian Wilds",
+            "sections": [
+              {
+                "name": "Pits chest",
+                "access_rules": [
+                  "$max_jump:3",
+                  "magnet"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "subrosia",
+                "x": 66,
+                "y": 194
+              }
+            ]
+          },
+          {
+            "name": "Spring tower",
+            "sections": [
+              {
+                "name": "Spring spirit item",
+                "access_rules": [
+                  "$max_jump:1"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "subrosia",
+                "x": 364,
+                "y": 108
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

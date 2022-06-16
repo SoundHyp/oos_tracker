@@ -8,7 +8,6 @@
         "name": "Temple of Seasons",
         "color": "#ff3c00",
         "access_rules": [
-          "$use_seeds, emberseeds, $destroy_bush",
           "$scent_tree, $cross_natzu, $natzu_to_suburbs, $suburbs_to_fountain",
           "$mount_cucco, $cucco_to_sunken, $natzu_to_suburbs, $suburbs_to_fountain, $destroy_bush",
           "$south_swamp, swim1, power1, $temple_to_beach",
@@ -17,9 +16,10 @@
           "$portal_village, $hns_to_beach, $temple_to_beach",
           "$portal_mountain, $temple_to_hns",
           "$portal_village, $temple_to_hns",
-          "$portal_lake, $max_jump:1, $furnace_to_beach",
+          "$portal_lake, $furnace_to_beach",
           "$portal_remains, $remains_to_temple",
-          "$portal_rosa"
+          "$portal_rosa",
+          "$portal_swamp, $temple_to_beach"
         ],
         "children": [
           {
@@ -91,8 +91,7 @@
               {
                 "name": "Winter spirit item",
                 "access_rules": [
-                  "$hit_far_switch",
-                  "$max_jump:1"
+                  "$hit_far_switch"
                 ],
                 "item_count": 1
               }
@@ -138,7 +137,6 @@
         "name": "Northern region",
         "color": "#ff3c00",
         "access_rules": [
-          "$use_seeds, emberseeds, $destroy_bush",
           "$scent_tree, $cross_natzu, $natzu_to_suburbs, $suburbs_to_fountain",
           "$mount_cucco, $cucco_to_sunken, $natzu_to_suburbs, $suburbs_to_fountain, $destroy_bush",
           "$south_swamp, swim1, power1, $temple_to_beach",
@@ -147,7 +145,7 @@
           "$portal_village, $hns_to_beach, $temple_to_beach",
           "$portal_mountain, $temple_to_hns",
           "$portal_village, $temple_to_hns",
-          "$portal_lake, $max_jump:1, $furnace_to_beach",
+          "$portal_lake, $furnace_to_beach",
           "$portal_remains, $remains_to_temple",
           "$portal_rosa"
         ],

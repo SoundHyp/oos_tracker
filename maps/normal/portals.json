@@ -29,31 +29,6 @@
                         ]
                     }
                 ]
-            },
-            {
-                "name": "Subrosia",
-                "children": [
-                    {
-                        "name": "Mountain",
-                        "sections": [
-                            {
-                                "name": "Portal",
-                                "item_count": 1,
-                                "access_rules": [
-                                    "$portal_hns"
-                                ]
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "subrosia",
-                                "x": 300,
-                                "y": 300
-                            }
-                        ]
-
-                    }
-                ]
             }
         ]
     }

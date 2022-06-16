@@ -1590,17 +1590,17 @@
         "inherit_codes": false
       },
       {
-        "img": "images/portal_lake.png",
-        "codes": "shuffle_dance",
-        "inherit_codes": false
-      },
-      {
         "img": "images/portal_swamp.png",
         "codes": "shuffle_dance",
         "inherit_codes": false
       },
       {
         "img": "images/portal_cucco.png",
+        "codes": "shuffle_dance",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/portal_lake.png",
         "codes": "shuffle_dance",
         "inherit_codes": false
       },
@@ -1638,17 +1638,17 @@
         "inherit_codes": false
       },
       {
-        "img": "images/portal_lake.png",
-        "codes": "shuffle_market",
-        "inherit_codes": false
-      },
-      {
         "img": "images/portal_swamp.png",
         "codes": "shuffle_market",
         "inherit_codes": false
       },
       {
         "img": "images/portal_cucco.png",
+        "codes": "shuffle_market",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/portal_lake.png",
         "codes": "shuffle_market",
         "inherit_codes": false
       },
@@ -1686,17 +1686,17 @@
         "inherit_codes": false
       },
       {
-        "img": "images/portal_lake.png",
-        "codes": "shuffle_hns",
-        "inherit_codes": false
-      },
-      {
         "img": "images/portal_swamp.png",
         "codes": "shuffle_hns",
         "inherit_codes": false
       },
       {
         "img": "images/portal_cucco.png",
+        "codes": "shuffle_hns",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/portal_lake.png",
         "codes": "shuffle_hns",
         "inherit_codes": false
       },
@@ -1734,17 +1734,17 @@
         "inherit_codes": false
       },
       {
-        "img": "images/portal_lake.png",
-        "codes": "shuffle_furnace",
-        "inherit_codes": false
-      },
-      {
         "img": "images/portal_swamp.png",
         "codes": "shuffle_furnace",
         "inherit_codes": false
       },
       {
         "img": "images/portal_cucco.png",
+        "codes": "shuffle_furnace",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/portal_lake.png",
         "codes": "shuffle_furnace",
         "inherit_codes": false
       },
@@ -1782,17 +1782,17 @@
         "inherit_codes": false
       },
       {
-        "img": "images/portal_lake.png",
-        "codes": "shuffle_pirate",
-        "inherit_codes": false
-      },
-      {
         "img": "images/portal_swamp.png",
         "codes": "shuffle_pirate",
         "inherit_codes": false
       },
       {
         "img": "images/portal_cucco.png",
+        "codes": "shuffle_pirate",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/portal_lake.png",
         "codes": "shuffle_pirate",
         "inherit_codes": false
       },
@@ -1830,17 +1830,17 @@
         "inherit_codes": false
       },
       {
-        "img": "images/portal_lake.png",
-        "codes": "shuffle_volcano",
-        "inherit_codes": false
-      },
-      {
         "img": "images/portal_swamp.png",
         "codes": "shuffle_volcano",
         "inherit_codes": false
       },
       {
         "img": "images/portal_cucco.png",
+        "codes": "shuffle_volcano",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/portal_lake.png",
         "codes": "shuffle_volcano",
         "inherit_codes": false
       },
@@ -1878,17 +1878,17 @@
         "inherit_codes": false
       },
       {
-        "img": "images/portal_lake.png",
-        "codes": "shuffle_sns",
-        "inherit_codes": false
-      },
-      {
         "img": "images/portal_swamp.png",
         "codes": "shuffle_sns",
         "inherit_codes": false
       },
       {
         "img": "images/portal_cucco.png",
+        "codes": "shuffle_sns",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/portal_lake.png",
         "codes": "shuffle_sns",
         "inherit_codes": false
       },
