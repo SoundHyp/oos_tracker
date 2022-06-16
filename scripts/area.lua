@@ -999,7 +999,7 @@ function remains_to_temple_hard()
 end
 function portal_rosa()
 	return (suburbs() and (destroy_bush() or any_flute())) or
-	(has("rosa_dance") or has("rosa_market") or has("rosa_hns") or has("rosa_pirate") or has("rosa_furnace") or has("rosa_volcano") or has("rosa_sns"))
+	(has("shuffle_dance"))
 	-- or temple() 
 end
 function portal_swamp()
@@ -1007,24 +1007,29 @@ function portal_swamp()
 	(any_flute() or has("swamp_summer") or has("swamp_fall") or
 	(swamp_stump() and (has("summer") or has("fall"))) or
 	(has("shovel") and (has("swamp_winter") or (swamp_stump() and has("winter")))) or
-	(destroy_flower() and (has("swamp_spring") or (swamp_stump() and has("spring")))) or
-	(has("swamp_dance") or has("swamp_market") or has("swamp_hns") or has("swamp_pirate") or has("swamp_furnace") or has("swamp_volcano") or has("swamp_sns")))
+	(destroy_flower() and (has("swamp_spring") or (swamp_stump() and has("spring"))))) or
+	(has("shuffle_market"))
 end
 function portal_mountain()
-	return max_jump() >= 1 and mount_cucco()
+	return max_jump() >= 1 and mount_cucco() or
+	(has("shuffle_hns"))
 end
 function portal_lake()
-	if north_stump() and
-		((wet_lake() and (max_jump() >= 1 or ricky() or moosh()) and (has("swim1") or (dimitri() and has("power1")))) or
-		(max_jump() >= 4 and (has("north_winter") or has("winter")))) then
+	if has("shuffle_furnace") then
 		return true, AccessibilityLevel.Normal
-	elseif north_stump() and
-		((wet_lake() and (max_jump() >= 1 or ricky() or moosh()) and
-		(has("swim1") or (dimitri() and has("power1")))) or
-		(max_jump() >= 3 and has("bombs") and (has("north_winter") or has("winter")))) then
-		return true, AccessibilityLevel.SequenceBreak
 	else
-		return false, AccessibilityLevel.None
+		if north_stump() and
+			((wet_lake() and (max_jump() >= 1 or ricky() or moosh()) and (has("swim1") or (dimitri() and has("power1")))) or
+			(max_jump() >= 4 and (has("north_winter") or has("winter")))) then
+			return true, AccessibilityLevel.Normal
+		elseif north_stump() and
+			((wet_lake() and (max_jump() >= 1 or ricky() or moosh()) and
+			(has("swim1") or (dimitri() and has("power1")))) or
+			(max_jump() >= 3 and has("bombs") and (has("north_winter") or has("winter")))) then
+			return true, AccessibilityLevel.SequenceBreak
+		else
+			return false, AccessibilityLevel.None
+		end
 	end	
 end
 function portal_lake_hard()
@@ -1036,13 +1041,17 @@ function portal_lake_hard()
 end
 -- Portal Pirate?
 function portal_village()
-	if has("boomerang2") then
+	if has("shuffle_pirate") then
 		return true, AccessibilityLevel.Normal
-	elseif max_jump() >= 4 then
-		return true, AccessibilityLevel.SequenceBreak
 	else
-		return false, AccessibilityLevel.None
-	end	
+		if has("boomerang2") then
+			return true, AccessibilityLevel.Normal
+		elseif max_jump() >= 4 then
+			return true, AccessibilityLevel.SequenceBreak
+		else
+			return false, AccessibilityLevel.None
+		end
+	end
 end
 function portal_village_hard()
 	return has("boomerang2") or

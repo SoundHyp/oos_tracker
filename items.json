@@ -1586,37 +1586,37 @@
       },
       {
         "img": "images/portal_rosa.png",
-        "codes": "rosa_dance",
+        "codes": "shuffle_dance",
         "inherit_codes": false
       },
       {
         "img": "images/portal_lake.png",
-        "codes": "lake_dance",
+        "codes": "shuffle_dance",
         "inherit_codes": false
       },
       {
         "img": "images/portal_swamp.png",
-        "codes": "swamp_dance",
+        "codes": "shuffle_dance",
         "inherit_codes": false
       },
       {
         "img": "images/portal_cucco.png",
-        "codes": "cucco_dance",
+        "codes": "shuffle_dance",
         "inherit_codes": false
       },
       {
         "img": "images/portal_village.png",
-        "codes": "village_dance",
+        "codes": "shuffle_dance",
         "inherit_codes": false
       },
       {
         "img": "images/portal_temple1.png",
-        "codes": "temple1_dance",
+        "codes": "shuffle_dance",
         "inherit_codes": false
       },
       {
         "img": "images/portal_temple2.png",
-        "codes": "temple2_dance",
+        "codes": "shuffle_dance",
         "inherit_codes": false
       }
     ]
@@ -1634,37 +1634,37 @@
       },
       {
         "img": "images/portal_rosa.png",
-        "codes": "rosa_market",
+        "codes": "shuffle_market",
         "inherit_codes": false
       },
       {
         "img": "images/portal_lake.png",
-        "codes": "lake_market",
+        "codes": "shuffle_market",
         "inherit_codes": false
       },
       {
         "img": "images/portal_swamp.png",
-        "codes": "swamp_market",
+        "codes": "shuffle_market",
         "inherit_codes": false
       },
       {
         "img": "images/portal_cucco.png",
-        "codes": "cucco_market",
+        "codes": "shuffle_market",
         "inherit_codes": false
       },
       {
         "img": "images/portal_village.png",
-        "codes": "village_market",
+        "codes": "shuffle_market",
         "inherit_codes": false
       },
       {
         "img": "images/portal_temple1.png",
-        "codes": "temple1_market",
+        "codes": "shuffle_market",
         "inherit_codes": false
       },
       {
         "img": "images/portal_temple2.png",
-        "codes": "temple2_market",
+        "codes": "shuffle_market",
         "inherit_codes": false
       }
     ]
@@ -1682,37 +1682,37 @@
       },
       {
         "img": "images/portal_rosa.png",
-        "codes": "rosa_hns",
+        "codes": "shuffle_hns",
         "inherit_codes": false
       },
       {
         "img": "images/portal_lake.png",
-        "codes": "lake_hns",
+        "codes": "shuffle_hns",
         "inherit_codes": false
       },
       {
         "img": "images/portal_swamp.png",
-        "codes": "swamp_hns",
+        "codes": "shuffle_hns",
         "inherit_codes": false
       },
       {
         "img": "images/portal_cucco.png",
-        "codes": "cucco_hns",
+        "codes": "shuffle_hns",
         "inherit_codes": false
       },
       {
         "img": "images/portal_village.png",
-        "codes": "village_hns",
+        "codes": "shuffle_hns",
         "inherit_codes": false
       },
       {
         "img": "images/portal_temple1.png",
-        "codes": "temple1_hns",
+        "codes": "shuffle_hns",
         "inherit_codes": false
       },
       {
         "img": "images/portal_temple2.png",
-        "codes": "temple2_hns",
+        "codes": "shuffle_hns",
         "inherit_codes": false
       }
     ]
@@ -1730,37 +1730,37 @@
       },
       {
         "img": "images/portal_rosa.png",
-        "codes": "rosa_furnace",
+        "codes": "shuffle_furnace",
         "inherit_codes": false
       },
       {
         "img": "images/portal_lake.png",
-        "codes": "lake_furnace",
+        "codes": "shuffle_furnace",
         "inherit_codes": false
       },
       {
         "img": "images/portal_swamp.png",
-        "codes": "swamp_furnace",
+        "codes": "shuffle_furnace",
         "inherit_codes": false
       },
       {
         "img": "images/portal_cucco.png",
-        "codes": "cucco_furnace",
+        "codes": "shuffle_furnace",
         "inherit_codes": false
       },
       {
         "img": "images/portal_village.png",
-        "codes": "village_furnace",
+        "codes": "shuffle_furnace",
         "inherit_codes": false
       },
       {
         "img": "images/portal_temple1.png",
-        "codes": "temple1_furnace",
+        "codes": "shuffle_furnace",
         "inherit_codes": false
       },
       {
         "img": "images/portal_temple2.png",
-        "codes": "temple2_furnace",
+        "codes": "shuffle_furnace",
         "inherit_codes": false
       }
     ]
@@ -1778,37 +1778,37 @@
       },
       {
         "img": "images/portal_rosa.png",
-        "codes": "rosa_pirate",
+        "codes": "shuffle_pirate",
         "inherit_codes": false
       },
       {
         "img": "images/portal_lake.png",
-        "codes": "lake_pirate",
+        "codes": "shuffle_pirate",
         "inherit_codes": false
       },
       {
         "img": "images/portal_swamp.png",
-        "codes": "swamp_pirate",
+        "codes": "shuffle_pirate",
         "inherit_codes": false
       },
       {
         "img": "images/portal_cucco.png",
-        "codes": "cucco_pirate",
+        "codes": "shuffle_pirate",
         "inherit_codes": false
       },
       {
         "img": "images/portal_village.png",
-        "codes": "village_pirate",
+        "codes": "shuffle_pirate",
         "inherit_codes": false
       },
       {
         "img": "images/portal_temple1.png",
-        "codes": "temple1_pirate",
+        "codes": "shuffle_pirate",
         "inherit_codes": false
       },
       {
         "img": "images/portal_temple2.png",
-        "codes": "temple2_pirate",
+        "codes": "shuffle_pirate",
         "inherit_codes": false
       }
     ]
@@ -1826,37 +1826,37 @@
       },
       {
         "img": "images/portal_rosa.png",
-        "codes": "rosa_volcano",
+        "codes": "shuffle_volcano",
         "inherit_codes": false
       },
       {
         "img": "images/portal_lake.png",
-        "codes": "lake_volcano",
+        "codes": "shuffle_volcano",
         "inherit_codes": false
       },
       {
         "img": "images/portal_swamp.png",
-        "codes": "swamp_volcano",
+        "codes": "shuffle_volcano",
         "inherit_codes": false
       },
       {
         "img": "images/portal_cucco.png",
-        "codes": "cucco_volcano",
+        "codes": "shuffle_volcano",
         "inherit_codes": false
       },
       {
         "img": "images/portal_village.png",
-        "codes": "village_volcano",
+        "codes": "shuffle_volcano",
         "inherit_codes": false
       },
       {
         "img": "images/portal_temple1.png",
-        "codes": "temple1_volcano",
+        "codes": "shuffle_volcano",
         "inherit_codes": false
       },
       {
         "img": "images/portal_temple2.png",
-        "codes": "temple2_volcano",
+        "codes": "shuffle_volcano",
         "inherit_codes": false
       }
     ]
@@ -1874,37 +1874,37 @@
       },
       {
         "img": "images/portal_rosa.png",
-        "codes": "rosa_sns",
+        "codes": "shuffle_sns",
         "inherit_codes": false
       },
       {
         "img": "images/portal_lake.png",
-        "codes": "lake_sns",
+        "codes": "shuffle_sns",
         "inherit_codes": false
       },
       {
         "img": "images/portal_swamp.png",
-        "codes": "swamp_sns",
+        "codes": "shuffle_sns",
         "inherit_codes": false
       },
       {
         "img": "images/portal_cucco.png",
-        "codes": "cucco_sns",
+        "codes": "shuffle_sns",
         "inherit_codes": false
       },
       {
         "img": "images/portal_village.png",
-        "codes": "village_sns",
+        "codes": "shuffle_sns",
         "inherit_codes": false
       },
       {
         "img": "images/portal_temple1.png",
-        "codes": "temple1_sns",
+        "codes": "shuffle_sns",
         "inherit_codes": false
       },
       {
         "img": "images/portal_temple2.png",
-        "codes": "temple2_sns",
+        "codes": "shuffle_sns",
         "inherit_codes": false
       }
     ]

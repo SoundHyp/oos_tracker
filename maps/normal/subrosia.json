@@ -18,7 +18,8 @@
           "$portal_mountain, $temple_to_hns",
           "$portal_village, $temple_to_hns",
           "$portal_lake, $max_jump:1, $furnace_to_beach",
-          "$portal_remains, $remains_to_temple"
+          "$portal_remains, $remains_to_temple",
+          "$portal_rosa"
         ],
         "children": [
           {
@@ -147,7 +148,8 @@
           "$portal_mountain, $temple_to_hns",
           "$portal_village, $temple_to_hns",
           "$portal_lake, $max_jump:1, $furnace_to_beach",
-          "$portal_remains, $remains_to_temple"
+          "$portal_remains, $remains_to_temple",
+          "$portal_rosa"
         ],
         "children": [
           {
