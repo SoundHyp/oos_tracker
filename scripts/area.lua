@@ -1060,18 +1060,22 @@ function portal_village_hard()
 end
 -- Portal Volcano?
 function portal_remains()
-	if destroy_bush() and
-		max_jump() >= 1 and has("winter") and
-		(has("temple_fall") or has("fall")) then
+	if has("shuffle_volcano") then
 		return true, AccessibilityLevel.Normal
-	elseif (has("temple_winter") or has("winter")) and
-		((has("shovel") and destroy_bush() and max_jump() >= 4) or
-		((has("temple_spring") or has("spring")) and destroy_flower() and destroy_bush() and max_jump() >= 4 and has("winter")) or
-		((has("temple_summer") or has("summer")) and destroy_bush() and max_jump() >= 4 and has("winter")) or
-		((has("temple_fall") or has("fall")) and destroy_bush() and max_jump() >= 1 and has("winter"))) then
-		return true, AccessibilityLevel.SequenceBreak
 	else
-		return false, AccessibilityLevel.None
+		if destroy_bush() and
+			max_jump() >= 1 and has("winter") and
+			(has("temple_fall") or has("fall")) then
+			return true, AccessibilityLevel.Normal
+		elseif (has("temple_winter") or has("winter")) and
+			((has("shovel") and destroy_bush() and max_jump() >= 4) or
+			((has("temple_spring") or has("spring")) and destroy_flower() and destroy_bush() and max_jump() >= 4 and has("winter")) or
+			((has("temple_summer") or has("summer")) and destroy_bush() and max_jump() >= 4 and has("winter")) or
+			((has("temple_fall") or has("fall")) and destroy_bush() and max_jump() >= 1 and has("winter"))) then
+			return true, AccessibilityLevel.SequenceBreak
+		else
+			return false, AccessibilityLevel.None
+		end
 	end	
 end
 function portal_remains_hard()
@@ -1083,17 +1087,21 @@ function portal_remains_hard()
 end
 -- Portal SNS?
 function portal_d8()
-	if has("temple_summer") or has("summer") then
-		if max_jump() >= 4 or 
-			(max_jump() >= 2 and has("magnet")) then
-			return true, AccessibilityLevel.Normal
-		elseif max_jump() >= 1 and has("bombs") then
-			return true, AccessibilityLevel.SequenceBreak
+	if has("shuffle_sns") then
+		return true, AccessibilityLevel.SequenceBreak
+	else
+		if has("temple_summer") or has("summer") then
+			if max_jump() >= 4 or 
+				(max_jump() >= 2 and has("magnet")) then
+				return true, AccessibilityLevel.Normal
+			elseif max_jump() >= 1 and has("bombs") then
+				return true, AccessibilityLevel.SequenceBreak
+			else
+				return false, AccessibilityLevel.None
+			end
 		else
 			return false, AccessibilityLevel.None
 		end
-	else
-		return false, AccessibilityLevel.None
 	end
 end
 function portal_d8_hard()
