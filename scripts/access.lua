@@ -2,6 +2,11 @@ function has(item)
   return Tracker:ProviderCountForCode(item) == 1
 end
 
+--[[ This is just showing a NOT statement
+function sword()
+	return has("sword1") ~= true
+end ]]
+
 -- ALL CHECKS MARKED AS "HARD" IN THE RANDOMIZER ARE NOT USED HERE
 
 -- WEIRD LOGIC CHECKS
@@ -151,7 +156,9 @@ function hit_far_switch()
 	return has("boomerang1") or
 	has("bombs") or
 	shoot_seeds() or
-	(has("sword1") and (has("ring_energy") or has("roc1")))
+	(has("sword1") and (has("ring_energy")) or 
+	has("sword2") or
+	has("roc1"))
 end 
 
 function max_jump()
