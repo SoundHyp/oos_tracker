@@ -67,7 +67,6 @@
           },
           {
             "name": "Horon Shop",
-
             "sections": [
               {
                 "name": "Unique item (150)",
@@ -80,7 +79,7 @@
               {
                 "name": "Member's Shop 1 (300)",
                 "access_rules": [
-                  "$member_shop"
+                  "memberscard"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -88,7 +87,7 @@
               {
                 "name": "Member's Shop 2 (200)",
                 "access_rules": [
-                  "$member_shop"
+                  "memberscard"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -96,7 +95,7 @@
               {
                 "name": "Member's Shop 3 (300)",
                 "access_rules": [
-                  "$member_shop"
+                  "memberscard"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -268,7 +267,7 @@
             "access_rules": [
               "$max_jump:3",
               "north_fall, $max_jump:1",
-              "$north_stump, fall, $max_jump:1"
+              "$destroy_bush_flute, fall, $max_jump:1"
             ],
             "sections": [
               {
@@ -290,13 +289,13 @@
               {
                 "name": "Bomb cave",
                 "access_rules": [
-                  "$north_stump, bombs, swim1, north_summer, $max_jump:1",
-                  "$north_stump, bombs, swim1, north_summer, $moosh",
-                  "$north_stump, bombs, swim1, summer, $max_jump:1",
-                  "$north_stump, bombs, swim1, summer, $moosh",
+                  "$destroy_bush_flute, bombs, swim1, north_summer, $max_jump:1",
+                  "$destroy_bush_flute, bombs, swim1, north_summer, $moosh",
+                  "$destroy_bush_flute, bombs, swim1, summer, $max_jump:1",
+                  "$destroy_bush_flute, bombs, swim1, summer, $moosh",
                   
-                  "$north_stump, $ricky, swim1, north_summer",
-                  "$north_stump, $ricky, swim1, summer",
+                  "$destroy_bush_flute, $ricky, swim1, north_summer",
+                  "$destroy_bush_flute, $ricky, swim1, summer",
                   
                   "$d5_stump, bombs, summer, swim1",
                   "$d5_stump, $ricky, summer, swim1",
