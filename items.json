@@ -272,37 +272,42 @@
   },
   {
     "name": "Red Ore",
-    "type": "toggle",  
+    "type": "toggle",
     "img": "images/orered.png",
     "codes": "redore"
   },
   {
     "name": "Ember Seeds",
     "type": "toggle",
+    "mask_input": true,
     "img": "images/seedember.png",
     "codes": "emberseeds"
   },
   {
     "name": "Mystery Seeds",
     "type": "toggle",
+    "mask_input": true,
     "img": "images/seedmystery.png",
     "codes": "mysteryseeds"
   },
   {
     "name": "Scent Seeds",
     "type": "toggle",
+    "mask_input": true,
     "img": "images/seedscent.png",
     "codes": "scentseeds"
   },
   {
     "name": "Pegasus Seeds",
     "type": "toggle",
+    "mask_input": true,
     "img": "images/seedpegasus.png",
     "codes": "pegasusseeds"
   },
   {
     "name": "Gale Seeds",
     "type": "toggle",
+    "mask_input": true,
     "img": "images/seedgale.png",
     "codes": "galeseeds"
   },

@@ -1,35 +1,20 @@
--- HORON VILLAGE
-
-function member_shop()
-	return has("memberscard")
-end
-
 -- NORTH HORON
 
-function north_stump()
-	return destroy_bush_flute()
-end
-
 function enter_d1()
-	return has("d1key") and north_stump()
+	return has("d1key") and destroy_bush_flute()
 	--(south_swamp() and (has("swim1") or dimitri())) 
 end
 
-
 function wet_lake()
-	return has("north_winter") or has("north_spring") or has("north_fall") or
-	has("winter") or has("spring") or has("fall")
-end
-
-function d5_stump_d1()
-	return (north_stump() and
-	(max_jump() >= 1 or ricky() or moosh()) and
-	(has("winter") or has("north_winter") or
-	has("swim1") or (dimitri()) and has("power1")))
+	return (not (has("season_northhoron") or has("north_summer"))) or
+	(has("winter") or has("spring") or has("fall"))
 end
 
 function d5_stump()
-	return d5_stump_d1() 
+	return (destroy_bush_flute() and
+	(max_jump() >= 1 or ricky() or moosh()) and
+	(has("winter") or has("north_winter") or
+	has("swim1") or (dimitri()) and has("power1")))
 end
 
 function enter_d5()
@@ -209,14 +194,14 @@ function fairy_fountain_hard()
 end
 
 function fairy_fountain_natzu()
-	return north_stump() and has("power1") and
+	return destroy_bush_flute() and has("power1") and
 	--cross natzu
 	((has("natzu_dimitri") and (dimitri() or has("swim1")) and max_jump() >= 1) or --cross dimitri's natzu
 	(has("natzu_moosh") and (moosh() or (destroy_bush_flute() and max_jump() >= 3))) or --crosh Moosh's natzu
 	(has("natzu_ricky") and ricky()))--cross ricky's natzu
 end
 function fairy_fountain_natzu_hard()
-	return north_stump() and has("power1") and
+	return destroy_bush_flute() and has("power1") and
 	--cross natzu
 	((has("natzu_dimitri") and (dimitri() or has("swim1")) and max_jump() >= 1) or --cross dimitri's natzu
 	(has("natzu_moosh") and (moosh() or 
@@ -303,7 +288,7 @@ function scent_tree_hard()
 end
 
 function scent_normal()
-	return north_stump() and
+	return destroy_bush_flute() and
 	(has("power1") or has("swim1") or dimitri())
 end
 
@@ -343,7 +328,7 @@ function plain_stump_scent_hard()
 end
 
 function plain_stump_north()
-	return north_stump() and
+	return destroy_bush_flute() and
 	(has("swim1") or dimitri()) and destroy_bush_flute() --swim around
 end
 
@@ -598,7 +583,7 @@ function sunken_rosa()
 end
 
 function sunken_lake()
-	return north_stump() and max_jump() >= 4 and (has("winter") or has("north_winter")) and --get to lake portal without any flute
+	return destroy_bush_flute() and max_jump() >= 4 and (has("winter") or has("north_winter")) and --get to lake portal without any flute
 	(has("summer") or has("sunken_summer")) and --summer requirement of rando
 	has("swim1") --go through tunnel
 end
@@ -1018,11 +1003,11 @@ function portal_lake()
 	if has("shuffle_furnace") then
 		return true, AccessibilityLevel.Normal
 	else
-		if north_stump() and
+		if destroy_bush_flute() and
 			((wet_lake() and (max_jump() >= 1 or ricky() or moosh()) and (has("swim1") or (dimitri() and has("power1")))) or
 			(max_jump() >= 4 and (has("north_winter") or has("winter")))) then
 			return true, AccessibilityLevel.Normal
-		elseif north_stump() and
+		elseif destroy_bush_flute() and
 			((wet_lake() and (max_jump() >= 1 or ricky() or moosh()) and
 			(has("swim1") or (dimitri() and has("power1")))) or
 			(max_jump() >= 3 and has("bombs") and (has("north_winter") or has("winter")))) then
@@ -1033,7 +1018,7 @@ function portal_lake()
 	end	
 end
 function portal_lake_hard()
-	return north_stump() and
+	return destroy_bush_flute() and
 	((wet_lake() and (max_jump() >= 1 or ricky() or moosh()) and
 	(has("swim1") or (dimitri() and has("power1")))) or
 	((max_jump() >= 4 or (max_jump() >= 3 and has("bombs"))) and 
