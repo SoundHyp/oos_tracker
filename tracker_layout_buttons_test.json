@@ -1,0 +1,678 @@
+﻿{
+  "map_enabled": true,
+  "auto_pin_capturing_locations": false,
+  "auto_unpin_on_clear": true,
+  "allow_resize": true,
+  "layout_swap_left_right": false,
+  "layouts": {
+    "portals": {
+      "type": "group",
+      "header": "Portals",
+      "content": {
+        "type": "itemgrid",
+        "item_size": 48,
+        "margin": "0, 5, 0, 0",
+        "item_margin": "2, 2, 4, 4",
+        "rows": [
+          ["portal_1","portal_dance","","portal_2","portal_market"],
+          ["portal_3","portal_hns","","portal_4","portal_furnace"],
+          ["portal_5","portal_pirate","","portal_6","portal_volcano"],
+          ["portal_7","portal_sns"]
+        ]
+      }
+    },
+    "seasons": {
+      "type": "group",
+      "header": "Seasons",
+      "max_height": 205,
+      "dock":"top",
+      "content": {
+        "type": "itemgrid",
+        "item_size": 64,
+        "margin": "0, 5, 0, 0",
+        "item_margin": "7, -5, 0, -20",
+        "rows": [
+          ["north_label", "north_winter", "swamp_label", "swamp_fall"],
+          ["suburbs_label", "suburbs_fall", "sunken_label", "sunken_summer"],
+          ["wow_label", "wow_summer", "coast_label", "season_coast"],
+          ["plain_label", "plain_spring", "temple_label", "temple_winter"]      
+        ]
+      }
+    },
+    "rings": {
+      "type": "group",
+      "header": "Rings",
+      "max_height": 205,
+      "dock":"top",
+      "content": {
+        "type": "itemgrid",
+        "item_size": 32,
+        "margin": "0, 5, 0, 0",
+        "item_margin": "5, 0, 5, 0",
+        "rows": [
+          ["ring_fist", "ring_expert", "ring_energy","ring_swimmer"]
+        ]
+      }
+    },
+    "dungeons": {
+      "type": "group",
+      "header": "Dungeon Shuffle",
+      "content": {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+          {
+            "type": "array",
+            "orientation": "horizontal",
+            "h_alignment": "center",
+            "margin": "0,20,0,0",
+            "content": [
+              {
+                "type": "image",
+                "image": "images/D1.png",
+                "margin": "0,0,0,0",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "d1_ent",
+                "margin": "0,0,5,0",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "image",
+                "image": "images/D2.png",
+                "margin": "0,0,0,0",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "d2_ent",
+                "margin": "0,0,5,0",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "image",
+                "image": "images/D3.png",
+                "margin": "0,0,0,0",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "d3_ent",
+                "margin": "0,0,5,0",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "image",
+                "image": "images/D4.png",
+                "margin": "0,0,0,0",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "d4_ent",
+                "margin": "0,0,0,0",
+                "width": 32,
+                "height": 32
+              }
+            ]
+          },
+          {
+            "type": "array",
+            "orientation": "horizontal",
+            "h_alignment": "center",
+            "margin": "0,20,0,0",
+            "content": [
+              {
+                "type": "image",
+                "image": "images/D5.png",
+                "margin": "0,0,0,0",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "d5_ent",
+                "margin": "0,0,5,0",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "image",
+                "image": "images/D6.png",
+                "margin": "0,0,0,0",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "d6_ent",
+                "margin": "0,0,5,0",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "image",
+                "image": "images/D7.png",
+                "margin": "0,0,0,0",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "d7_ent",
+                "margin": "0,0,5,0",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "image",
+                "image": "images/D8.png",
+                "margin": "0,0,0,0",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "d8_ent",
+                "margin": "0,0,5,0",
+                "width": 32,
+                "height": 32
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "shared_item_grid": {
+      "type": "array",
+      "orientation": "horizontal",
+      "content": [
+        {
+          "type": "array",
+          "orientation": "vertical",
+          "content": [
+            {
+              "type": "itemgrid",
+              "name": "Menu Items",
+              "item_size": 32,
+              "item_margin": "10,0,5,10",
+              "rows": [
+                ["sword1", "shield1"],
+                ["power1", "roc1"],
+                ["slingshot1", "seedshooter"],
+                ["hook1", "magnet"],
+                ["boomerang1", "shovel"],
+                ["flute", "natzu_moosh"],
+                ["cane", "bombs"],
+                ["foolsore"]
+              ]
+            },
+            {
+              "type": "array",
+              "orientation": "horizontal",
+              "alignment": "center",
+              "margin": "14,-2,0,5",
+              "content": [
+                {
+                  "type": "item",
+                  "item": "satchel",
+                  "item_size": 48
+                },
+
+                {
+                  "type": "itemgrid",
+                  "name": "Seeds",
+                  "item_size": 24,
+                  "margin": "4,-4,0,0",
+                  "item_margin": "2, 0, 2, -8",
+                  "h_alignment": "center",
+                  "rows": [
+                    ["emberseeds", "mysteryseeds"],
+                    ["scentseeds"],
+                    ["pegasusseeds", "galeseeds"]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "orientation": "vertical",
+          "name": "Items, Keys/Jewels/Seasons, Essences, Dungeon Items",
+          "content": [
+            {
+              "type": "itemgrid",
+              "name": "Items",
+              "item_size": 32,
+              "margin": "4,3,3,3",
+              "item_margin": "6, 0, 0, 0",
+              "rows": [
+                ["starore", "masterplaque", "swim1", "banana", "bell1"]
+              ]
+            },
+            {
+              "type": "itemgrid",
+              "name": "Items",
+              "item_size": 32,
+              "margin": "4,0,3,3",
+              "item_margin": "6, 0, 0, 0",
+              "rows": [
+                ["ribbon", "memberscard", "blueore", "redore", "hardore"]
+              ]
+            },
+            {
+              "type": "array",
+              "name": "Keys/Jewels/Seasons",
+              "orientation": "horizontal",
+              "h_alignment": "center",
+              "margin": "3, 3, 0, 0",
+              "content": [
+                {
+                  "type": "item",
+                  "item": "d1key",
+                  "item_size": 46
+                },
+                {
+                  "type": "item",
+                  "item": "d3key",
+                  "item_size": 46
+                },
+                {
+                  "type": "item",
+                  "item": "d4key",
+                  "item_size": 46
+                },
+                {
+                  "type": "itemgrid",
+                  "name": "Jewels",
+                  "item_size": 18,
+                  "margin": "4,-2,2,0",
+                  "item_margin": "2,2,0,0",
+                  "rows": [
+                    ["roundjewel", "pyramidjewel"],
+                    ["squarejewel", "xjewel"]
+                  ]
+                },
+                {
+                  "type": "itemgrid",
+                  "name": "Seasons",
+                  "item_size": 15,
+                  "margin": "0, -5, 0, 10",
+                  "item_margin": "6, 11, 0, -5",
+                  "h_alignment": "center",
+                  "rows": [
+                    ["summer", "fall"],
+                    ["spring", "winter"]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "array",
+              "name": "Essences/Keys",
+              "orientation": "vertical",
+              "content": [
+                {
+                  "type": "array",
+                  "name": "D1-D4 Essences",
+                  "orientation": "horizontal",
+                  "h_alignment": "center",
+                  "margin": "0,10,0,0",
+                  "content": [
+                    {
+                      "type": "item",
+                      "item": "d1",
+                      "margin": "10,0,10,0",
+                      "width": 32,
+                      "height": 32
+                    },
+                    {
+                      "type": "item",
+                      "item": "d2",
+                      "margin": "10,0,10,0",
+                      "width": 32,
+                      "height": 32
+                    },
+                    {
+                      "type": "item",
+                      "item": "d3",
+                      "margin": "10,0,10,0",
+                      "width": 32,
+                      "height": 32
+                    },
+                    {
+                      "type": "item",
+                      "item": "d4",
+                      "margin": "10,0,10,0",
+                      "width": 32,
+                      "height": 32
+                    }
+                  ]
+                },
+                {
+                  "type": "array",
+                  "name": "D1-D4 Keys",
+                  "orientation": "horizontal",
+                  "h_alignment": "center",
+                  "content": [
+                    {
+                      "type": "item",
+                      "item": "d1sk",
+                      "width": 24,
+                      "height": 24
+                    },
+                    {
+                      "type": "item",
+                      "item": "d1bk",
+                      "margin": "0,0,2,0",
+                      "width": 24,
+                      "height": 24
+                    },
+                    {
+                      "type": "item",
+                      "item": "d2sk",
+                      "margin": "2,0,0,0",
+                      "width": 24,
+                      "height": 24
+                    },
+                    {
+                      "type": "item",
+                      "item": "d2bk",
+                      "margin": "0,0,2,0",
+                      "width": 24,
+                      "height": 24
+                    },
+                    {
+                      "type": "item",
+                      "item": "d3sk",
+                      "margin": "2,0,0,0",
+                      "width": 24,
+                      "height": 24
+                    },
+                    {
+                      "type": "item",
+                      "item": "d3bk",
+                      "margin": "0,0,2,0",
+                      "width": 24,
+                      "height": 24
+                    },
+                    {
+                      "type": "item",
+                      "item": "d4sk",
+                      "margin": "2,0,0,0",
+                      "width": 24,
+                      "height": 24
+                    },
+                    {
+                      "type": "item",
+                      "item": "d4bk",
+                      "width": 24,
+                      "height": 24
+                    }
+                  ]
+                },
+                {
+                  "type": "array",
+                  "name": "D5-D8 Essences",
+                  "orientation": "horizontal",
+                  "h_alignment": "center",
+                  "margin": "0,20,0,0",
+                  "content": [
+                    {
+                      "type": "item",
+                      "item": "d5",
+                      "margin": "10,0,10,0",
+                      "width": 32,
+                      "height": 32
+                    },
+                    {
+                      "type": "item",
+                      "item": "d6",
+                      "margin": "10,0,10,0",
+                      "width": 32,
+                      "height": 32
+                    },
+                    {
+                      "type": "item",
+                      "item": "d7",
+                      "margin": "10,0,10,0",
+                      "width": 32,
+                      "height": 32
+                    },
+                    {
+                      "type": "item",
+                      "item": "d8",
+                      "margin": "10,0,10,0",
+                      "width": 32,
+                      "height": 32
+                    }
+                  ]
+                },
+                {
+                  "type": "array",
+                  "name": "D5-D8 Keys",
+                  "orientation": "horizontal",
+                  "h_alignment": "center",
+                  "content": [
+                    {
+                      "type": "item",
+                      "item": "d5sk",
+                      "width": 24,
+                      "height": 24
+                    },
+                    {
+                      "type": "item",
+                      "item": "d5bk",
+                      "margin": "0,0,2,0",
+                      "width": 24,
+                      "height": 24
+                    },
+                    {
+                      "type": "item",
+                      "item": "d6sk",
+                      "margin": "2,0,0,0",
+                      "width": 24,
+                      "height": 24
+                    },
+                    {
+                      "type": "item",
+                      "item": "d6bk",
+                      "margin": "0,0,2,0",
+                      "width": 24,
+                      "height": 24
+                    },
+                    {
+                      "type": "item",
+                      "item": "d7sk",
+                      "margin": "2,0,0,0",
+                      "width": 24,
+                      "height": 24
+                    },
+                    {
+                      "type": "item",
+                      "item": "d7bk",
+                      "margin": "0,0,2,0",
+                      "width": 24,
+                      "height": 24
+                    },
+                    {
+                      "type": "item",
+                      "item": "d8sk",
+                      "margin": "2,0,0,0",
+                      "width": 24,
+                      "height": 24
+                    },
+                    {
+                      "type": "item",
+                      "item": "d8bk",
+                      "width": 24,
+                      "height": 24
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "array",
+              "name": "Popups",
+              "orientation": "horizontal",
+              "margin": "0, 20, 0, 0",
+              "h_alignment": "center",
+              "content": [
+                {
+                  "type": "button_popup",
+                  "layout": "seasons",
+                  "style": "image",
+                  "image": "images/rod.png",
+                  "width": 32,
+                  "margin": "15,0,15,0"
+                },
+                {
+                  "type": "button_popup",
+                  "layout": "portals",
+                  "style": "image",
+                  "image": "images/portal.png",
+                  "width": 32,
+                  "margin": "15,0,15,0"
+                },
+                {
+                  "type": "button_popup",
+                  "layout": "rings",
+                  "style": "image",
+                  "image": "images/rings0.png",
+                  "width": 32,
+                  "margin": "15,0,15,0"
+                },
+                {
+                  "type": "button_popup",
+                  "layout": "dungeons",
+                  "style": "image",
+                  "image": "images/keyboss.png",
+                  "width": 32,
+                  "margin": "15,0,15,0"
+                }
+              ]
+            }
+          ] 
+        }
+      ] 
+    },
+    
+    "tracker_capture_item": {
+        "type": "container",
+        "name": "Pinned Item Grid",
+        "content": {
+          "type": "array",
+          "orientation": "horizontal",
+          "content": [
+            {
+              "type": "itemgrid",
+              "name": "Seeds",
+              "h_alignment": "center",
+              "item_margin": "1,2",
+              "rows": [
+                ["emberseeds"],
+                ["scentseeds"],
+                ["pegasusseeds"],
+                ["galeseeds"],
+                ["mysteryseeds"]
+              ]
+            },
+            {
+              "type": "itemgrid",
+              "name": "Equipment/Key Items",
+              "h_alignment": "center",
+              "item_margin": "1,2,5,10",
+              "margin": "10,6,0,0",
+              "rows": [
+                ["sword1", "shield", "feather", "boomerang", "slingshot1", "season", "satchel"],
+                ["bracelet", "magnet", "shovel", "flute_generic", "foolsore", "hook1", "cane"],
+                ["swim1","starore", "blueore", "redore", "hardore", "masterplaque", "memberscard"],
+                ["banana","ribbon", "gnarledkey", "d3key", "dragonkey", "bell1", "jewels"]
+              ]
+            }
+          ]
+        }
+    },
+    "tracker_default": {
+      "type": "container",
+      "name": "Tracker Layout",
+      "background": "#595959",
+      "content": {
+        "type": "dock",
+        "dropshadow": true,
+        "content": [
+          {
+            "type": "dock",
+            "name": "Left-side of Tracker",
+            "dock": "left",
+            "margin": "0,0,3,0",
+            "content": [
+              {
+                "type": "group",
+                "header": "Key Items/Essences",
+                "dock": "top",
+                "content": {
+                  "type": "layout",
+                  "margin": 0,
+                  "key": "shared_item_grid"
+                }
+              },
+              {
+                
+              }
+            ]
+          },
+          {
+            "type": "dock",
+            "name": "Right-side of Tracker",
+            "v_alignment": "stretch",
+            "h_alignment": "stretch",
+            "margin": "0,0,0,0",
+            "content": [
+              {
+                "type": "dock",
+                "dock": "top",
+                "name": "Maps",
+                "max_height": 700,
+                "h_alignment": "stretch",
+                "v_alignment": "stretch",
+                "content": [
+                  {
+                    "type": "map",
+                    "orientation": "vertical",
+                    "maps": [
+                      "holodrum","subrosia"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "group",
+                "header": "Pinned Locations",
+                "content": {
+                  "type": "recentpins",
+                  "style": "wrap",
+                  "h_alignment": "stretch",
+                  "v_alignment": "stretch",
+                  "orientation": "horizontal",
+                  "compact": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

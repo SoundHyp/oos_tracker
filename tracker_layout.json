@@ -23,10 +23,42 @@
                 ["power1", "roc1"],
                 ["slingshot1", "seedshooter"],
                 ["hook1", "magnet"],
-                ["boomerang1", "shovel"],
+                ["boomerang1", "shovel"]
+              ]
+            },
+            {
+              "type": "array",
+              "orientation": "horizontal",
+              "alignment": "center",
+              "margin": "14,-2,0,5",
+              "content": [
+                {
+                  "type": "item",
+                  "item": "foolsore",
+                  "item_size": 48
+                },
+                {
+                  "type": "itemgrid",
+                  "name": "Seasons",
+                  "item_size": 15,
+                  "margin": "0, -5, 0, 10",
+                  "item_margin": "6, 11, 0, -5",
+                  "h_alignment": "center",
+                  "rows": [
+                    ["summer", "fall"],
+                    ["spring", "winter"]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "itemgrid",
+              "name": "Menu Items",
+              "item_size": 32,
+              "item_margin": "10,0,5,10",
+              "rows": [
                 ["flute", "natzu_moosh"],
-                ["cane", "bombs"],
-                ["foolsore"]
+                ["cane", "bombs"]
               ]
             },
             {
@@ -67,20 +99,42 @@
               "type": "itemgrid",
               "name": "Items",
               "item_size": 32,
-              "margin": "4,3,3,3",
-              "item_margin": "6, 0, 0, 0",
+              "margin": "0,0,0,0",
+              "item_margin": "0, 0, 0, 0",
               "rows": [
-                ["starore", "masterplaque", "swim1", "banana", "bell1"]
+                ["starore", "masterplaque", "swim1", "banana"]
               ]
             },
             {
-              "type": "itemgrid",
+              "type": "array",
               "name": "Items",
-              "item_size": 32,
-              "margin": "4,0,3,3",
-              "item_margin": "6, 0, 0, 0",
-              "rows": [
-                ["ribbon", "memberscard", "blueore", "redore", "hardore"]
+              "orientation": "horizontal",
+              "h_alignment": "center",
+              "content": [
+                {
+                  "type": "item",
+                  "item": "ribbon",
+                  "margin": "0, 0, 2, 0"
+                },
+                {
+                  "type": "item",
+                  "item": "memberscard"
+                },
+                {
+                  "type": "itemgrid",
+                  "name": "Ores",
+                  "item_size": 32,
+                  "margin": "0,0,0,0",
+                  "item_margin": "-4,0,-10,0",
+                  "rows": [
+                    ["blueore", "redore"]
+                  ]
+                },
+                {
+                  "type": "item",
+                  "item": "hardore",
+                  "margin": "0, 0, 0, 0"
+                }
               ]
             },
             {
@@ -91,18 +145,18 @@
               "margin": "3,3,0,0",
               "content": [
                 {
-                  "type": "item",
-                  "item": "d1key",
-                  "item_size": 46
+                  "type": "itemgrid",
+                  "name": "Keys",
+                  "item_size": 32,
+                  "margin": "4,-2,2,0",
+                  "item_margin": "-5,2,-5,0",
+                  "rows": [
+                    ["d1key", "d3key", "d4key"]
+                  ]
                 },
                 {
                   "type": "item",
-                  "item": "d3key",
-                  "item_size": 46
-                },
-                {
-                  "type": "item",
-                  "item": "d4key",
+                  "item": "bell1",
                   "item_size": 46
                 },
                 {
@@ -115,18 +169,6 @@
                     ["roundjewel", "pyramidjewel"],
                     ["squarejewel", "xjewel"]
                   ]
-                },
-                {
-                      "type": "itemgrid",
-                      "name": "Seasons",
-                      "item_size": 15,
-                      "margin": "0, -5, 0, 10",
-                      "item_margin": "6, 11, 0, -5",
-                      "h_alignment": "center",
-                      "rows": [
-                        ["summer", "fall"],
-                        ["spring", "winter"]
-                      ]
                 }
               ]
             },
